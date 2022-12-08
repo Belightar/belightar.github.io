@@ -1,0 +1,16 @@
+_site/
+*.sw[po]
+*.~vsd
+\#*\#
+*~
+.DS_Store
+Gemfile.lock
+.vscode/
+.jekyll-metadata
+
+*.gem
+.bundle
+.sass-cache
+_site
+Gemfile.lock
+*.code-workspace
