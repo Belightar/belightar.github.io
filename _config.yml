@@ -31,7 +31,7 @@ youtube_username: xiong_siliang
 
 # Additional icon links
 additional_links:
-- title: itsgoingto.be
+- title: 主页
   icon: fas fa-globe
   url: https://www.siliang.xyz
 # - title: another link
