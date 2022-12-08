@@ -58,12 +58,12 @@ content:
     content:
       - layout: top-middle
         title: Super awesome project
-        link: github.com/belightar.github.io/cv
+        link: https://siliang.xyz/cv
         # link_text: Project Website
         additional_links:
-          - title:  github.com/belightar.github.io/cv
+          - title:  https://siliang.xyz/cv
             icon: fab fa-github
-            url: github.com/belightar.github.io/cv
+            url: https://siliang.xyz/cv
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
