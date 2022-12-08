@@ -9,10 +9,10 @@ version: 2
 name: Xiong Siliang Main
 title: Senior Network System Administrator
 email: xiong_siliang@siliang.xyz
-website: www.github.com/Belightar/belightar.github.io
+website: siliang.xyz
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: true
 
 # Social links
 twitter_username: xiong_siliang
@@ -58,12 +58,12 @@ content:
     content:
       - layout: top-middle
         title: Super awesome project
-        link: github.com/belightar.github.io/cv_page
+        link: github.com/belightar.github.io/cv
         # link_text: Project Website
         additional_links:
-          - title:  github.com/belightar.github.io/cv_page
+          - title:  github.com/belightar.github.io/cv
             icon: fab fa-github
-            url: github.com/belightar.github.io/cv_page
+            url: github.com/belightar.github.io/cv
           # - title:  Github page for project (eg. sproogen/modern-resume-theme)
           #   icon: fab fa-github
           #   url: Link to project (eg. sproogen.github.io/modern-resume-theme)
