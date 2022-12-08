@@ -1,0 +1,1046 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>中国外汇交易中心、全国银行间同业拆借中心 (1)</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-opaquegray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="447321a7-3fd6-4855-b247-baf84e90d5c0" class="page sans"><header><h1 class="page-title">中国外汇交易中心、全国银行间同业拆借中心 (1)</h1></header><div class="page-body"><p id="63137565-23a9-43a5-9ca0-b5d637df74f3" class="">
+</p><figure id="ee3d79db-77aa-4e8e-9f3c-82f4dd7ae9ce"><a href="https://www.chinamoney.com.cn/chinese/bkfrr/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://www.chinamoney.com.cn/chinese/bkfrr/</div></div></a></figure><p id="e25e897d-60db-41a5-b26c-0444c2b1fa3a" class="">
+</p><p id="6b3fc84c-7cc5-424b-9eb5-2a67e616f076" class="">LIVE</p><figure id="8b4d0056-3a87-4b9a-800e-6f14535fa020"><a href="https://www.chinamoney.com.cn/chinese/mkdatapm/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://www.chinamoney.com.cn/chinese/mkdatapm/</div></div></a></figure><p id="e6896293-51c6-4ab2-943c-b8c7ef78dfd8" class="">HIST</p><figure id="fea4d12a-4187-40b8-95a6-0afcd1e53ae6"><a href="https://www.chinamoney.com.cn/chinese/bkcrr/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://www.chinamoney.com.cn/chinese/bkcrr/</div></div></a></figure><p id="06b6b786-4e79-4d76-8af7-abd8227c071e" class="">
+</p><nav id="1e0576bf-2374-444f-8958-0acde2cbae7a" class="block-color-gray table_of_contents"><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#3ee90703-628b-4176-a456-9bb32c3aba3b">外汇市场</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#fca6ea53-654d-463c-bd16-c5883d25f81d">人民币汇率中间价   </a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#84914bf7-3c5b-4ef9-910a-c87edef36351">人民币参考汇率</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#a2ae4738-e5f7-42d2-a48b-67ca98e2e5fd">人民币汇率指数</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#d0a9d653-5a8f-4360-add4-816f49cdc242">USD CIROR</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#9a45c92e-dd3b-4cde-a848-76ba93f56370">外汇掉期曲线</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#1296634d-0b43-4514-aa20-2855800a5b96">外币隐含利率曲线</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#4d83b5b6-859c-4ce6-8551-2f02e9b32cea">外汇期权隐含波动率曲线</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#933cf6e5-4ca7-4315-bc52-0fc24c4dca1b">外汇期权Delta计量参数</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#74ebe562-1fa0-4077-b6d5-8d6d160e3be2">货币掉期曲线</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#aef08273-88fe-4a81-ba24-e5a6c818bcce">本币市场</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#c77b03d8-92c6-4df7-9085-708341f95970">Shibor</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#3e6b38cb-cdab-4664-9023-f4bf68dfd123">贷款市场报价利率</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#e01126ad-4f67-4429-9750-43bb9fe34fa6">回购定盘利率</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#abe6538c-2be0-4ac6-8be7-51e855a8fd21">债券指数</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#3c1073c4-b75f-4d3d-910e-a5405826c121">基准债券</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#25307bf1-0042-44f6-ae57-c9e51ad30218">实时收益率曲线</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#8af6d56b-561c-4811-9d37-fa4dc80efd7d">收盘收益率曲线</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#bcf2c153-e362-444d-81a5-b17fc0066221">利率互换曲线</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#24c5a2b6-e4cb-490a-9b71-3e18c4be816e">债券估值       </a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#37ed3dc9-6e84-4556-9593-4cc7dbc4f117">CDS指数</a></div><div class="table_of_contents-item table_of_contents-indent-1"><a class="table_of_contents-link" href="#09af134b-9cd8-48f2-93f0-19d81f5d2e4d">RMBS条件早偿率指数</a></div><div class="table_of_contents-item table_of_contents-indent-0"><a class="table_of_contents-link" href="#29c5f626-7158-4ca3-944a-fe36b38cfda9">利率与汇率（SDDS）</a></div></nav><p id="83d68043-0512-49ec-a190-fc03b7ce8180" class="">
+</p><p id="c9f85ff5-b601-4c5e-98b9-5d35b494f1a0" class="">
+</p><h1 id="3ee90703-628b-4176-a456-9bb32c3aba3b" class="">外汇市场</h1><h2 id="fca6ea53-654d-463c-bd16-c5883d25f81d" class=""><details open=""><summary>人民币汇率中间价   </summary></details></h2><div class="indented"><p id="0b675b1e-c37e-4fef-a7ce-128e00ae5e5d" class="">人民币汇率中间价指交易中心根据中国人民银行授权，每日计算和发布人民币对美元等主要外汇币种汇率中间价。</p><p id="10768666-8421-416b-8f0a-76353b356f51" class="">人民币对美元汇率中间价的形成方式为：交易中心于每日银行间外汇市场开盘前向外汇市场做市商询价。外汇市场做市商参考上日银行间外汇市场收盘汇率，综合考虑外汇供求情况以及国际主要货币汇率变化进行报价。交易中心将全部做市商报价作为人民币对美元汇率中间价的计算样本，去掉最高和最低报价后，将剩余做市商报价加权平均，得到当日人民币对美元汇率中间价，权重由交易中心根据报价方在银行间外汇市场的交易量及报价情况等指标综合确定。</p><p id="e21ab0f6-adc2-45cd-ba8e-b776a229f2bd" class="">人民币对港元汇率中间价由交易中心分别根据当日人民币对美元汇率中间价与上午9时国际外汇市场港元对美元汇率套算确定。</p><p id="ceeaa73d-3cf1-4092-9402-f77815f93e5d" class="">人民币对欧元、日元、英镑、澳大利亚元、新西兰元、新加坡元、瑞士法郎、加拿大元、林吉特、俄罗斯卢布、兰特、韩元、阿联酋迪拉姆、沙特里亚尔、匈牙利福林、波兰兹罗提、丹麦克朗、瑞典克朗、挪威克朗、土耳其里拉、墨西哥比索和泰铢汇率中间价形成方式为：交易中心于每日银行间外汇市场开盘前向银行间外汇市场相应币种的做市商询价，去掉最高和最低报价后，将剩余做市商报价平均，得到当日人民币对欧元、日元、英镑、澳大利亚元、新西兰元、新加坡元、瑞士法郎、加拿大元、林吉特、俄罗斯卢布、兰特、韩元、阿联酋迪拉姆、沙特里亚尔、匈牙利福林、波兰兹罗提、丹麦克朗、瑞典克朗、挪威克朗、土耳其里拉、墨西哥比索和泰铢汇率中间价。</p><p id="36d1a93a-516a-48e2-8ea3-20a19cdc70e0" class="">  </p><pre id="626225e7-f995-4c7f-86e1-c4c7ca46e7ee" class="code"><code># LIVE 
+
+url = &quot;https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/fx/ccpr-mth-avg.json?t=1666776044395&quot;
+
+
+
+# HIST
+
+# 中间价
+url = &quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-ccpr/CcprHisNew?startDate=2022-09-27&amp;endDate=2022-10-26&amp;currency=USD/CNY,EUR/CNY,100JPY/CNY,HKD/CNY,GBP/CNY,AUD/CNY,NZD/CNY,SGD/CNY,CHF/CNY,CAD/CNY,CNY/MYR,CNY/RUB,CNY/ZAR,CNY/KRW,CNY/AED,CNY/SAR,CNY/HUF,CNY/PLN,CNY/DKK,CNY/SEK,CNY/NOK,CNY/TRY,CNY/MXN,CNY/THB&amp;pageNum=1&amp;pageSize=10&quot;
+
+# 月平均
+url = &quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-ccpr/CcprYearAvgHisNew?startYear=2012&amp;endYear=2021&amp;currency=USD/CNY,EUR/CNY,100JPY/CNY,HKD/CNY,GBP/CNY,AUD/CNY,NZD/CNY,SGD/CNY,CHF/CNY,CAD/CNY,CNY/MYR,CNY/RUB,CNY/ZAR,CNY/KRW,CNY/AED,CNY/SAR,CNY/HUF,CNY/PLN,CNY/DKK,CNY/SEK,CNY/NOK,CNY/TRY,CNY/MXN,CNY/THB&amp;pageNum=1&amp;pageSize=10&quot;
+
+# 年平均
+url = &quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-ccpr/CcprYearAvgHisNew?startYear=2012&amp;endYear=2021&amp;currency=USD/CNY,EUR/CNY,100JPY/CNY,HKD/CNY,GBP/CNY,AUD/CNY,NZD/CNY,SGD/CNY,CHF/CNY,CAD/CNY,CNY/MYR,CNY/RUB,CNY/ZAR,CNY/KRW,CNY/AED,CNY/SAR,CNY/HUF,CNY/PLN,CNY/DKK,CNY/SEK,CNY/NOK,CNY/TRY,CNY/MXN,CNY/THB&amp;pageNum=1&amp;pageSize=10&quot;</code></pre><p id="311e29bf-cdd2-4694-85d1-4ac3296e9b63" class="">
+</p></div><h2 id="84914bf7-3c5b-4ef9-910a-c87edef36351" class=""><details open=""><summary>人民币参考汇率</summary></details></h2><div class="indented"><p id="d8cd8554-895e-4d80-8506-576c2bbce8ed" class="">根据中国人民银行授权，为便于有关主体了解未在中国外汇交易中心（简称“交易中心”）挂牌交易货币对人民币的折算汇率情况，交易中心计算并公布人民币参考汇率。具体计算方法是交易中心分别根据每月最后一个交易日人民币对美元汇率中间价与上午9时国际外汇市场相应货币对美元汇率套算形成。该汇率每月最后一个交易日更新，仅供参考使用。</p><p id="3585b090-df60-441a-833d-ca2163b0bd6d" class="">
+</p><pre id="b75b3cc7-0054-49cf-88a2-97dcce389a6f" class="code"><code># LIVE 
+
+&quot;https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/fx/crr-chrt-CNYALL.xml?t=1666776168853&quot;
+
+
+# HIST
+
+&quot;https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/fx/crr-chrt-CNYALL.xml?t=1666776168853&quot;
+</code></pre><p id="c2df4c55-7b69-4d7a-9307-145a00109620" class="">
+</p></div><h2 id="a2ae4738-e5f7-42d2-a48b-67ca98e2e5fd" class=""><details open=""><summary>人民币汇率指数</summary></details></h2><div class="indented"><p id="b893b727-920b-40e4-9b9e-f1bf4953e9ca" class="">
+</p><p id="797f5b74-298e-4f9c-b4d3-69d5005ebc32" class="">为进一步增强CFETS人民币汇率指数货币篮子代表性，中国外汇交易中心（以下简称交易中心）拟根据《CFETS人民币汇率指数货币篮子调整规则》（中汇交公告〔2016〕81号）调整CFETS人民币汇率指数货币篮子的权重，新版指数自2022年1月1日起生效。</p><p id="da918bc4-8b44-439e-add3-3afeb20d16f7" class="">一、调整CFETS人民币汇率指数的货币篮子权重</p><p id="e4abc7d8-84fd-46ee-a1a3-e8ffb3346db0" class="">CFETS人民币汇率指数的篮子货币权重是采用考虑转口贸易因素的贸易权重法计算而得，现版指数采用的是2019年度贸易数据。为进一步增强指数代表性，新版指数采用2020年度贸易数据作为权重进行调整。经历史回溯试算，新版和现版CFETS人民币汇率指数运行趋势基本吻合。</p><p id="3349f865-8826-4e43-86d7-d850b3333ff5" class=""><strong>表1 新版CFETS货币篮子和权重</strong></p><table id="14a4be0d-a4be-44ba-8755-599f534bab1b" class="simple-table"><tbody><tr id="5580f7e0-28ea-468d-a42d-e2f01bd33ed2"><td id="=rIi" class=""><strong>币种</strong></td><td id="eIeK" class=""><strong>权重</strong></td></tr><tr id="eeed38fd-4a74-4631-8fbc-8709b2ad61b4"><td id="=rIi" class="">USD</td><td id="eIeK" class="">0.1988</td></tr><tr id="f26e91ab-1dd3-4cf3-8f55-38f1ac3b8a37"><td id="=rIi" class="">EUR</td><td id="eIeK" class="">0.1845</td></tr><tr id="d1379a72-4d81-4bec-a197-faf52731f6db"><td id="=rIi" class="">JPY</td><td id="eIeK" class="">0.1076</td></tr><tr id="4a937d3f-0e1e-4027-856d-78d44d380c53"><td id="=rIi" class="">HKD</td><td id="eIeK" class="">0.0346</td></tr><tr id="495c298d-02fe-496a-80c9-11735ed6a71f"><td id="=rIi" class="">GBP</td><td id="eIeK" class="">0.0313</td></tr><tr id="25380485-5eec-40c8-b49b-30d6eb2d3bd5"><td id="=rIi" class="">AUD</td><td id="eIeK" class="">0.0571</td></tr><tr id="d8e2f05e-b196-4421-a0d4-6a57095624f2"><td id="=rIi" class="">NZD</td><td id="eIeK" class="">0.0061</td></tr><tr id="45d12099-d9e9-4bfd-866d-ad4a7bad8b67"><td id="=rIi" class="">SGD</td><td id="eIeK" class="">0.0302</td></tr><tr id="47089604-e942-4a9d-9b44-a451e8ce56c0"><td id="=rIi" class="">CHF</td><td id="eIeK" class="">0.0076</td></tr><tr id="3286f71b-18ab-4a72-b9a1-999ff4e28e55"><td id="=rIi" class="">CAD</td><td id="eIeK" class="">0.0217</td></tr><tr id="44ccec7a-929c-4bfb-8764-d2bdf33ec4ba"><td id="=rIi" class="">MYR</td><td id="eIeK" class="">0.0444</td></tr><tr id="456cee74-1db6-4f6a-8833-93b9f95f7f16"><td id="=rIi" class="">RUB</td><td id="eIeK" class="">0.0366</td></tr><tr id="06928e4b-e991-4574-a294-02bc79d612df"><td id="=rIi" class="">ZAR</td><td id="eIeK" class="">0.0121</td></tr><tr id="e279055b-56e5-48aa-85b2-1428b12995fd"><td id="=rIi" class="">KRW</td><td id="eIeK" class="">0.0967</td></tr><tr id="279a46cb-e078-4763-b475-4451095e452c"><td id="=rIi" class="">AED</td><td id="eIeK" class="">0.0167</td></tr><tr id="24e7a1ba-4680-414b-99be-b62f051cb45c"><td id="=rIi" class="">SAR</td><td id="eIeK" class="">0.0228</td></tr><tr id="665be7fe-0627-4c2d-aff0-3ac4fb6b69f4"><td id="=rIi" class="">HUF</td><td id="eIeK" class="">0.004</td></tr><tr id="db5936e2-e9e5-45d3-bbc3-ec42ad6244b1"><td id="=rIi" class="">PLN</td><td id="eIeK" class="">0.0105</td></tr><tr id="f600bcdb-b430-448d-be50-9c8d23c4bc5d"><td id="=rIi" class="">DKK</td><td id="eIeK" class="">0.0046</td></tr><tr id="7203e01a-8f57-486f-b2b2-5f49973033b8"><td id="=rIi" class="">SEK</td><td id="eIeK" class="">0.0061</td></tr><tr id="cb4f8be2-f7a9-4bd9-aff4-2b52900553e3"><td id="=rIi" class="">NOK</td><td id="eIeK" class="">0.0037</td></tr><tr id="6ab8d27b-6352-4eb4-a85b-749ea84c09c7"><td id="=rIi" class="">TRY</td><td id="eIeK" class="">0.0082</td></tr><tr id="52b6327d-f32c-432b-ab28-a63a19f49352"><td id="=rIi" class="">MXN</td><td id="eIeK" class="">0.0206</td></tr><tr id="36fa1983-1e78-4f24-b9b7-26ce06854b93"><td id="=rIi" class="">THB</td><td id="eIeK" class="">0.0335</td></tr></tbody></table><p id="e72b4549-b24c-495e-aa07-1b7203aa350f" class="">二、保持BIS货币篮子和权重不变</p><p id="60272bf9-8e12-470b-a170-976238eb58b7" class="">国际清算银行（BIS）自2019年4月以来未调整汇率指数的货币篮子及权重，故交易中心继续保持BIS货币篮子人民币汇率指数的货币篮子和权重不变。</p><p id="a75d93c0-603f-4b87-8895-9139f1699a66" class=""><strong>表2 BIS货币篮子和权重</strong></p><table id="0c616680-d174-4543-afc7-c1dab8e00a45" class="simple-table"><tbody><tr id="2b0d4d06-9d43-42a4-9933-5356f017328c"><td id="GXU[" class="">币种</td><td id="H\_D" class="">权重</td></tr><tr id="caddfa38-f754-4c2b-98af-226905142e5e"><td id="GXU[" class="">USD</td><td id="H\_D" class="">0.196807605546305</td></tr><tr id="c821fac6-7c43-48b6-972b-e520aed869c8"><td id="GXU[" class="">EUR</td><td id="H\_D" class="">0.180341487906990</td></tr><tr id="8f36e22b-de9a-4c32-881a-0e6a88cdd14a"><td id="GXU[" class="">JPY</td><td id="H\_D" class="">0.119337085872547</td></tr><tr id="685852df-ee36-4dc0-8cc5-f59fac652a86"><td id="GXU[" class="">HKD</td><td id="H\_D" class="">0.009545347000566</td></tr><tr id="35d5bf29-b104-4d8b-b199-414a9c109cd8"><td id="GXU[" class="">GBP</td><td id="H\_D" class="">0.030100023232646</td></tr><tr id="75af4fbf-3a83-4509-99d6-078b28baf06b"><td id="GXU[" class="">AUD</td><td id="H\_D" class="">0.013762591023056</td></tr><tr id="f87102dd-5030-4d17-8fef-c492ee9d3ce2"><td id="GXU[" class="">NZD</td><td id="H\_D" class="">0.002288156660129</td></tr><tr id="20a974d6-0ffa-4007-8349-a72b822926de"><td id="GXU[" class="">SGD</td><td id="H\_D" class="">0.029627571487147</td></tr><tr id="5a78e973-9c55-4225-8ee0-8f3022bb1222"><td id="GXU[" class="">CHF</td><td id="H\_D" class="">0.014074414390102</td></tr><tr id="30ba1d23-2232-4488-add2-effe291bda7a"><td id="GXU[" class="">CAD</td><td id="H\_D" class="">0.020534052391550</td></tr><tr id="6c9e86cd-94da-4492-8096-a091fc10c9bc"><td id="GXU[" class="">MYR</td><td id="H\_D" class="">0.021461977052835</td></tr><tr id="42126db7-4531-48bf-b963-04dd21240b34"><td id="GXU[" class="">RUB</td><td id="H\_D" class="">0.014234779188439</td></tr><tr id="0d3b68c8-7538-4547-b818-7c655f64bf08"><td id="GXU[" class="">THB</td><td id="H\_D" class="">0.021525322330631</td></tr><tr id="e7e2d16a-4842-4a50-b044-670bedf9b356"><td id="GXU[" class="">AED</td><td id="H\_D" class="">0.007726583944420</td></tr><tr id="59717031-17c0-49b8-8bf9-3d7af13610f2"><td id="GXU[" class="">ARS</td><td id="H\_D" class="">0.003832921664745</td></tr><tr id="9bfdf9ae-1bcb-4697-9199-003f64923df4"><td id="GXU[" class="">BGN</td><td id="H\_D" class="">0.000906653219964</td></tr><tr id="af02bc7a-f010-4ce1-86a8-75ebd1bd55bd"><td id="GXU[" class="">BRL</td><td id="H\_D" class="">0.012050618379314</td></tr><tr id="72f88eff-1a31-47a5-8ad7-1fcaf02f2134"><td id="GXU[" class="">CLP</td><td id="H\_D" class="">0.007589438341455</td></tr><tr id="d98b3062-705d-44ca-9810-018266e476f8"><td id="GXU[" class="">COP</td><td id="H\_D" class="">0.002905041182442</td></tr><tr id="d141346f-18de-46e4-a89f-27092365525b"><td id="GXU[" class="">CZK</td><td id="H\_D" class="">0.006722982818794</td></tr><tr id="9ee883d5-0feb-4569-8420-eab875c4f271"><td id="GXU[" class="">DKK</td><td id="H\_D" class="">0.004097265334114</td></tr><tr id="78b12566-9273-4a6e-bb2b-b93076a2e8c9"><td id="GXU[" class="">DZD</td><td id="H\_D" class="">0.001884431374940</td></tr><tr id="c95fb9cd-8ff6-4a24-a22f-baeb2877842b"><td id="GXU[" class="">HRK</td><td id="H\_D" class="">0.000401733441415</td></tr><tr id="35ede195-20a6-4ab5-a481-689e1f416841"><td id="GXU[" class="">HUF</td><td id="H\_D" class="">0.004312711927208</td></tr><tr id="d1346be5-f0db-46a4-bc4b-84bc97fd2d6d"><td id="GXU[" class="">IDR</td><td id="H\_D" class="">0.013609912681645</td></tr><tr id="f0d14119-94a5-4981-b952-be24f347718f"><td id="GXU[" class="">ILS</td><td id="H\_D" class="">0.004464240559451</td></tr><tr id="044fd41b-3f66-477d-9f40-b60287e7f915"><td id="GXU[" class="">INR</td><td id="H\_D" class="">0.025170316543314</td></tr><tr id="a30ce437-82c6-4b30-9cdc-92c0a82bb532"><td id="GXU[" class="">KRW</td><td id="H\_D" class="">0.087769079809287</td></tr><tr id="fc803c4d-3249-457a-b19d-40a63479596e"><td id="GXU[" class="">MXN</td><td id="H\_D" class="">0.025457186558152</td></tr><tr id="dfb06971-5c79-4924-8651-5fdb39d2bf35"><td id="GXU[" class="">NOK</td><td id="H\_D" class="">0.003527240428385</td></tr><tr id="6b0d8477-46e2-4552-a0e9-d19577c8c9e2"><td id="GXU[" class="">PEN</td><td id="H\_D" class="">0.002907146893037</td></tr><tr id="94b8880d-4f29-4a11-8f29-ddbfc2fde00e"><td id="GXU[" class="">PHP</td><td id="H\_D" class="">0.008420955588068</td></tr><tr id="008f0bf6-89e1-4584-8b67-cc3394f043c8"><td id="GXU[" class="">PLN</td><td id="H\_D" class="">0.009643059812242</td></tr><tr id="4eb4dc87-1e41-4b22-84ae-a01d60189140"><td id="GXU[" class="">RON</td><td id="H\_D" class="">0.002595755432589</td></tr><tr id="de9143e1-87e8-47aa-8414-def6c3f17a9f"><td id="GXU[" class="">SAR</td><td id="H\_D" class="">0.009053862821189</td></tr><tr id="1ab2cc43-10cc-445e-a49c-3e09d5e88dc8"><td id="GXU[" class="">SEK</td><td id="H\_D" class="">0.007192810679931</td></tr><tr id="8a2865db-f87e-4695-8bea-7a9089afb127"><td id="GXU[" class="">TRY</td><td id="H\_D" class="">0.009107158356225</td></tr><tr id="047f7e8e-67a5-496c-b6d1-e0eda8e5fd22"><td id="GXU[" class="">TWD</td><td id="H\_D" class="">0.059407216805689</td></tr><tr id="236a6bcd-4468-4119-b1a9-5a200db60713"><td id="GXU[" class="">ZAR</td><td id="H\_D" class="">0.005433822973667</td></tr><tr id="7827ba3c-5a7f-4251-9176-c2d54c0ed655"><td id="GXU[" class="">ISK</td><td id="H\_D" class="">0.000169438345375</td></tr></tbody></table><p id="4afc6dd7-3638-49ea-a7fa-d860b4867293" class="">三、保持SDR货币篮子和权重不变</p><p id="e6ac4ee2-9af3-4678-a591-c73fc0af4431" class="">自2016年10月1日人民币正式加入SDR货币篮子以来，SDR货币篮子及权重未发生改变，故交易中心继续保持SDR货币篮子人民币汇率指数的货币篮子和权重不变。</p><p id="14e468d2-e0a2-4443-ae5d-c8c3bc93d844" class=""><strong>表3 SDR货币篮子和权重</strong></p><table id="9f5c50b2-5e8d-4316-9c2a-2f21f797811d" class="simple-table"><tbody><tr id="b4247258-c136-4e18-9e08-9b809936dfba"><td id="uqlk" class="">币种</td><td id="XdDf" class="">权重</td></tr><tr id="6463bd39-2f9d-4ae1-a3c9-4d6b0f61319a"><td id="uqlk" class="">USD</td><td id="XdDf" class="">0.4685</td></tr><tr id="46bcd789-6e12-4ebe-ab89-086664c3a5b2"><td id="uqlk" class="">EUR</td><td id="XdDf" class="">0.3472</td></tr><tr id="ad0ef3e9-b869-4d24-aeb3-c4158f414cfc"><td id="uqlk" class="">JPY</td><td id="XdDf" class="">0.0935</td></tr><tr id="13911fff-6892-46af-a3d4-76bc4fe2cf6c"><td id="uqlk" class="">GBP</td><td id="XdDf" class="">0.0908</td></tr></tbody></table><pre id="7e662245-0b52-4089-8189-f4c5496e308d" class="code"><code># LIVE 
+
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/RmbIdxChrt?indexType=3&amp;t=1666776284518&quot;
+
+# HIST
+
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/RmbIdxHis?lang=cn&amp;startDate=2021-11-24&amp;endDate=2022-10-26&amp;t=1666776349682&quot;
+</code></pre></div><h2 id="d0a9d653-5a8f-4360-add4-816f49cdc242" class=""><details open=""><summary>USD CIROR</summary></details></h2><div class="indented"><p id="6bdea347-43d0-4f5c-aa45-917b51c3e235" class="">境内外币同业拆放参考利率（CFETS Interbank Reference Offered Rate，简称CIROR）是由交易中心根据境内信用等级较高、外币定价能力较强、外币拆借交易相对活跃的银行报价计算并发布的以单利计息、无担保、批发性的拆出利率。目前公布的CIROR币种为美元，品种包括隔夜、1周、2周、1个月、3个月、6个月、9个月及1年。</p><p id="fedda52d-12b7-47e7-9d9f-26d5d0ddfb1e" class="">交易中心每个交易日根据各报价行的报价，剔除最高、最低各2家报价，对其余报价进行算术平均计算后，得出每一期限品种的USD CIROR，并于10:00对外发布。</p><p id="205319a3-582d-493a-b817-47962f908bb8" class="">CIROR报价行与交易中心签署外币拆借报价行协议，承诺遵守报价规则，履行报价行义务，并接受交易中心的检查和评估。</p><table id="705513f8-2c58-4ec5-92fc-a7730f32a1e9" class="simple-table"><tbody><tr id="a9e6ef2a-e294-4751-a4fd-40b519df1ff8"><td id="X@&gt;G" class="">序号</td><td id="LHtX" class="">报价行名称</td><td id="Kggg" class="">银行网址</td></tr><tr id="a039b4a2-442b-420d-8b13-4d2ed79eddd4"><td id="X@&gt;G" class="">1</td><td id="LHtX" class="">国开行</td><td id="Kggg" class=""><a href="http://www.cdb.com.cn/">http://www.cdb.com.cn/</a></td></tr><tr id="223375c5-5683-4285-83d8-58a772302f45"><td id="X@&gt;G" class="">2</td><td id="LHtX" class="">进出口行</td><td id="Kggg" class=""><a href="http://www.eximbank.gov.cn/">http://www.eximbank.gov.cn/</a></td></tr><tr id="e9278e8b-bcfb-4e4c-b301-5a985f451e48"><td id="X@&gt;G" class="">3</td><td id="LHtX" class="">工商银行</td><td id="Kggg" class=""><a href="http://www.icbc.com.cn/">http://www.icbc.com.cn</a></td></tr><tr id="dc6bc32f-f0bf-4273-a550-2ad82ad581df"><td id="X@&gt;G" class="">4</td><td id="LHtX" class="">农业银行</td><td id="Kggg" class=""><a href="http://www.abchina.com/">http://www.abchina.com</a></td></tr><tr id="bdb88c98-4889-4f8a-a4b3-628cc06f2adf"><td id="X@&gt;G" class="">5</td><td id="LHtX" class="">中国银行</td><td id="Kggg" class=""><a href="http://www.boc.cn/">http://www.boc.cn</a></td></tr><tr id="fa9b787f-e8c9-4a49-b11e-2613f5f9f2da"><td id="X@&gt;G" class="">6</td><td id="LHtX" class="">建设银行</td><td id="Kggg" class=""><a href="http://www.ccb.com/">http://www.ccb.com</a></td></tr><tr id="b6e570d7-f782-41eb-a80c-79a14f811ea2"><td id="X@&gt;G" class="">7</td><td id="LHtX" class="">交通银行</td><td id="Kggg" class=""><a href="http://www.bankcomm.com/">http://www.bankcomm.com</a></td></tr><tr id="437af013-2f97-475f-8b0c-79660a6c5c45"><td id="X@&gt;G" class="">8</td><td id="LHtX" class="">中信银行</td><td id="Kggg" class=""><a href="http://www.ecitic.com/">http://www.ecitic.com</a></td></tr><tr id="a6049a32-7c1c-46cc-8632-c14461c3e6b8"><td id="X@&gt;G" class="">9</td><td id="LHtX" class="">光大银行</td><td id="Kggg" class=""><a href="http://www.cebbank.com/">http://www.cebbank.com</a></td></tr><tr id="d3d7bf21-3c4b-4844-82ef-c1c821c3a430"><td id="X@&gt;G" class="">10</td><td id="LHtX" class="">华夏银行</td><td id="Kggg" class=""><a href="http://www.hxb.com.cn/chinese">http://www.hxb.com.cn/chinese</a></td></tr><tr id="ed4e1b37-08cf-44dd-bb33-fd0cc4f7c162"><td id="X@&gt;G" class="">11</td><td id="LHtX" class="">民生银行</td><td id="Kggg" class=""><a href="http://www.cmbc.com.cn/">http://www.cmbc.com.cn</a></td></tr><tr id="3681238a-a500-487f-9cee-747f245fae5b"><td id="X@&gt;G" class="">12</td><td id="LHtX" class="">邮储银行</td><td id="Kggg" class=""><a href="http://www.psbc.com/">http://www.psbc.com</a></td></tr><tr id="8f05a417-fe7a-40ae-9eda-3c37c678012d"><td id="X@&gt;G" class="">13</td><td id="LHtX" class="">浦发银行</td><td id="Kggg" class=""><a href="http://www.spdb.com.cn/">http://www.spdb.com.cn</a></td></tr><tr id="61c99632-60d0-4e92-b3d5-8db3c9e14269"><td id="X@&gt;G" class="">14</td><td id="LHtX" class="">招商银行</td><td id="Kggg" class=""><a href="http://www.cmbchina.com/">http://www.cmbchina.com/</a></td></tr><tr id="6a380b6c-2fa8-4c37-8507-213e77c0b777"><td id="X@&gt;G" class="">15</td><td id="LHtX" class="">兴业银行</td><td id="Kggg" class=""><a href="http://www.cib.com.cn/">http://www.cib.com.cn</a></td></tr><tr id="2caaa8fb-3208-407a-9c7b-2ce103c0dc2f"><td id="X@&gt;G" class="">16</td><td id="LHtX" class="">广发银行</td><td id="Kggg" class=""><a href="http://www.cgbchina.com.cn/">http://www.cgbchina.com.cn</a></td></tr><tr id="c108af8f-3fab-4c57-af40-8d90c8dedb2d"><td id="X@&gt;G" class="">17</td><td id="LHtX" class="">浙商银行</td><td id="Kggg" class=""><a href="http://www.czbank.com/">http://www.czbank.com</a></td></tr><tr id="4df7c841-9f51-4681-a422-b4f9971e6f7e"><td id="X@&gt;G" class="">18</td><td id="LHtX" class="">上海银行</td><td id="Kggg" class=""><a href="http://www.bankofshanghai.com/">http://www.bankofshanghai.com</a></td></tr><tr id="398da909-a523-4c4a-9c88-204b165822e6"><td id="X@&gt;G" class="">19</td><td id="LHtX" class="">南京银行</td><td id="Kggg" class=""><a href="http://www.njcb.com.cn/">http://www.njcb.com.cn</a></td></tr><tr id="782a7548-25ef-4b56-b711-4c53268c3784"><td id="X@&gt;G" class="">20</td><td id="LHtX" class="">宁波银行</td><td id="Kggg" class=""><a href="http://www.nbcb.com.cn/">http://www.nbcb.com.cn</a></td></tr><tr id="f462d4af-d516-4f32-86ef-23794e9d043f"><td id="X@&gt;G" class="">21</td><td id="LHtX" class="">平安银行</td><td id="Kggg" class=""><a href="https://bank.pingan.com/">https://bank.pingan.com/</a></td></tr><tr id="1bbb8a4d-3979-45b5-b383-7a420879acb7"><td id="X@&gt;G" class="">22</td><td id="LHtX" class="">江苏银行</td><td id="Kggg" class=""><a href="http://www.jsbchina.cn/">http://www.jsbchina.cn/</a></td></tr><tr id="d75b326b-5fda-4554-9306-28e3c4cc4ea6"><td id="X@&gt;G" class="">23</td><td id="LHtX" class="">杭州银行</td><td id="Kggg" class=""><a href="http://www.hzbank.com.cn/">http://www.hzbank.com.cn/</a></td></tr></tbody></table><p id="76df1321-6df3-4c35-953c-c09179cc10a3" class="">
+</p><p id="13794a93-6c1e-4e8e-8c66-5ab2701d3b7c" class="">USD CIROR均值</p><table id="d6681d9e-d026-4472-b912-738af3391ea0" class="simple-table"><tbody><tr id="63090222-ca96-4ead-a224-8ac7e2b86729"><td id="`lJP" class="">USD CIROR</td><td id="i^FD" class="">2022-10-26</td><td id="NWCR" class="">5日均值</td><td id="_Z}c" class="">10日均值</td><td id="A&gt;LM" class="">20日均值</td></tr><tr id="92804f10-22a7-41be-8117-95d9f13c5793"><td id="`lJP" class=""><a href="https://www.chinamoney.com.cn/chinese/bkusdmnhischrt/index.html?term=O/N-O/N">O/N</a></td><td id="i^FD" class="">3.05</td><td id="NWCR" class="">3.05</td><td id="_Z}c" class="">3.05</td><td id="A&gt;LM" class="">3.05</td></tr><tr id="590255cb-a3d8-4eae-9251-670319187710"><td id="`lJP" class=""><a href="https://www.chinamoney.com.cn/chinese/bkusdmnhischrt/index.html?term=1W-1W">1W</a></td><td id="i^FD" class="">3.17</td><td id="NWCR" class="">3.14</td><td id="_Z}c" class="">3.14</td><td id="A&gt;LM" class="">3.13</td></tr><tr id="38d8a056-74f3-47fb-9631-c81e47e8e3d7"><td id="`lJP" class=""><a href="https://www.chinamoney.com.cn/chinese/bkusdmnhischrt/index.html?term=2W-2W">2W</a></td><td id="i^FD" class="">3.31</td><td id="NWCR" class="">3.27</td><td id="_Z}c" class="">3.25</td><td id="A&gt;LM" class="">3.23</td></tr><tr id="7671321b-5a4a-4015-8b2a-e33db8a92d4c"><td id="`lJP" class=""><a href="https://www.chinamoney.com.cn/chinese/bkusdmnhischrt/index.html?term=1M-1M">1M</a></td><td id="i^FD" class="">3.53</td><td id="NWCR" class="">3.47</td><td id="_Z}c" class="">3.42</td><td id="A&gt;LM" class="">3.37</td></tr><tr id="87a16cb4-c6bf-438e-a13c-3e0aa1cb70fb"><td id="`lJP" class=""><a href="https://www.chinamoney.com.cn/chinese/bkusdmnhischrt/index.html?term=3M-3M">3M</a></td><td id="i^FD" class="">4.07</td><td id="NWCR" class="">4.02</td><td id="_Z}c" class="">3.98</td><td id="A&gt;LM" class="">3.93</td></tr><tr id="7f2af4dc-0aa6-4493-8f1b-a4b2012a9de7"><td id="`lJP" class=""><a href="https://www.chinamoney.com.cn/chinese/bkusdmnhischrt/index.html?term=6M-6M">6M</a></td><td id="i^FD" class="">4.41</td><td id="NWCR" class="">4.36</td><td id="_Z}c" class="">4.32</td><td id="A&gt;LM" class="">4.24</td></tr><tr id="e4ad346f-86d8-4e23-ac49-24e113d5e4be"><td id="`lJP" class=""><a href="https://www.chinamoney.com.cn/chinese/bkusdmnhischrt/index.html?term=9M-9M">9M</a></td><td id="i^FD" class="">4.53</td><td id="NWCR" class="">4.48</td><td id="_Z}c" class="">4.44</td><td id="A&gt;LM" class="">4.38</td></tr><tr id="8646e5a0-8ed9-4bed-9fa1-9b65684d2e9b"><td id="`lJP" class=""><a href="https://www.chinamoney.com.cn/chinese/bkusdmnhischrt/index.html?term=1Y-1Y">1Y</a></td><td id="i^FD" class="">4.68</td><td id="NWCR" class="">4.63</td><td id="_Z}c" class="">4.59</td><td id="A&gt;LM" class="">4.53</td></tr></tbody></table><pre id="f509bfe8-4c6d-45f0-9b3e-fb9211ce8fba" class="code"><code># LIVE
+# 境内美元同业拆放参考利率(USD CIROR)
+&quot;https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/shibor/usdshibor.json?t=1666778254678&quot;
+
+# USD CIROR均值
+&quot;https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/shibor/USDMean.json?t=1666778112304&quot;
+
+# HIST
+# USD CIROR数据
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-ciror/USDHis?lang=CN&amp;startDate=2022-09-27&amp;endDate=2022-10-26&amp;t=1666778323820&quot;
+
+# USD CIROR均值数据
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-ciror/USDMnHis?lang=CN&amp;startDate=2022-09-29&amp;endDate=2022-10-26&amp;tendencyvalue=&amp;t=1666778448213&quot;</code></pre><p id="65ac659e-7902-4a86-a582-978bfb430f23" class="">
+</p></div><h2 id="9a45c92e-dd3b-4cde-a848-76ba93f56370" class=""><details open=""><summary>外汇掉期曲线</summary></details></h2><div class="indented"><p id="66379d2b-70ed-4d24-a11b-7a4c7aacab59" class=""><strong>一、外汇掉期曲线</strong></p><p id="a857417c-e958-4291-83a4-6d38083b0170" class="">外汇掉期曲线是由外汇掉期各期限代表性价格（掉期点）构成的行情曲线，曲线数据包括掉期点和掉期全价汇率。交易中心外汇掉期曲线选用了外汇交易系统行情（成交价、询价报价、C-Swap订单报价）和货币经纪报价（可成交报价、意向报价）为数据样本，利用报价数据过滤了异常交易价格，数据质量较高，可作为机构中后台外汇掉期等产品定价参考基准。</p><p id="2f1c0ab6-e4e3-48e6-a4a7-af55f054c576" class=""><strong>（一）货币对和关键期限点</strong></p><table id="73ee6586-5e2e-4678-aaf2-b6da416ecb62" class="simple-table"><tbody><tr id="fa7d8f49-48b2-45c1-a836-c9e1d77234a2"><td id="&gt;haH" class="">货币对</td><td id="o|&gt;s" class="" style="width:657px">关键期限</td></tr><tr id="e41f11d6-afde-4e09-93e4-584a82df36f9"><td id="&gt;haH" class="">USD.CNY</td><td id="o|&gt;s" class="" style="width:657px">ON、TN、SN、1W、2W、3W、1M、2M、3M、4M、5M、6M、9M、1Y、18M、2Y、3Y、4Y、5Y</td></tr><tr id="0fec77f0-524a-4526-a92b-9472a660abbc"><td id="&gt;haH" class="">EUR.CNY</td><td id="o|&gt;s" class="" style="width:657px">ON、TN、SN、1W、2W、3W、1M、2M、3M、4M、5M、6M、9M、1Y、18M、2Y、3Y</td></tr><tr id="5c85b2f4-3bdf-4a13-acf6-1b837741acd7"><td id="&gt;haH" class="">JPY.CNY</td><td id="o|&gt;s" class="" style="width:657px">ON、TN、SN、1W、2W、3W、1M、2M、3M、4M、5M、6M、9M、1Y、18M、2Y、3Y</td></tr><tr id="8822c647-3bf8-4fc9-b1c4-01c94549b534"><td id="&gt;haH" class="">HKD.CNY</td><td id="o|&gt;s" class="" style="width:657px">ON、TN、SN、1W、2W、3W、1M、2M、3M、4M、5M、6M、9M、1Y、18M、2Y、3Y</td></tr><tr id="7d14ee3a-9fa9-4bee-b608-a3ea1c7a1963"><td id="&gt;haH" class="">GBP.CNY</td><td id="o|&gt;s" class="" style="width:657px">ON、TN、SN、1W、2W、3W、1M、2M、3M、4M、5M、6M、9M、1Y、18M、2Y、3Y</td></tr><tr id="cea59d15-a68a-47c2-83ce-28be3abb0231"><td id="&gt;haH" class="">EUR.USD</td><td id="o|&gt;s" class="" style="width:657px">ON、TN、SN、1W、2W、3W、1M、2M、3M、4M、5M、6M、9M、1Y</td></tr><tr id="44221bc0-c098-448d-81de-d0b067d45c0d"><td id="&gt;haH" class="">EUR.USD</td><td id="o|&gt;s" class="" style="width:657px">ON、TN、SN、1W、2W、3W、1M、2M、3M、4M、5M、6M、9M、1Y</td></tr><tr id="70789b8a-b694-4c77-8350-75df722505c9"><td id="&gt;haH" class="">USD.HKD</td><td id="o|&gt;s" class="" style="width:657px">ON、TN、SN、1W、2W、3W、1M、2M、3M、4M、5M、6M、9M、1Y</td></tr><tr id="5f84f5bb-97b7-4e87-a26a-d10e61b4b299"><td id="&gt;haH" class="">USD.HKD</td><td id="o|&gt;s" class="" style="width:657px">ON、TN、SN、1W、2W、3W、1M、2M、3M、4M、5M、6M、9M、1Y</td></tr><tr id="769423b4-2062-41b7-aa27-b9cc4c2806c7"><td id="&gt;haH" class="">AUD.USD</td><td id="o|&gt;s" class="" style="width:657px">ON、TN、SN、1W、2W、3W、1M、2M、3M、4M、5M、6M、9M、1Y</td></tr></tbody></table><p id="0680c682-77fa-459e-823e-8a7d5ddd97fd" class=""><strong>（二）曲线样本选择</strong></p><p id="793de313-f6ef-4d2a-a3c8-6e183bf07cf5" class="">USD.CNY外汇掉期曲线数据样本包括外汇交易系统成交价、C-Swap订单报价、货币经纪可成交报价和货币经纪意向报价，EUR.CNY等其他货币对外汇掉期曲线数据样本为外汇交易系统成交价和询价双边报价。</p><p id="14d310d5-cd4d-4ede-9465-b4a2ef68a6a2" class="">选价流程：</p><p id="2048326c-4595-4075-b12f-855cfad422fa" class="">1、发布时刻点，对于USD.CNY外汇掉期曲线，取出截止发布时刻点的各期限有效的成交价、最新C-Swap订单报价、货币经纪可成交报价和货币经纪意向报价；对于EUR.CNY等其他货币对外汇掉期曲线，取出截止发布时刻点的各期限有效的成交价、最新交易系统询价双边报价。</p><p id="cfa4ab80-bdb4-4359-bd82-d6b428250a2d" class="">2、根据当日之前外汇掉期曲线历史波动方差，按照一定置信水平，确定当日的报价正常波动范围，该范围以外的报价（包括交易系统询价双边报价、C-Swap订单报价、货币经纪可成交报价和货币经纪意向报价）被判为异常价格。</p><p id="67ab1be2-f3c8-4f5a-a203-53ff509e8c68" class="">3、选出每个期限最新的报买掉期点（bid）和报卖掉期点（ask）。对于USD.CNY外汇掉期曲线，根据C-Swap订单报价、货币经纪可成交报价计算出可成交代表性价格，bid和ask掉期点优先选用可成交代表性价格，可成交代表性价格缺失或价差过大时，选用货币经纪意向报价；对于EUR.CNY等其他货币对外汇掉期曲线，bid和ask掉期点取自交易系统询价双边报价。交易中心定期调整报价的选价优先级。</p><p id="5d335c80-fdf0-4dc0-95d7-aded90c93374" class="">4、在发布时刻点，取出当日所有掉期点位于报价区间[bid, ask]内的成交，取成交时间最晚的成交作为该期限掉期点代表，标记数据源为交易数据；如果取不到交易数据，则利用报价均值作为该期限掉期点代表，标记数据源为报价数据。</p><p id="91cdd231-bec5-459b-a4b1-c4df938419a5" class=""><strong>（三）曲线发布频率</strong></p><p id="bfeeb64c-f277-4bd5-a31f-feb26f0a3277" class="">每个工作日17:00通过中国货币网发布当日16:30的外汇掉期曲线。</p><p id="78e0a7db-291b-44a2-b373-c468b7ce0c8d" class=""><strong>二、USD.CNY外汇掉期C-Swap定盘曲线</strong></p><p id="8ab7d2a3-cd6d-40b1-b9b1-d718cecf4c19" class="">USD.CNY外汇掉期C-Swap定盘曲线是由外汇掉期各期限代表性价格（掉期点）构成的行情曲线，曲线选用了外汇交易系统C-Swap订单报价和成交价为数据样本，是C-Swap市场的估值定价基准曲线。</p><p id="4fb244c0-c7b5-4d8c-8bd4-ea60beb8139f" class=""><strong>（一）关键期限点</strong></p><p id="92f543b5-b56b-42c0-8592-e95205e2dac3" class="">ON、TN、SN、1W、2W、3W、1M、2M、3M、6M、9M、1Y等期限品种。</p><p id="8eb60bac-d787-4c4a-a5aa-6f49ea41469a" class=""><strong>（二）曲线样本选择</strong></p><p id="81c4bb8a-45b1-4d40-a08a-0547f03d777c" class="">外汇掉期C-Swap定盘曲线数据样本包括外汇交易系统C-Swap报价和成交价。</p><p id="b797e80f-e071-41f6-b72c-70ef579c404d" class="">选价流程：</p><p id="b4abf394-f4a2-4569-95cc-dd3924c8a53d" class="">1、发布时刻点，取出截止发布时刻点的各期限有效的最新交易系统C-Swap最优订单报价、C-Swap成交价，分别取值为“报价”和“成交价”。</p><p id="87c4ac8d-d1ac-45c1-98d1-663e6446edb8" class="">2、选出每个期限最新的最优订单报买掉期点（bid）和报卖掉期点（ask），如果最优订单同时存在报买和报卖，则“报价”取值为最优报价均值，最优订单同时存在报买和报卖但报价倒挂或只有单边报价，则“报价”取值为最新单边报价。</p><p id="e8edbb8e-ca1e-4a16-aa91-b0da6cdd726f" class="">3、选出每个期限最新的成交价为“成交价”。</p><p id="c01e4666-73b9-40ab-9181-0d6e14ce9aa9" class="">4、取“报价”和“成交价”最新的价格作为曲线数值，掉期点数据源分别标识为“报价数据”和“交易数据”。</p><p id="d7eaf3b9-5ada-4ed8-a24a-a6eab2afe45c" class=""><strong>（三）曲线发布频率</strong></p><p id="a238f3c4-b820-4a5d-9ac0-0aa10be6db3b" class="">每个工作日17:00发布当日外汇掉期C-Swap定盘曲线。</p><pre id="52ec1f4d-2572-471b-be0a-0513fcb08b48" class="code"><code>
+Foreign Exchange SWAP Curve
+
+curveType_list = [&#x27;USD.CNY&#x27;, &#x27;EUR.CNY&#x27;, &#x27;JPY.CNY&#x27;, &#x27;HKD.CNY&#x27;, &#x27;GBP.CNY&#x27;,
+&#x27;EUR.USD&#x27;, &#x27;USD.JPY&#x27;, &#x27;USD.HKD&#x27;, &#x27;GBP.USD&#x27;, &#x27;AUD.USD&#x27;]
+
+
+# LIVE
+&quot;https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/fx/fx-sw-curv-USD.CNY.json?t=1666839126219&quot;
+
+# HIST
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/FxSwapHisory?startDate=2022-09-29&amp;endDate=2022-10-27&amp;curveType=&amp;time=&amp;page=1&amp;pagesize=15&quot;
+
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-fx/FxSwapHisoryExcel?startDate=2022-09-27&amp;endDate=2022-10-27&amp;curveType=&amp;time=&amp;t=1666850918929
+
+
+Foreign Exchange C-SWAP Fixed Curve
+
+curveType=USD.CNY fixed
+
+# LIVE
+&quot;https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/fx/fx-c-sw-curv-USD.CNY.json?t=1666839449516&quot;
+
+# HIST
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/FxCSwapHisory?startDate=2022-09-27&amp;endDate=2022-10-11&amp;curveType=USD.CNY&amp;time=&amp;page=1&amp;pagesize=15&quot;
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-fx/FxCSwapHisoryExcel?startDate=2022-09-27&amp;endDate=2022-10-21&amp;curveType=USD.CNY&amp;time=&amp;t=1666851174849
+</code></pre><p id="90ce802e-5413-4df6-8b8f-411c1a1afa24" class="">
+</p></div><h2 id="1296634d-0b43-4514-aa20-2855800a5b96" class=""><details open=""><summary>外币隐含利率曲线</summary></details></h2><div class="indented"><p id="45decb93-8739-4200-95fc-900b79c61d88" class="">
+</p><p id="09cf3fb9-7561-4cb5-9b6e-6bd22667f440" class=""><strong>外币隐含利率曲线编制说明</strong></p><p id="2be86f9f-6715-4049-bfe6-c4821e25f45f" class="">外币隐含利率曲线是根据利率平价理论，由人民币利率和外汇掉期价格得到的各期限隐含外币利率的曲线。</p><p id="bcf7b6b3-6eed-4fbc-8b70-718be07f69aa" class=""><strong>一、外币隐含利率曲线参数组合</strong></p><p id="c4293b05-4dfb-4ab6-ae67-57d55517968b" class="">1、参数组合</p><p id="e89b585b-1675-4589-a832-194402ece3e2" class="">外币隐含利率曲线的基础参数包括人民币利率、掉期价格和即期价格，交易中心共提供如下表所示的6类曲线。</p><table id="22888e76-71b0-46e7-afba-dc21a8a78bd9" class="simple-table"><tbody><tr id="c35b53fd-4f0b-425b-9f3d-832e42589225"><td id="yYQ&gt;" class=""><strong>人民币利率</strong></td><td id="i&lt;MD" class=""><strong>外汇远/掉期点</strong></td><td id="GobV" class=""><strong>外汇即期价格</strong></td></tr><tr id="301eca9f-c733-424f-8adb-56d64ef7215c"><td id="yYQ&gt;" class="">Shibor</td><td id="i&lt;MD" class="">掉期点</td><td id="GobV" class="">即期询价均值</td></tr><tr id="4ba6c5f7-ef96-4c79-b4e6-fd95753c5ebf"><td id="yYQ&gt;" class="">Shibor</td><td id="i&lt;MD" class="">掉期点</td><td id="GobV" class="">中间价</td></tr><tr id="657abe87-c28a-4dc3-b548-a283923ff47c"><td id="yYQ&gt;" class="">Shibor3M利率互换收盘曲线</td><td id="i&lt;MD" class="">掉期点</td><td id="GobV" class="">即期询价均值</td></tr><tr id="389223c4-8a94-49b7-856e-42da9b81f31c"><td id="yYQ&gt;" class="">Shibor3M利率互换收盘曲线</td><td id="i&lt;MD" class="">掉期点</td><td id="GobV" class="">中间价</td></tr><tr id="5d68e617-1965-4b5c-a690-3f8b0c442a9c"><td id="yYQ&gt;" class="">FR007利率互换收盘曲线</td><td id="i&lt;MD" class="">掉期点</td><td id="GobV" class="">即期询价均值</td></tr><tr id="125470ac-9f9a-48a9-9529-111838b54f89"><td id="yYQ&gt;" class="">FR007利率互换收盘曲线</td><td id="i&lt;MD" class="">掉期点</td><td id="GobV" class="">中间价</td></tr></tbody></table><p id="3d841db3-a83f-4a3f-b0c7-38db9012010d" class="">2、人民币利率</p><p id="c4e1c80c-a993-49c3-88ce-0a28268d5637" class="">Shibor是指1Y以下（含1Y）是Shibor（连续复利利率），1Y以上是交易中心Shibor3M利率互换收盘曲线的即期利率曲线（连续复利利率）</p><p id="b72dc316-915d-432a-96cb-4da565d3203c" class="">Shibor3M利率互换收盘曲线是指3M以下（含3M）是Shibor（连续复利利率），3M以上是交易中心Shibor3M利率互换收盘曲线的即期利率曲线（连续复利利率）。</p><p id="e82abaee-59a5-41e6-877d-65b4384d7ec9" class="">FR007利率互换收盘曲线是指1D、1W、2W是FR001、FR007、FR014（连续复利利率），2W以上是交易中心FR007利率互换收盘曲线的即期利率曲线（连续复利利率）。</p><p id="8aed59e2-f865-4f71-afe9-f1ddd65da4ef" class="">3、外汇远/掉期点</p><p id="fa293457-cb88-4bbb-bb8d-b5dd9e5aa57e" class="">外汇远/掉期点是指交易中心外汇掉期曲线各关键期限点的曲线数据。</p><p id="64d4cf0e-ec78-453f-902c-47c8c21d7d5a" class="">4、外汇即期价格</p><p id="e8221bac-2e21-402d-bd19-cacaf90d9fb0" class="">即期询价均值是指外汇交易系统的最新的询价最优买卖报价均值。</p><p id="30c94695-683e-4d4a-8f3c-25d45536a034" class="">中间价是中国人民银行每日公布的人民币汇率中间价。</p><p id="acd10a8f-95be-46f4-b7cd-6c6ab0cea697" class=""><strong>二、  外币隐含利率曲线计算公式</strong></p><p id="0032ea0b-2eed-470b-8b27-a9bd0a0f49a3" class="">3M以下（含3M）Shibor3M利率互换收盘曲线（Shibor3M利率互换收盘曲线-掉期点-即期询价均值的参数组合）外币隐含利率曲线（连续复利利率）计算公式：</p><figure id="ab837a98-bcf1-4e7f-af40-9d93c81466cd" class="image"><a href="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005538341001.png"><img src="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005538341001.png"/></a></figure><figure id="48970e99-bc0f-44c8-ab96-2089a606c4be" class="image"><a href="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005538356002.png"><img src="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005538356002.png"/></a></figure><p id="397e10fc-3237-4c08-b6fd-be6922da18ce" class="">其他3M以下（含3M）和3M以上的计算公式则根据人民币利率曲线、人民币利率单复利、美元利率单复利、计息方式、外汇掉期点、外汇即期价格等要素做相应调整。</p><p id="4d594214-336d-4f64-a7a1-b266db579a02" class=""><strong>三、曲线发布频率</strong></p><p id="a6b012a3-3ee8-41b3-9ff0-bfefc0ed74ea" class="">每个工作日16:50发布当日外币隐含利率曲线。</p><pre id="a99f4506-8027-4898-a453-0bcc98f7932e" class="code"><code># 数字非常近似
+ccyPair_list = [&#x27;USD.CNY&#x27;, &#x27;EUR.CNY&#x27;, &#x27;JPY.CNY&#x27;, &#x27;HKD.CNY&#x27;, &#x27;GBP.CNY&#x27;]
+# 查询历史数据跨度一个月
+
+# SHIBOR 3M
+
+# Live
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/IuirCurv?rmbRateSrc=24&amp;bpSrc=26&amp;spotrateSrc=29&amp;ccyPair=USD.CNY&amp;t=1666840175602&quot;
+# HIST 
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/IuirCurvHis?rmbRateSrc=24&amp;spotrateSrc=&amp;bpSrc=&amp;startDate=2022-09-27&amp;endDate=2022-10-26&amp;ccyPair=&amp;page=1&amp;pageSize=15&quot;
+
+# FROO7
+# LIVE
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/IuirCurv?rmbRateSrc=25&amp;bpSrc=26&amp;spotrateSrc=29&amp;ccyPair=USD.CNY&amp;t=1666840175602&quot;
+# HIST 
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/IuirCurvHis?rmbRateSrc=25&amp;spotrateSrc=&amp;bpSrc=&amp;startDate=2022-09-27&amp;endDate=2022-10-12&amp;ccyPair=&amp;page=1&amp;pageSize=15&quot;
+
+# SHIBOR
+# LIVE
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/IuirCurv?rmbRateSrc=23&amp;bpSrc=26&amp;spotrateSrc=29&amp;ccyPair=USD.CNY&amp;t=1666840130881&quot;
+# HIST
+&quot;https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/IuirCurvHis?rmbRateSrc=23&amp;spotrateSrc=&amp;bpSrc=&amp;startDate=2022-09-27&amp;endDate=2022-10-12&amp;ccyPair=&amp;page=1&amp;pageSize=15&quot;
+
+
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-fx/IuirCurvHisExcel?lang=CN&amp;rmbRateSrc=&amp;spotrateSrc=&amp;bpSrc=&amp;startDate=2022-09-27&amp;endDate=2022-10-27&amp;ccyPair=&amp;t=1666859784914</code></pre><p id="6115d105-f7db-4ac8-84b3-0ea38e42c053" class="">
+</p></div><h2 id="4d83b5b6-859c-4ce6-8551-2f02e9b32cea" class=""><details open=""><summary>外汇期权隐含波动率曲线</summary></details></h2><div class="indented"><p id="828b1b5c-e2b4-4d3a-bee3-35bd27f044a4" class=""><strong>外币隐含利率曲线编制说明</strong></p><p id="0488d3f9-ea8a-4b28-9b61-4ab618548812" class="">外币隐含利率曲线是根据利率平价理论，由人民币利率和外汇掉期价格得到的各期限隐含外币利率的曲线。</p><p id="3f2782cd-18a4-4c7a-9e27-82bc2fd81fc8" class=""><strong>一、外币隐含利率曲线参数组合</strong></p><p id="626f5e0c-cfac-4796-87ab-834f5bfe8b70" class="">1、参数组合</p><p id="90b30a2f-0145-44e5-9d25-a4741b0ebaf5" class="">外币隐含利率曲线的基础参数包括人民币利率、掉期价格和即期价格，交易中心共提供如下表所示的6类曲线。</p><table id="1768350d-101d-4d10-98f5-6e29e5aef82b" class="simple-table"><tbody><tr id="dbb9551d-0582-4e23-8b1f-24d636c8439d"><td id="SLbm" class=""><strong>人民币利率</strong></td><td id="V^r|" class=""><strong>外汇远/掉期点</strong></td><td id="{v_\" class=""><strong>外汇即期价格</strong></td></tr><tr id="d87d1057-2d8a-43de-8696-3454a94b026e"><td id="SLbm" class="">Shibor</td><td id="V^r|" class="">掉期点</td><td id="{v_\" class="">即期询价均值</td></tr><tr id="c5419740-cf5c-4d77-a6a4-89b19fc7bce9"><td id="SLbm" class="">Shibor</td><td id="V^r|" class="">掉期点</td><td id="{v_\" class="">中间价</td></tr><tr id="60f5dc60-df00-4586-b43b-9075aafd10ab"><td id="SLbm" class="">Shibor3M利率互换收盘曲线</td><td id="V^r|" class="">掉期点</td><td id="{v_\" class="">即期询价均值</td></tr><tr id="a93c5ab6-53ae-4747-96ac-b0d9583fc3e8"><td id="SLbm" class="">Shibor3M利率互换收盘曲线</td><td id="V^r|" class="">掉期点</td><td id="{v_\" class="">中间价</td></tr><tr id="073b60fe-f06b-4c53-bdc1-96cf6796aa6a"><td id="SLbm" class="">FR007利率互换收盘曲线</td><td id="V^r|" class="">掉期点</td><td id="{v_\" class="">即期询价均值</td></tr><tr id="f5088050-6966-42d0-bab4-0ef82dc7e8af"><td id="SLbm" class="">FR007利率互换收盘曲线</td><td id="V^r|" class="">掉期点</td><td id="{v_\" class="">中间价</td></tr></tbody></table><p id="2b25c42b-a75b-40ab-a081-9b70f88b7f29" class="">2、人民币利率</p><p id="a8ae6969-27ab-4290-bb11-de56f4b8b39e" class="">Shibor是指1Y以下（含1Y）是Shibor（连续复利利率），1Y以上是交易中心Shibor3M利率互换收盘曲线的即期利率曲线（连续复利利率）</p><p id="1f64407c-4a47-4822-8403-5d6f6449a6af" class="">Shibor3M利率互换收盘曲线是指3M以下（含3M）是Shibor（连续复利利率），3M以上是交易中心Shibor3M利率互换收盘曲线的即期利率曲线（连续复利利率）。</p><p id="959355d8-875d-477b-886c-54dc24d9c193" class="">FR007利率互换收盘曲线是指1D、1W、2W是FR001、FR007、FR014（连续复利利率），2W以上是交易中心FR007利率互换收盘曲线的即期利率曲线（连续复利利率）。</p><p id="ce733632-386d-4476-a8a8-9aef7799b02c" class="">3、外汇远/掉期点</p><p id="69dadc14-143c-461a-b2bb-b78d273b3e23" class="">外汇远/掉期点是指交易中心外汇掉期曲线各关键期限点的曲线数据。</p><p id="b8bd5b85-d587-4842-9c5b-ed9a87e7499b" class="">4、外汇即期价格</p><p id="1b4f9a97-2d8b-4b9b-aaad-4f78532ed64f" class="">即期询价均值是指外汇交易系统的最新的询价最优买卖报价均值。</p><p id="80ada6ff-c01e-4370-9743-f1d25a877f7a" class="">中间价是中国人民银行每日公布的人民币汇率中间价。</p><p id="b0610db0-3189-40cb-806d-85e893660ce2" class=""><strong>二、  外币隐含利率曲线计算公式</strong></p><p id="5faff386-7be2-48bd-a8c1-7f97dc31beee" class="">3M以下（含3M）Shibor3M利率互换收盘曲线（Shibor3M利率互换收盘曲线-掉期点-即期询价均值的参数组合）外币隐含利率曲线（连续复利利率）计算公式：</p><figure id="bb254326-6681-412c-bded-efca143e8c8f" class="image"><a href="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005538341001.png"><img src="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005538341001.png"/></a></figure><figure id="252b6338-191a-4609-9a68-e23bf2f3bdea" class="image"><a href="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005538356002.png"><img src="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005538356002.png"/></a></figure><p id="2bb94b48-dd0d-420f-a140-98033a4d5b0f" class="">其他3M以下（含3M）和3M以上的计算公式则根据人民币利率曲线、人民币利率单复利、美元利率单复利、计息方式、外汇掉期点、外汇即期价格等要素做相应调整。</p><p id="d0db5233-c8f7-4b63-b311-23e1d39c0b0c" class=""><strong>三、曲线发布频率</strong></p><p id="37677f80-ba18-45f4-81c2-da82578dc5da" class="">每个工作日16:50发布当日外币隐含利率曲线。</p><p id="1dba60b8-a47d-4eb6-8012-fa3b1e076899" class="">
+</p><pre id="275aa733-8546-4f5b-8448-548c117daa20" class="code"><code># 数字非常近似
+
+volatilitySurface_dict = {
+ATM     : 0,
+10D PUT : 1,
+10D CALL: 2,
+25D PUT : 3,
+25D CALL: 4,
+25D RR  : 7,
+25D BF  : 8,
+10D RR  : 9,
+10D BF  : a
+}
+
+tradeTime_list = [&#x27;10:00&#x27;, &#x27;11:00&#x27;, &#x27;14:00&#x27;, &#x27;15:00&#x27;, &#x27;16:00&#x27;]
+
+ccyPair_list = [&#x27;USD.CNY&#x27;, &#x27;EUR.CNY&#x27;, &#x27;JPY.CNY&#x27;, &#x27;HKD.CNY&#x27;, &#x27;GBP.CNY&#x27;]
+
+
+rmbRateSrc_dict = {
+SHIBOR =  23,
+SHIBOR 3M = 24,
+FROO7 = 25
+}
+# 不指定就显示全部
+
+spotrateSrc_dict = {
+spot = 28,
+# 即期均价报价均值
+interval = 29
+# 中间价
+}
+# 不指定就显示全部
+
+# Live
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/FoivltltyCurv?ccyPair=USD.CNY&amp;volatilitySurface=0&amp;ccyTime=10:00&amp;ccyDate=2022-10-27
+
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/FoivltltyCurv?ccyPair=USD.CNY&amp;volatilitySurface=5&amp;ccyTime=11:00&amp;ccyDate=2022-10-27
+
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/FoivltltyCurv?ccyPair=USD.CNY&amp;volatilitySurface=7&amp;ccyTime=10:00&amp;ccyDate=2022-10-27
+
+# HIST 
+
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/IuirCurvHis?rmbRateSrc=23&amp;spotrateSrc=28&amp;bpSrc=26&amp;startDate=2022-09-27&amp;endDate=2022-10-27&amp;ccyPair=USD.CNY&amp;page=1&amp;pageSize=15
+
+# EXCEL
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-fx/IuirCurvHis?rmbRateSrc=&amp;spotrateSrc=29&amp;bpSrc=26&amp;startDate=2022-09-27&amp;endDate=2022-10-27&amp;ccyPair=USD.CNY</code></pre><p id="a8d2d4dd-785e-421e-a855-a7b705857e84" class="">
+</p></div><h2 id="933cf6e5-4ca7-4315-bc52-0fc24c4dca1b" class=""><details open=""><summary>外汇期权Delta计量参数</summary></details></h2><div class="indented"><p id="94db6fc0-107a-49ab-b082-f1cb6aa1087f" class="">为方便会员计量外汇期权产品Delta头寸，交易中心按日计算和发布USD.CNY外汇期权Delta头寸计量参数。</p><p id="1b81c730-fcfc-4822-a77e-db560276ed7c" class=""><strong>一、USD.CNY外汇期权Delta头寸计量参数算法</strong></p><p id="0e2eb506-920b-4a28-b7d2-6d099f933de8" class="">按照如下公式计量期权产品Delta头寸：</p><p id="79a45e8a-36a6-4bd5-a31a-3e6b72210cb5" class="">看涨期权</p><p id="8648407c-7a89-49df-a5e7-81d4fd6a2b10" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>e</mi><mi>l</mi><mi>t</mi><mi>a</mi><mo>=</mo><msup><mi>e</mi><mrow><mo stretchy="false">(</mo><mo>−</mo><msub><mi>r</mi><mi>f</mi></msub><msub><mi>t</mi><mn>2</mn></msub><mi>N</mi><mo stretchy="false">(</mo><msub><mi>d</mi><mn>1</mn></msub><mo stretchy="false">)</mo><mo stretchy="false">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">Delta = e^{(-r_ft_2N(d_1))}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">De</span><span class="mord mathnormal">lt</span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8879999999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">−</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3487714285714287em;margin-left:-0.02778em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29011428571428566em;"><span></span></span></span></span></span></span><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathnormal mtight">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mclose mtight">))</span></span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span></p><p id="f5e3baf6-4fe4-47de-8379-8bcc1813b261" class="">看跌期权</p><p id="2ac1d238-931c-4490-ae5d-072add1b488e" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>D</mi><mi>e</mi><mi>l</mi><mi>t</mi><mi>a</mi><mo>=</mo><msup><mi>e</mi><mrow><mo stretchy="false">(</mo><mo>−</mo><msub><mi>r</mi><mi>f</mi></msub><msub><mi>t</mi><mn>2</mn></msub><mo stretchy="false">[</mo><mi>N</mi><mo stretchy="false">(</mo><msub><mi>d</mi><mn>1</mn></msub><mo stretchy="false">)</mo><mo>−</mo><mn>1</mn><mo stretchy="false">]</mo><mo stretchy="false">)</mo></mrow></msup></mrow><annotation encoding="application/x-tex">Delta = e^{(-r_ft_2[N(d_1)-1])}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathnormal">De</span><span class="mord mathnormal">lt</span><span class="mord mathnormal">a</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8879999999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8879999999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mopen mtight">(</span><span class="mord mtight">−</span><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3487714285714287em;margin-left:-0.02778em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29011428571428566em;"><span></span></span></span></span></span></span><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mopen mtight">[</span><span class="mord mathnormal mtight" style="margin-right:0.10903em;">N</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathnormal mtight">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mclose mtight">)</span><span class="mbin mtight">−</span><span class="mord mtight">1</span><span class="mclose mtight">])</span></span></span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span></p><p id="57e3937b-9082-4e28-a74e-f6f7f2ea7233" class="">其中，</p><p id="9cc82fc2-791c-46b4-b17b-941c208e966c" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>d</mi><mn>1</mn></msub><mo>=</mo><mfrac><mrow><mi>l</mi><mi>n</mi><mo stretchy="false">(</mo><mi>F</mi><mi mathvariant="normal">/</mi><mi>K</mi><mo stretchy="false">)</mo></mrow><mrow><mi>σ</mi><msqrt><msub><mi>t</mi><mn>1</mn></msub></msqrt></mrow></mfrac><mo>+</mo><mfrac><mrow><mi>σ</mi><msqrt><msub><mi>t</mi><mn>1</mn></msub></msqrt></mrow><mn>2</mn></mfrac></mrow><annotation encoding="application/x-tex">d_1=\frac{ln(F/K)}{σ\sqrt{t_1}}+\frac{σ\sqrt{t_1}}{2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">d</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.548em;vertical-align:-0.538em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.01em;"><span style="top:-2.6113345em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">σ</span><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.826665em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mtight" style="padding-left:0.833em;"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.786665em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail mtight" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.21333500000000005em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.485em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.01968em;">l</span><span class="mord mathnormal mtight">n</span><span class="mopen mtight">(</span><span class="mord mathnormal mtight" style="margin-right:0.13889em;">F</span><span class="mord mtight">/</span><span class="mord mathnormal mtight" style="margin-right:0.07153em;">K</span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.538em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.383em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.038em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">2</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4593345em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.03588em;">σ</span><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.826665em;"><span class="svg-align" style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mtight" style="padding-left:0.833em;"><span class="mord mtight"><span class="mord mathnormal mtight">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span><span style="top:-2.786665em;"><span class="pstrut" style="height:3em;"></span><span class="hide-tail mtight" style="min-width:0.853em;height:1.08em;"><svg width='400em' height='1.08em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702
+c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,-10,-9.5,-14
+c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54
+c44.2,-33.3,65.8,-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10
+s173,378,173,378c0.7,0,35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429
+c69,-144,104.5,-217.7,106.5,-221
+l0 -0
+c5.3,-9.3,12,-14,20,-14
+H400000v40H845.2724
+s-225.272,467,-225.272,467s-235,486,-235,486c-2.7,4.7,-9,7,-19,7
+c-6,0,-10,-1,-12,-3s-194,-422,-194,-422s-65,47,-65,47z
+M834 80h400000v40h-400000z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.21333500000000005em;"><span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span><span>﻿</span></span></p><p id="3e05ca6b-d58d-4dcd-a1bb-bd003f78cd0d" class=""><strong>二、USD.CNY外汇期权Delta头寸计量参数</strong></p><p id="cc76602c-0c6e-4a6a-ae3d-762436fb6eaf" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>S</mi></mrow><annotation encoding="application/x-tex">S</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span></span><span>﻿</span></span>（外汇即期汇率）：取自中间价、即期询价均值。</p><p id="ca906a39-acc2-4224-a5bf-4cbf0895f817" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">σ</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">σ</span></span></span></span></span><span>﻿</span></span>（波动率）：取外汇期权隐含波动率曲线（ATM）。</p><p id="40e62da2-ce03-4340-8a6d-93bb5ad21b71" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>d</mi></msub></mrow><annotation encoding="application/x-tex">r_d</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.58056em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span>（人民币利率）：人民币利率“Shibor”、人民币利率“回购定盘利率/FR007利率互换收盘曲线”、人民币利率“Shibor/Shibor3M利率互换收盘曲线”。</p><p id="f9f7e6ff-9bef-468f-9f0d-d107ad83dbf5" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>r</mi><mi>f</mi></msub></mrow><annotation encoding="application/x-tex">r_f</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.716668em;vertical-align:-0.286108em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3361079999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.02778em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight" style="margin-right:0.10764em;">f</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.286108em;"><span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span>（美元利率）：美元隐含利率曲线。</p><p id="e4efd813-0749-4344-adca-4d7096b8a280" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mn>1</mn></msub></mrow><annotation encoding="application/x-tex">t_1</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span>（期限）：成交日至到期日。</p><p id="e2caa89a-a9a8-4ab9-8e2b-2d54162065bc" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msub><mi>t</mi><mn>2</mn></msub></mrow><annotation encoding="application/x-tex">t_2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76508em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathnormal">t</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></span><span>﻿</span></span>（期限）：即期起息日至交割日。</p><p id="479e05c6-e896-486f-bd22-d649055986a9" class=""><style>@import url('https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.13.2/katex.min.css')</style><span data-token-index="0" contenteditable="false" class="notion-text-equation-token" style="user-select:all;-webkit-user-select:all;-moz-user-select:all"><span></span><span><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>K</mi></mrow><annotation encoding="application/x-tex">K</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathnormal" style="margin-right:0.07153em;">K</span></span></span></span></span><span>﻿</span></span>（执行价格）：自行逐笔选取。</p><p id="e39bb5a2-9a27-4fed-8c8e-17f65fd9bf39" class=""><strong>三、发布的频率</strong></p><p id="0d29062b-0eea-4e4a-8f02-b1353e600a69" class="">每个工作日17:00发布当日外汇期权Delta头寸计量参数。</p><pre id="b14dfb34-18e1-4ac0-8939-0425b5214169" class="code"><code>
+
+
+
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-fx/FodpParamHisExcel?init=flase&amp;startDate=2022-09-27&amp;endDate=2022-10-27&amp;spotPriceType=&amp;rmbRateType=&amp;volatilitySurface=&amp;t=1666861218809
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-fx/FodpParamHisExcel?init=flase&amp;startDate=2022-09-27&amp;endDate=2022-10-27&amp;spotPriceType=&amp;rmbRateType=&amp;volatilitySurface=&amp;t=1666861336723</code></pre></div><h2 id="74ebe562-1fa0-4077-b6d5-8d6d160e3be2" class=""><details open=""><summary>货币掉期曲线</summary></details></h2><div class="indented"><p id="5e0ddfdf-1ae8-4282-8ee7-cfa9bcf5b9f1" class="">货币掉期曲线由中国外汇交易中心编制和发布。</p><p id="0e03aec3-35db-4085-9bde-21b0dc41cfb1" class=""><strong>一、货币掉期曲线种类及交易要素</strong></p><table id="675ff23f-5232-4e66-855d-a47112acd875" class="simple-table"><tbody><tr id="640dc570-d7b4-4a79-a10c-45cab5a4299c"><td id="IAs=" class=""><strong>曲线种类</strong></td><td id="`yMO" class=""><strong>标准期限</strong></td><td id="NlCK" class=""><strong>付息周期</strong></td><td id="`w?c" class=""><strong>计息基准</strong></td></tr><tr id="4f95a617-a502-4f66-9718-7418f697a3a0"><td id="IAs=" class="">人民币固定利率对美元Libor 3M</td><td id="`yMO" class="">1Y、2Y、3Y、4Y、
+5Y</td><td id="NlCK" class="">人民币固定利率及3个月美元Libor付息周期均为三个月</td><td id="`w?c" class="">人民币固定利率(Act/365)
+美元Libor(Act/360)</td></tr><tr id="754f4413-3eae-485c-857a-309dcfad1cc5"><td id="IAs=" class="">人民币Shibor 3M对美元Libor 3M</td><td id="`yMO" class="">1Y、2Y、3Y、4Y、
+5Y</td><td id="NlCK" class="">3个月人民币Shibor及3个月美元Libor付息周期均为三个月</td><td id="`w?c" class="">人民币Shibor(Act/360)
+美元Libor(Act/360)</td></tr></tbody></table><p id="bdf3712b-e352-49fe-83e5-6556b8245c0f" class=""><strong>二、报价机构</strong></p><p id="b9c89712-2433-4dd0-b40f-6ba64c56c84a" class="">人民币外汇远掉期做市商。</p><p id="fbfe840c-b52a-43c9-b44d-b8ccdf12222e" class=""><strong>三、报价平台</strong></p><p id="8ee8d7c9-209d-4f01-b6ab-68dfd6511824" class="">报价机构在外汇交易系统货币掉期双边报价界面同时报Bid/Ask两个方向报价。</p><p id="4fcf1aef-3c43-44fa-9801-67a7857c8b88" class=""><strong>四、曲线算法</strong></p><p id="0e6d8be9-5f05-4ad4-a841-435250f3c999" class="">交易中心取各机构的最新报价，根据以下规则计算：</p><p id="dc1ba4fc-a163-49e4-9c40-f48788260c93" class="">（1）计算报买(Bid)曲线和报卖(Ask)曲线</p><p id="7c098a2e-b57b-4c2d-a019-ba6ea124578e" class="">在当天计算时点16:30，获取所有报价机构的最新有效报价。首先，剔除Bid &gt;Ask报价数据；其次，对于有效Bid（Ask）报价，如果报价数量大于等于8个，剔除最高和最低的2个报价，如果报价数量小于8个，不做剔除。对剩余的Bid（Ask）报价做算数平均，得到报买曲线（报卖）曲线。</p><p id="0e8e04d0-d554-4524-8ac9-573b0eda9f5f" class="">（2）计算均值曲线</p><p id="0ac99fb1-9dbd-4a38-8419-2e8c1c020d66" class="">均值曲线为报买和报卖曲线的平均。</p><p id="a27533cd-8899-4a8a-9896-28ba2fc23c12" class=""><strong>五、发布时间</strong></p><p id="b315e036-e322-4013-94a6-c151b9a48ff9" class="">每个工作日17:15发布当日货币掉期曲线。</p><pre id="6e8a83dc-d083-48a1-99b8-63c6715aceaa" class="code"><code>
+# 时间：	16:30
+curve_type_dict={
+currency swap curve (RMB fixed rate 2 USD Libor 3M): 1,
+#货币掉期曲线（人民币固定利率对美元LIBOR3M）
+currency swap curve (RMB Shibor 3M 2 USD Libor 3M): 2
+#货币掉期曲线（人民币SHIBOR3M对美元LIBOR3M）
+}
+
+All
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-fx/CswCurvHisExcel?startDate=2022-09-27&amp;endDate=2022-10-27&amp;curveType=0&amp;bidAskType=0&amp;t=1666861519902
+
+currency swap curve (RMB fixed rate 2 USD Libor 3M)
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-fx/CswCurvHisExcel?startDate=2022-09-27&amp;endDate=2022-10-27&amp;curveType=1&amp;bidAskType=0&amp;t=1666861620870
+
+currency swap curve (RMB Shibor 3M 2 USD Libor 3M)
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-fx/CswCurvHisExcel?startDate=2022-09-27&amp;endDate=2022-10-27&amp;curveType=2&amp;bidAskType=0&amp;t=1666861564064</code></pre><p id="c7bad0c6-28e8-4162-856f-44fa7cb77b95" class="">
+</p></div><h1 id="aef08273-88fe-4a81-ba24-e5a6c818bcce" class="">本币市场</h1><h2 id="c77b03d8-92c6-4df7-9085-708341f95970" class=""><details open=""><summary>Shibor</summary></details></h2><div class="indented"><p id="d1a6dbe3-0165-48db-a8d8-1fa3f21eb73e" class="">Shibor简介</p><p id="525ede06-52c2-445c-b0a9-fed7ee490d0a" class="">上海银行间同业拆放利率（Shanghai Interbank Offered Rate，简称Shibor），以位于上海的全国银行间同业拆借中心为技术平台计算、发布并命名，是由信用等级较高的银行组成报价团自主报出的人民币同业拆出利率计算确定的算术平均利率，是单利、无担保、批发性利率。目前，对社会公布的Shibor品种包括隔夜、1周、2周、1个月、3个月、6个月、9个月及1年。</p><p id="aef5d55a-768c-4fb3-b792-9de531881ffc" class="">Shibor报价银行团现由18家商业银行组成。报价银行是公开市场一级交易商或外汇市场做市商，在中国货币市场上人民币交易相对活跃、信息披露比较充分的银行。中国人民银行成立Shibor工作小组，依据《上海银行间同业拆放利率（Shibor）实施准则》确定和调整报价银行团成员、监督和管理Shibor运行、规范报价行与指定发布人行为。</p><p id="4e78287d-f0e3-49d0-9137-ec261627d8ef" class="">全国银行间同业拆借中心受权Shibor的报价计算和信息发布。每个交易日根据各报价行的报价，剔除最高、最低各4家报价，对其余报价进行算术平均计算后，得出每一期限品种的Shibor，并于11:00对外发布。</p><p id="27efd614-d855-4029-847e-69955d524556" class="">Shibor实施准则</p><p id="bc0ce18b-841f-402f-8414-67170aa8d2aa" class=""><strong>第一章 总 则</strong></p><p id="fd86ace7-06ef-439a-85ca-6ce1a505a576" class="">第一条 为规范中国货币市场基准利率的形成机制、信息发布机制和监督管理机制，特制定本准则。</p><p id="b41e2f2b-2337-4e7f-ab18-d0ebfc965cb4" class="">第二条 上海银行间同业拆放利率（Shanghai Interbank Offered Rate，简称Shibor）是由信用等级较高的银行自主报出的人民币同业拆出利率计算确定的算术平均利率，是单利、无担保、批发性利率。</p><p id="f901ebe7-ecd7-4a85-8697-396949a86c98" class="">第三条 市场利率定价自律机制成立Shibor工作组（以下简称工作组），依据本准则确定和调整报价银行团成员、监督和管理Shibor运行、规范报价行与指定发布人行为。</p><p id="a4a3860e-e78e-488d-811f-3aee38c9cf68" class=""><strong>第二章 报价银行团构成</strong></p><p id="8be57084-65fc-4d91-a1ea-9116e9437482" class="">第四条 报价银行团由符合条件的商业银行组成。</p><p id="28dc64cf-aba8-45a9-a94f-d0d59b5e7598" class="">第五条 报价行原则上应具备以下条件：</p><p id="3e534a37-4e14-42d4-91c2-333f3e3fbab9" class="">（一）是市场利率定价自律机制成员；</p><p id="83f755df-e09e-4d06-ac68-14a4022c0a7e" class="">（二）具有公开市场一级交易商资格或外汇市场做市商资格；</p><p id="918bbd5f-d303-43be-bb0a-1cd2922b5752" class="">（三）货币市场交易活跃，即交易量较大、交易连续性较好、价差较小。交易量指报价行在中国货币市场所有交易的总量，包括公开市场交易、同业拆借交易、债券回购交易、现券交易、货币市场衍生品交易等；</p><p id="96083f2a-e8f5-4cec-8ac7-142f13cb10f0" class="">（四）信用等级较高；</p><p id="8900a260-852c-477e-8aa3-9e1f8e9ae586" class="">（五）已建立内部收益率曲线和内部转移定价机制，具有较强的利率定价能力；</p><p id="cd82bf29-8dfa-49f8-9b55-dc14ccec5583" class="">（六）通过上海银行间同业拆放利率网（www.shibor.org）等工作组指定的媒体每年披露经注册会计师审计的上年年度报告；</p><p id="a1232771-2811-42e0-9b5f-a9e405fe543d" class="">（七）有利于开展报价工作的其它条件。</p><p id="4c035bc7-9240-4f26-866a-429d23b5964a" class="">第六条 符合上述条件、并愿意成为报价行的商业银行应于每年12月1日前向工作组提交申请及相关材料。经审核合格后可成为场外报价行，在场外进行Shibor报价。工作组结合报价等情况，在报价一年以上的场外报价行中，择优选取下一年的Shibor报价行。工作组根据本准则于每年年初公布当年的报价银行团成员名单。</p><p id="55039842-e3c6-4536-8405-0f35cf37557f" class=""><strong>第三章 报价行职责</strong></p><p id="1f31aa52-a86c-4ea7-899e-f7a8f7f2e776" class="">第七条 提供拆出报价。该报价是基于市场情况的报价，是单利、无担保、批发性利率。报价行当日货币市场交易利率都以其报价利率为基准。报价行应独立报价，当日不得相互参照报价。</p><p id="2b531884-ea72-4865-a2f0-de427d7b8736" class="">第八条 每个交易日（以下简称每日）上午10:55前通过上海银行间同业拆放利率网提供的报价界面完成报价。报价行每日应按时报价，保证质量。</p><p id="feed1d82-f498-4cd1-9bcf-efcb1232180c" class="">第九条 每日对隔夜、1周、2周、1个月、3个月、6个月、9个月及1年八个品种进行报价。利率品种代码按期限长短排列为O/N、1W、2W、1M、3M、6M、9M、1Y（O/N代表隔夜，W代表周，M代表月，Y代表年）。</p><p id="bbc97494-bfcd-424e-9e16-592a634698f2" class="">第十条 以年利率（％，Act/360，T+0）对各期限品种报价，保留4位小数。</p><p id="7994a9c7-57d0-4b0c-9b62-c3f43468d46a" class="">第十一条 报价行应加强内控，建立流程清晰、权责明确的定价机制和报价程序，建立报价记录留存制度。报价行报价要做到专人专岗，并及时向市场利率定价自律机制备案。</p><p id="2bd80b78-009a-4e50-9f74-7007f1ef9b6c" class="">第十二条 建立应急机制，确保每日按时报出各期限品种的利率。</p><p id="789b1620-ff42-454d-bd2c-3e7da7e8c485" class=""><strong>第四章 指定发布人及其职责</strong></p><p id="a98f5b5c-e761-4e00-b719-eeb08d099efb" class="">第十三条 全国银行间同业拆借中心受权为Shibor的指定发布人。</p><p id="0d785f15-b416-441e-ac13-cc58e047671c" class="">第十四条 负责提供报价界面，对接收到的每一期限品种的拆出利率数据，剔除最高、最低各4家报价，对其余报价进行算术平均计算后，得出每一期限品种的Shibor，于每日上午11:00对外公布，同时公布各报价行的拆出报价。</p><p id="07d9528d-a8da-4ab5-86c5-311a94ef5cd7" class="">第十五条 在上午10:55前鉴别报价行报价的可能差错，及时进行提示。如有报价行未报价，指定发布人根据已报的数据确定Shibor，同时将此情况以书面形式报告工作组。</p><p id="e621e9c8-ef9e-4988-95f7-2b4b1177dde0" class="">第十六条 负责维护上海银行间同业拆放利率系统。</p><p id="d7d4770b-b0c5-4051-b4de-ffc4eed949ae" class="">第十七条 建立Shibor的备份、应急机制，确保每日Shibor的正常运行和历史资料储存。</p><p id="1f307f30-c33f-43ce-a014-b4842caf141a" class="">第十八条 组织Shibor场外报价行报价。</p><p id="c831f75a-29ed-4772-97be-606db2cfa638" class=""><strong>第五章 工作组的运行机制</strong></p><p id="08fe2397-2caf-48ed-83ee-4393fd5b882d" class="">第十九条 根据商业银行的申请，按照本准则确定和调整报价银行团成员和场外报价银行团成员。</p><p id="d3e926d1-5e0e-4ca6-8fcf-93f90f752668" class="">第二十条 组织报价行和场外报价行按本准则要求开展报价，对指定发布人发布Shibor信息等行为进行日常管理。</p><p id="251da39d-b62c-4cbc-b0a9-966549a528c4" class="">第二十一条 按月、季、年评估报价行有关报价行为，通报Shibor运行情况，对报价行报价质量进行考评。</p><p id="bcd4a557-2a5c-42cd-9b64-945e341d7e37" class=""><strong>第六章 监督管理</strong></p><p id="2e9e5772-1590-4e1e-8fd4-ce130829d279" class="">第二十二条 对报价行实行淘汰制。工作组建立报价考评指标体系，并定期对报价行的报价质量、定价机制和报价程序等进行现场检查和非现场检查。工作组每年对所有报价银行团成员的报价记录进行考评，确定淘汰更新方案并公布。</p><p id="8041e97c-043d-4562-b823-a6a2c0b50f56" class="">第二十三条 工作组负责监督管理指定发布人，每年对指定发布人履行职责的各项情况进行考核。</p><p id="50aa0ea5-c108-4664-8582-edcb9e2ced87" class="">第二十四条 指定发布人根据工作组授权，对报价行报价质量进行现场监督和考核。如果报价行出现违反本准则行为，应及时发出警告，要求其改正，并报告工作组。指定发布人应及时记录、披露报价行违反本准则的行为和改正情况，按月向工作组报告Shibor的运行情况。</p><h3 id="d438f76e-f66b-4d67-9f82-456db0fe5033" class="">报价行成员</h3><figure id="c275d43a-4100-49d9-9dd9-dd5dd22696ae"><a href="https://www.chinamoney.com.cn/r/cms/www/chinamoney/data//shibor/shibor-pnl-bk.json" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://www.chinamoney.com.cn/r/cms/www/chinamoney/data//shibor/shibor-pnl-bk.json</div></div></a></figure><p id="8f09da9d-c6b5-4282-b7a4-5d9d6790824d" class="">
+</p><pre id="bef69987-61e1-42c9-9d02-7bd83ee6d174" class="code"><code>https://www.chinamoney.com.cn/r/cms/www/chinamoney/data//shibor/shibor-pnl-bk.json
+{&quot;memCode&quot;:&quot;100000911000000102001&quot;,&quot;code&quot;:&quot;100009&quot;,&quot;cname&quot;:&quot;光大银行&quot;,&quot;ename&quot;:&quot;CEB&quot;,&quot;linkUrl&quot;:&quot;http://www.cebbank.com&quot;,&quot;index&quot;:8}</code></pre><p id="d15a3222-e05c-47e9-a709-7ca76c4eaeb5" class="">
+</p><table id="74e40798-8fd9-41ca-9590-eb4d6f0cd518" class="simple-table"><tbody><tr id="2ef0937c-0628-45e4-920b-ad069211a27a"><td id="chYK" class="">序号</td><td id=";yYc" class="">报价行名称</td><td id="vmq=" class="">银行网址</td></tr><tr id="1b3a24f1-7fd5-46cd-8c63-b7e7c0ee9df7"><td id="chYK" class="">1</td><td id=";yYc" class="">工商银行</td><td id="vmq=" class=""><a href="http://www.icbc.com.cn/">http://www.icbc.com.cn</a></td></tr><tr id="9a37bd57-0ea7-4407-a44f-9af51ece12de"><td id="chYK" class="">2</td><td id=";yYc" class="">农业银行</td><td id="vmq=" class=""><a href="http://www.abchina.com/">http://www.abchina.com</a></td></tr><tr id="e3dbd343-804b-4b0b-aa85-be4f59d06b35"><td id="chYK" class="">3</td><td id=";yYc" class="">中国银行</td><td id="vmq=" class=""><a href="http://www.boc.cn/">http://www.boc.cn</a></td></tr><tr id="b427338f-5501-4fb8-8609-735dcc38e0a1"><td id="chYK" class="">4</td><td id=";yYc" class="">建设银行</td><td id="vmq=" class=""><a href="http://www.ccb.com/">http://www.ccb.com</a></td></tr><tr id="f1ade952-deac-4120-b631-325d576ed072"><td id="chYK" class="">5</td><td id=";yYc" class="">交通银行</td><td id="vmq=" class=""><a href="http://www.bankcomm.com/">http://www.bankcomm.com</a></td></tr><tr id="b4ffdd78-3bc6-4d53-89e9-4f2f416c9daa"><td id="chYK" class="">6</td><td id=";yYc" class="">招商银行</td><td id="vmq=" class=""><a href="http://www.cmbchina.com/">http://www.cmbchina.com/</a></td></tr><tr id="0098322a-b4df-4e37-b35e-37bb07e0f48a"><td id="chYK" class="">7</td><td id=";yYc" class="">中信银行</td><td id="vmq=" class=""><a href="http://www.citicbank.com/">http://www.citicbank.com</a></td></tr><tr id="f503d3b7-c2d2-4c80-a652-9cefe200dec9"><td id="chYK" class="">8</td><td id=";yYc" class="">光大银行</td><td id="vmq=" class=""><a href="http://www.cebbank.com/">http://www.cebbank.com</a></td></tr><tr id="c09dc178-8c75-40df-a1ba-bb9e2cf290d0"><td id="chYK" class="">9</td><td id=";yYc" class="">兴业银行</td><td id="vmq=" class=""><a href="http://www.cib.com.cn/">http://www.cib.com.cn</a></td></tr><tr id="41b73884-0166-4c90-a30f-a830e06308c1"><td id="chYK" class="">10</td><td id=";yYc" class="">浦发银行</td><td id="vmq=" class=""><a href="http://www.spdb.com.cn/">http://www.spdb.com.cn</a></td></tr><tr id="71fcd363-7e51-47e1-9ea8-9f2b3e1acad1"><td id="chYK" class="">11</td><td id=";yYc" class="">北京银行</td><td id="vmq=" class=""><a href="http://www.bankofbeijing.com.cn/">http://www.bankofbeijing.com.cn</a></td></tr><tr id="8bb38f6a-faf8-4a02-91e4-3c07c1c52407"><td id="chYK" class="">12</td><td id=";yYc" class="">上海银行</td><td id="vmq=" class=""><a href="http://www.bankofshanghai.com/">http://www.bankofshanghai.com</a></td></tr><tr id="b7b67f30-3db9-48b3-8b4b-a344e0f955b9"><td id="chYK" class="">13</td><td id=";yYc" class="">汇丰银行</td><td id="vmq=" class=""><a href="http://www.hsbc.com.cn/">http://www.hsbc.com.cn</a></td></tr><tr id="110ce375-5b28-4734-9fee-bfb8b71ecd38"><td id="chYK" class="">14</td><td id=";yYc" class="">华夏银行</td><td id="vmq=" class=""><a href="http://www.hxb.com.cn/chinese">http://www.hxb.com.cn/chinese</a></td></tr><tr id="16d8a837-6265-4387-b0e8-9a211453e347"><td id="chYK" class="">15</td><td id=";yYc" class="">广发银行</td><td id="vmq=" class=""><a href="http://www.cgbchina.com.cn/">http://www.cgbchina.com.cn</a></td></tr><tr id="d69a6df2-959d-4612-8e39-a5ac0a1112e0"><td id="chYK" class="">16</td><td id=";yYc" class="">邮储银行</td><td id="vmq=" class=""><a href="http://www.psbc.com/">http://www.psbc.com</a></td></tr><tr id="aac91af3-1958-458a-a829-42ca3bcd50f6"><td id="chYK" class="">17</td><td id=";yYc" class="">国开行</td><td id="vmq=" class=""><a href="http://www.cdb.com.cn/">http://www.cdb.com.cn/</a></td></tr><tr id="83a3db5f-cf35-4979-a135-6cd8ed9a8a3b"><td id="chYK" class="">18</td><td id=";yYc" class="">民生银行</td><td id="vmq=" class=""><a href="http://www.cmbc.com.cn/">http://www.cmbc.com.cn</a></td></tr></tbody></table><pre id="69fd97de-a8ae-4065-a139-e2e025ff0f26" class="code"><code># LIVE 
+
+https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/shibor/shibor.json?t=1666926189889
+
+
+# 均值
+https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/shibor/shibor-mn.json?t=1666926189888
+
+
+# 成员报价
+memCode = 
+{&quot;head&quot;:{&quot;version&quot;:&quot;2.0&quot;,&quot;provider&quot;:&quot;CWAP&quot;,&quot;req_code&quot;:&quot;&quot;,&quot;rep_code&quot;:&quot;200&quot;,&quot;rep_message&quot;:&quot;&quot;,&quot;ts&quot;:1616461500020,&quot;producer&quot;:&quot;&quot;},&quot;records&quot;:[{&quot;memCode&quot;:&quot;100000111000000101001&quot;,&quot;code&quot;:&quot;100001&quot;,&quot;cname&quot;:&quot;工商银行&quot;,&quot;ename&quot;:&quot;ICBC&quot;,&quot;linkUrl&quot;:&quot;http://www.icbc.com.cn&quot;,&quot;index&quot;:1},{&quot;memCode&quot;:&quot;100000211000000101001&quot;,&quot;code&quot;:&quot;100003&quot;,&quot;cname&quot;:&quot;农业银行&quot;,&quot;ename&quot;:&quot;ABC&quot;,&quot;linkUrl&quot;:&quot;http://www.abchina.com&quot;,&quot;index&quot;:2},{&quot;memCode&quot;:&quot;100000311000000101001&quot;,&quot;code&quot;:&quot;100002&quot;,&quot;cname&quot;:&quot;中国银行&quot;,&quot;ename&quot;:&quot;BOC&quot;,&quot;linkUrl&quot;:&quot;http://www.boc.cn&quot;,&quot;index&quot;:3},{&quot;memCode&quot;:&quot;100000411000000101001&quot;,&quot;code&quot;:&quot;100004&quot;,&quot;cname&quot;:&quot;建设银行&quot;,&quot;ename&quot;:&quot;CBC&quot;,&quot;linkUrl&quot;:&quot;http://www.ccb.com&quot;,&quot;index&quot;:4},{&quot;memCode&quot;:&quot;100000531000000102001&quot;,&quot;code&quot;:&quot;100005&quot;,&quot;cname&quot;:&quot;交通银行&quot;,&quot;ename&quot;:&quot;BOCOM&quot;,&quot;linkUrl&quot;:&quot;http://www.bankcomm.com&quot;,&quot;index&quot;:5},{&quot;memCode&quot;:&quot;100000844030000102001&quot;,&quot;code&quot;:&quot;100008&quot;,&quot;cname&quot;:&quot;招商银行&quot;,&quot;ename&quot;:&quot;CMB&quot;,&quot;linkUrl&quot;:&quot;http://www.cmbchina.com/&quot;,&quot;index&quot;:6},{&quot;memCode&quot;:&quot;100000711000000102001&quot;,&quot;code&quot;:&quot;100007&quot;,&quot;cname&quot;:&quot;中信银行&quot;,&quot;ename&quot;:&quot;CNCB&quot;,&quot;linkUrl&quot;:&quot;http://www.citicbank.com&quot;,&quot;index&quot;:7},{&quot;memCode&quot;:&quot;100000911000000102001&quot;,&quot;code&quot;:&quot;100009&quot;,&quot;cname&quot;:&quot;光大银行&quot;,&quot;ename&quot;:&quot;CEB&quot;,&quot;linkUrl&quot;:&quot;http://www.cebbank.com&quot;,&quot;index&quot;:8},{&quot;memCode&quot;:&quot;100001435010000102001&quot;,&quot;code&quot;:&quot;100014&quot;,&quot;cname&quot;:&quot;兴业银行&quot;,&quot;ename&quot;:&quot;CIB&quot;,&quot;linkUrl&quot;:&quot;http://www.cib.com.cn&quot;,&quot;index&quot;:9},{&quot;memCode&quot;:&quot;200001131000000102001&quot;,&quot;code&quot;:&quot;100011&quot;,&quot;cname&quot;:&quot;浦发银行&quot;,&quot;ename&quot;:&quot;SPDB&quot;,&quot;linkUrl&quot;:&quot;http://www.spdb.com.cn&quot;,&quot;index&quot;:10},{&quot;memCode&quot;:&quot;101000111000000104001&quot;,&quot;code&quot;:&quot;100073&quot;,&quot;cname&quot;:&quot;北京银行&quot;,&quot;ename&quot;:&quot;BOB&quot;,&quot;linkUrl&quot;:&quot;http://www.bankofbeijing.com.cn&quot;,&quot;index&quot;:11},{&quot;memCode&quot;:&quot;102000031000000104001&quot;,&quot;code&quot;:&quot;100051&quot;,&quot;cname&quot;:&quot;上海银行&quot;,&quot;ename&quot;:&quot;BOS&quot;,&quot;linkUrl&quot;:&quot;http://www.bankofshanghai.com&quot;,&quot;index&quot;:12},{&quot;memCode&quot;:&quot;290000531000000106001&quot;,&quot;code&quot;:&quot;102294&quot;,&quot;cname&quot;:&quot;汇丰银行&quot;,&quot;ename&quot;:&quot;HSBC&quot;,&quot;linkUrl&quot;:&quot;http://www.hsbc.com.cn&quot;,&quot;index&quot;:13},{&quot;memCode&quot;:&quot;100001011000000102001&quot;,&quot;code&quot;:&quot;100010&quot;,&quot;cname&quot;:&quot;华夏银行&quot;,&quot;ename&quot;:&quot;HXB&quot;,&quot;linkUrl&quot;:&quot;http://www.hxb.com.cn/chinese&quot;,&quot;index&quot;:14},{&quot;memCode&quot;:&quot;100001244010000102001&quot;,&quot;code&quot;:&quot;100012&quot;,&quot;cname&quot;:&quot;广发银行&quot;,&quot;ename&quot;:&quot;GDB&quot;,&quot;linkUrl&quot;:&quot;http://www.cgbchina.com.cn&quot;,&quot;index&quot;:15},{&quot;memCode&quot;:&quot;101050011000000208011&quot;,&quot;code&quot;:&quot;101747&quot;,&quot;cname&quot;:&quot;邮储银行&quot;,&quot;ename&quot;:&quot;PSBC&quot;,&quot;linkUrl&quot;:&quot;http://www.psbc.com&quot;,&quot;index&quot;:16},{&quot;memCode&quot;:&quot;100005311000000103001&quot;,&quot;code&quot;:&quot;100034&quot;,&quot;cname&quot;:&quot;国开行&quot;,&quot;ename&quot;:&quot;CDB&quot;,&quot;linkUrl&quot;:&quot;http://www.cdb.com.cn/&quot;,&quot;index&quot;:17},{&quot;memCode&quot;:&quot;100001511000000102001&quot;,&quot;code&quot;:&quot;100015&quot;,&quot;cname&quot;:&quot;民生银行&quot;,&quot;ename&quot;:&quot;CMSB&quot;,&quot;linkUrl&quot;:&quot;http://www.cmbc.com.cn&quot;,&quot;index&quot;:18}]}
+
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-shibor/ShiborPri?memCode=100001244010000102001
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-shibor/ShiborPri?memCode=100000111000000101001
+
+# HIST
+
+# EXCEL 
+
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-shibor/ShiborHisExcel?lang=cn&amp;startDate=2022-09-29&amp;endDate=2022-10-26
+
+# 成员报价数据 EXCEL
+
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-shibor/ShiborPriHisExcel?lang=cn&amp;startDate=2022-09-29&amp;endDate=2022-10-17&amp;memCode=|100000111000000101001|100000211000000101001|100000311000000101001|100000411000000101001|100000531000000102001|100000844030000102001|100000711000000102001|100000911000000102001|100001435010000102001|200001131000000102001|101000111000000104001|102000031000000104001|290000531000000106001|100001011000000102001|100001244010000102001|101050011000000208011|100005311000000103001|100001511000000102001&amp;instnCnNm=|工商银行|农业银行|中国银行|建设银行|交通银行|招商银行|中信银行|光大银行|兴业银行|浦发银行|北京银行|上海银行|汇丰银行|华夏银行|广发银行|邮储银行|国开行|民生银行&amp;instnEnNm=|ICBC|ABC|BOC|CBC|BOCOM|CMB|CNCB|CEB|CIB|SPDB|BOB|BOS|HSBC|HXB|GDB|PSBC|CDB|CMSB
+
+# 均值
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-shibor/ShiborMnHisExcel?lang=cn&amp;startDate=2022-09-29&amp;endDate=2022-10-28&amp;tendencyvalue=</code></pre><p id="0c1db480-6d7f-4442-b260-82e3650bd4d9" class="">
+</p></div><h2 id="3e6b38cb-cdab-4664-9023-f4bf68dfd123" class=""><details open=""><summary>贷款市场报价利率</summary></details></h2><div class="indented"><p id="6f35146c-ca73-44dd-ad3d-68fb7a8557bf" class="">贷款市场报价利率（LPR）由各报价行按公开市场操作利率（主要指中期借贷便利利率）加点形成的方式报价，由全国银行间同业拆借中心计算得出，为银行贷款提供定价参考。目前，LPR包括1年期和5年期以上两个品种。</p><p id="bb319d4c-369c-4c4d-b06d-61ebe7772dc1" class="">LPR报价行目前包括18家银行，每月20日（遇节假日顺延）9时前，各报价行以0.05个百分点为步长，向全国银行间同业拆借中心提交报价，全国银行间同业拆借中心按去掉最高和最低报价后算术平均，并向0.05%的整数倍就近取整计算得出LPR，于当日9时15分公布，公众可在全国银行间同业拆借中心和中国人民银行网站查询。</p><p id="f2db1832-9c1c-4f7e-8016-2bcea8ada89f" class="">
+</p><p id="e538e83d-5d64-4edc-97bf-1eb0ce355e22" class="">
+</p><pre id="ce9246ce-7d0f-4fbc-89ac-79b7801aaffe" class="code"><code># 报价成员
+
+https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/currency/lpr-pnl-bk.json?t=1666929167307
+
+# HIST
+
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-currency/LprHisExcel?lang=CN&amp;strStartDate=2021-10-29&amp;strEndDate=2022-10-20
+
+</code></pre><p id="ffef5583-8c67-4b85-b569-040cd9c4be87" class="">
+</p></div><h2 id="e01126ad-4f67-4429-9750-43bb9fe34fa6" class=""><details open=""><summary>回购定盘利率</summary></details></h2><div class="indented"><p id="a96a1e4d-3d3e-4002-88b1-e15e7c1d0c5f" class="">银行间回购定盘利率是以银行间市场每天上午9:00-11:30间的回购交易利率为基础同时借鉴国际经验编制而成的利率基准参考指标，每天上午11:30起对外发布。回购定盘利率包括FR001、FR007、FR014、FDR001、FDR007、FDR014等品种，其中FDR001、FDR007和FDR014为银银间回购定盘利率品种。</p><p id="867fcbd8-bf1d-4eaf-a79e-72d7a1c67f57" class="">FR001、FR007和FR014编制方法如下：</p><p id="e64595d2-7209-4435-b87a-6cbccadd0f53" class="">1.以隔夜回购（R001）、七天回购（R007）、14天回购（R014）交易在每个交易日上午9:00-11:30之间（包括9:00和11:30）的全部成交利率为计算基础。特别地，交易对手相同(交易方向相同或相反)且交易利率相同的交易只作为一笔交易纳入样本。</p><p id="5be5c845-f71c-452d-b720-98ce48b9e998" class="">2.分别对隔夜回购、七天回购、14天回购利率进行排序，记从小到大排序之后的最大序号为N，则[N/2]（向下取整）+1位置上的那个利率即为当日的定盘利率。</p><p id="82e7c193-476b-4d02-8cd1-d8e354e1bf48" class="">3.隔夜回购定盘利率、七天回购定盘利率、14天回购定盘利率分别以FR001、FR007、FR014进行标识。</p><p id="fec08078-a261-46e2-9048-0a2db6a650a7" class="">4.异常情况处理。</p><p id="7f790437-47be-4864-ad7b-f485b0723c8e" class="">如果当日某个回购品种在9:00-11:30没有成交数据，则选用当日Shibor对应期限利率*365/360作为当日定盘利率。</p><p id="2c6a4e06-af3e-47b0-b2e1-09877b7b92f5" class="">银银间回购定盘利率FDR001、FDR007和FDR014以银行间市场每天上午9:00-11:30存款类机构以利率债为质押的回购交易为样本，编制方法如下：</p><p id="b19e51f3-8933-44d6-a09c-70ec777ad340" class="">1、存款类机构包括政策性银行、大型商业银行、股份制银行、城市商业银行、农村商业银行及合作银行、农村信用联社、外资银行、民营银行、村镇银行等存款类机构；利率债包括国债、央行票据和政策性金融债。</p><p id="8cac77c2-eb27-4766-ab1b-ff5bdb5232ff" class="">2、以银银间隔夜回购（DR001）、7天回购（DR007）、14天回购（DR014）交易在每个交易日上午9:00-11:30的全部成交利率为计算基础。特别地，交易对手相同（交易方向相同或相反）且交易利率相同的交易只作为一笔交易纳入样本。</p><p id="0123b7d5-3412-45b7-a85a-181ebbda243b" class="">3、分别对银银间隔夜回购、7天回购、14天回购利率进行排序，记从小到大排序之后的最大序号为N，则[N/2]（向下取整）+1位置上的那个利率即为当日的银银间定盘利率。</p><p id="0e4dc8e8-691c-4c64-afa8-fa47c83f29ef" class="">4、银银间隔夜回购定盘利率、7天回购定盘利率、14天回购定盘利率分别以FDR001、FDR007、FDR014进行标识。</p><p id="5073005c-6f24-45bb-a9e2-99c853de55d1" class="">5、异常情况处理：如果当日某个银银间回购品种在9:00-11:30没有成交数据，则选用当日Shibor对应期限利率*365/360作为当日银银间回购定盘利率。</p><pre id="d403349a-6bf9-444e-ae56-ec0ebae7a5f2" class="code"><code>
+# HIST
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-currency/FrrHisExcel?lang=CN&amp;startDate=2022-09-29&amp;endDate=2022-10-28
+
+</code></pre></div><h2 id="abe6538c-2be0-4ac6-8be7-51e855a8fd21" class=""><details open=""><summary>债券指数</summary></details></h2><h2 id="3c1073c4-b75f-4d3d-910e-a5405826c121" class=""><details open=""><summary>基准债券</summary></details></h2><div class="indented"><p id="680d32bc-1dac-46ac-b203-256d80d6d69b" class=""><strong>一、基准债券分类</strong></p><p id="92b083ac-3725-4874-a99f-e5a6a6a79bf8" class="">基准债券是指根据银行间现券市场做市机构上报的做市券种列表进行综合分析，按照债券种类、期限分布、市场流动性等因素最终确定的一揽子基准债券。基准债券分为中长期债券和短期债券2类：中长期债券按月确定样本，包括国债、政策性金融债（国开行）、政策性金融债（进出口行）、政策性金融债（农发行）、中期票据（AAA）；短期债券按周确定样本，包括短期融资券（AAA）。根据基准债券选样结果，生成对应的实时收益率曲线系列。</p><p id="c1741f2e-6c06-4cad-afc8-ba21c14ab0cb" class=""><strong>二、选券标准</strong></p><p id="3e015acf-00a2-4075-853f-7c10dda2509f" class="">在银行间现券市场的做市券种中，根据债券类型、信用评级、关键期限点、平均竞争性做市机构数、报价覆盖度和做市券种活跃度指标等6个指标选取各类债券各关键期限点的基准债券，除基准债券以外的债券为样本债券。</p><p id="441e0ab0-237b-4433-9b08-56a860cc94da" class="">（一）债券类型：固定利率债券、贴现债券、零息债券，非含权债。</p><p id="3b18372a-41da-4e36-acf7-880868021bd7" class="">（二）信用评级和关键期限点</p><p id="ff5cf4e0-9ff3-4427-8992-5244816b5ca1" class="">信用评级都取自银行间市场本币交易系统，信用评级和关键期限点对应关系如下表所示。</p><table id="d8ca1a6d-ce22-4193-b1c7-46bcffad972f" class="simple-table"><tbody><tr id="20e975fb-c5ad-4668-aabb-ea8e9033d657"><td id="fnq_" class=""><strong>基准债券种类</strong></td><td id="BNxj" class=""><strong>信用评级</strong></td><td id="K`si" class=""><strong>关键期限点（年）</strong></td></tr><tr id="7fe62e74-e965-4a0a-a83c-a402d61fe3ce"><td id="fnq_" class="">国债</td><td id="BNxj" class="">-</td><td id="K`si" class="">0.25、0.5、1、2、3、5、7、10、15、20、30</td></tr><tr id="6260c8d6-a69c-4110-8884-8d5571ab7282"><td id="fnq_" class="">政策性金融债（国开行）</td><td id="BNxj" class="">-</td><td id="K`si" class="">0.25、0.5、1、2、3、5、7、10、15、20、30</td></tr><tr id="b296535f-262b-4342-84fe-0b89ebccdf11"><td id="fnq_" class="">政策性金融债（进出口行）</td><td id="BNxj" class="">-</td><td id="K`si" class="">0.25、0.5、1、2、3、5、7、10、15、20、30</td></tr><tr id="cc7d05c1-0fd9-47fd-b894-42e9d5ec2802"><td id="fnq_" class="">政策性金融债（农发行）</td><td id="BNxj" class="">-</td><td id="K`si" class="">0.25、0.5、1、2、3、5、7、10、15、20、30</td></tr><tr id="3a358a66-e006-4b69-81cf-f55ef51dda71"><td id="fnq_" class="">中期票据（AAA）</td><td id="BNxj" class="">债项评级AAA</td><td id="K`si" class="">0.25、0.5、1、2、3、5、7</td></tr><tr id="ddfe5b30-c024-4417-92e7-b469123b4e44"><td id="fnq_" class="">短期融资券（AAA）</td><td id="BNxj" class="">发债主体评级AAA</td><td id="K`si" class="">0.083、0.25、0.5、0.75、1</td></tr></tbody></table><p id="8067dd1b-3e32-417f-a920-d66806eb5acd" class="">（三）平均竞争性做市机构数是指基准债券选样期内，对同一债券进行做市报价的平均做市机构数量。</p><p id="e4699c94-8d1b-4fa1-84be-4a522c85f739" class="">（四）报价覆盖度是指在“平均竞争性做市机构数”选样基础上，在该债券上一选取周期中存在竞争性做市报价的天</p><p id="a17ad8b6-2110-4f58-bdd9-087c59e68455" class="">数占实际可交易的天数的比例。</p><p id="124facb1-7f79-4b11-a568-98f1a56f7bd7" class="">（五）做市券种活跃度指标分为中长期债券和短期债券。</p><p id="6b2be913-7227-469a-901a-958853758125" class="">中长期债券做市券种活跃度指标：</p><table id="3271fabb-b686-4a70-8e6f-10a549a37b7f" class="simple-table"><tbody><tr id="7073b900-2d0e-48f6-96b0-8d503ae3494f"><td id="RBZB" class=""><strong>选样指标</strong></td><td id="TNNF" class=""><strong>满分</strong></td></tr><tr id="c0fe66d0-71a0-45d3-ab07-6773c8a8c878"><td id="RBZB" class="">做市报价成交量</td><td id="TNNF" class="">20</td></tr><tr id="ce0f6427-fd83-4b1b-9c58-9b8a1008cc3d"><td id="RBZB" class="">做市报价平均双边报价价差</td><td id="TNNF" class="">20</td></tr><tr id="fae94720-cfd0-47b4-889e-f9e854fec29f"><td id="RBZB" class="">做市报价量</td><td id="TNNF" class="">20</td></tr><tr id="298950ab-4e5b-4e5f-a8d7-35c65363c37f"><td id="RBZB" class="">整个现券市场成交量</td><td id="TNNF" class="">10</td></tr><tr id="ab61880d-d621-4399-adf0-ba99abfe721c"><td id="RBZB" class="">债券待偿期与关键期限点的期限长度差</td><td id="TNNF" class="">5</td></tr><tr id="2a61b820-d069-47c8-9ce6-e7d8c34524de"><td id="RBZB" class="">是否新发行债券</td><td id="TNNF" class="">25</td></tr><tr id="b280fa6f-5ac3-488c-8378-88e31bcdee88"><td id="RBZB" class=""><strong>总分</strong></td><td id="TNNF" class=""><strong>100</strong></td></tr></tbody></table><p id="7f0bf533-be1d-4e32-bbab-d7c99bdb00df" class="">短期债券做市券种活跃度指标：</p><table id="d537d765-a836-4231-b6f5-6f2b75264bbe" class="simple-table"><tbody><tr id="f3647b9a-dcfb-4e1f-ab12-508261bb0f8b"><td id="eMA}" class=""><strong>选样指标</strong></td><td id="XVwO" class=""><strong>满分</strong></td></tr><tr id="56e746d6-acd4-40e3-98ea-65c7455bb059"><td id="eMA}" class="">做市报价成交量</td><td id="XVwO" class="">30</td></tr><tr id="dc87619e-0c10-4dce-8352-2cf4de8140ab"><td id="eMA}" class="">做市报价量</td><td id="XVwO" class="">30</td></tr><tr id="88160e1b-7129-45d7-92b8-6ecc7b3f26a7"><td id="eMA}" class="">债券待偿期与关键期限点的期限长度差</td><td id="XVwO" class="">5</td></tr><tr id="3b87c0a6-b272-4c49-9a4b-93926c2bc9d6"><td id="eMA}" class="">是否新发行债券</td><td id="XVwO" class="">35</td></tr><tr id="087c0ff5-981b-4f22-a992-b5b23c4ea051"><td id="eMA}" class=""><strong>总分</strong></td><td id="XVwO" class=""><strong>100</strong></td></tr></tbody></table><p id="026e11b5-e2ab-4205-ab20-dfaf2112713e" class="">其中，对于每类债券，选券优先级依次是平均竞争性做市机构数、报价覆盖度和做市券种活跃度指标，依次降序排序得到每类债券每个关键期限点的基准债券和样本债券。</p><p id="7da252ee-6d67-475d-a50d-3ee5866564cb" class="">以基准国债为例，如下表所示：</p><table id="11985286-b72f-4885-8475-e489b0f59268" class="simple-table"><tbody><tr id="75654990-a10a-4dfc-b5b7-a4efa7a726ce"><td id="xIr]" class=""><strong>债券代码</strong></td><td id="Zz&gt;v" class=""><strong>关键期限点</strong></td><td id=":XAv" class=""><strong>基准/样本债券</strong></td><td id="aO~I" class=""><strong>竞争性做市机构数</strong></td><td id="p@Vm" class=""><strong>报价覆盖度</strong></td><td id="r&gt;M`" class=""><strong>做市券种活跃度指标</strong></td></tr><tr id="b53d0075-1b98-497f-b50a-ebd1c0db96cb"><td id="xIr]" class=""><strong>090021</strong></td><td id="Zz&gt;v" class=""><strong>0.5</strong></td><td id=":XAv" class=""><strong>基准债券</strong></td><td id="aO~I" class=""><strong>3</strong></td><td id="p@Vm" class=""><strong>100%</strong></td><td id="r&gt;M`" class=""><strong>20</strong></td></tr><tr id="a6111358-218f-482d-8168-b1dc8e93e186"><td id="xIr]" class="">070011</td><td id="Zz&gt;v" class="">0.5</td><td id=":XAv" class="">样本债券</td><td id="aO~I" class="">1</td><td id="p@Vm" class="">100%</td><td id="r&gt;M`" class="">85</td></tr><tr id="199b69ed-3eab-4a1c-9785-f6b489027a6b"><td id="xIr]" class="">090008</td><td id="Zz&gt;v" class="">0.5</td><td id=":XAv" class="">样本债券</td><td id="aO~I" class="">1</td><td id="p@Vm" class="">100%</td><td id="r&gt;M`" class="">90</td></tr><tr id="10498b12-188f-41e7-b9bc-a96bb9f8d471"><td id="xIr]" class=""><strong>080004</strong></td><td id="Zz&gt;v" class=""><strong>1</strong></td><td id=":XAv" class=""><strong>基准债券</strong></td><td id="aO~I" class=""><strong>2</strong></td><td id="p@Vm" class=""><strong>100%</strong></td><td id="r&gt;M`" class=""><strong>100</strong></td></tr><tr id="a1535f9e-7c84-432b-a6d3-fed69a894186"><td id="xIr]" class="">040004</td><td id="Zz&gt;v" class="">1</td><td id=":XAv" class="">样本债券</td><td id="aO~I" class="">2</td><td id="p@Vm" class="">80%</td><td id="r&gt;M`" class="">100</td></tr></tbody></table><p id="beec7cfe-7f5e-4e3c-8576-cf07ce3a76a8" class=""><strong>三、基准债券应用周期和选样周期</strong></p><p id="7ab34ebe-6ab2-48c8-b517-b9564f2375cc" class="">基准债券应用周期是指基准债券生效的交易日范围，选样周期是指基准债券选样所在交易日范围；应用周期和选样周期原则上按周、按月进行，具体视节假日调整而定。其中，选样周期通常是指上一应用周期，在选样周期最后一个交易日确定和公布下一应用周期的基准债券。</p><p id="cf6b6126-48df-4937-9f3d-cdd65cf9ad76" class="">选样周期分为样本初选和确定样本两个阶段。其中，中长期债券在上一应用周期倒数第二个交易日完成样本初选，由业务人员征询市场成员意见后，于上一应用周期最后一个交易日完成基准债券的样本确认；短期债券在上一应用周期最后一个交易日中午完成样本初选，由业务人员征询市场成员意见后，于上一应用周期最后一个交易日收盘后完成基准债券的样本确认。</p><p id="cff6af71-02ff-4070-9d52-a6b635775993" class="">例如，国债应用周期201001对应的基准债券有效期是2010年1月1日至1月31日，选样周期是2009年12月1日至12月30日；短期融资券(AAA)应用周期201002对应的基准债券有效期是2010年1月11日至1月15日，选样周期是2010年1月4日至1月8日。</p><p id="b2aef0a4-c53d-49a7-854b-8a51d4f77da8" class=""><strong>四、基准债券自动换券机制</strong></p><p id="eda6441c-149a-4df7-a9bb-b36a04b6527a" class="">由于一揽子基准债券是通过历史做市报价数据统计所得，因此可能会出现在后续交易日没有报价更新的情况，此时基准债券方案将启动自动换券机制，并及时告知市场成员。自动换券机制如下：</p><p id="86a9c190-1700-4512-b996-78aa8174f90e" class="">优先选择新发行债券：</p><p id="92e19271-be6e-4919-b298-42848a669560" class="">如果某个关键期限点基准债券连续N天（通常是5天）没有价格，如果在该应用周期有新券发行，优先考虑最近连续N天（通常是5天）有双边报价的新券；如果有两只及两只以上的新券满足条件，按照平均做市机构数优于发行日优于发行量优于债券代码的规则换券。</p><p id="2d111740-f523-49cf-9871-10b3009a15a0" class="">其次选择样本债券：</p><p id="8df1ae12-9e81-4a38-b579-6d95c5a96ce4" class="">如果选不出新券进行自动换券，选取该标准期限样本债券中连续N天（通常是5天）有双边报价，且分值最高的债券作为该应用周期的基准债券。如果挑选出的债券在应用期限出现连续N天（通常是5天）没有价格，更换基准债券规则同上。</p><p id="9d802f1a-7b55-4790-8282-4d39774e9dd9" class="">继续选券：</p><p id="e15c751d-6ed0-4bfe-af5b-dceadb64ebe7" class="">如果以上两步仍然没有挑选出债券，基准债券当日不更换，该期限利率依然使用该债券历史报价利率；第二日重新根据以上两步挑选基准债券。</p></div><h2 id="25307bf1-0042-44f6-ae57-c9e51ad30218" class=""><details open=""><summary>实时收益率曲线</summary></details></h2><div class="indented"><p id="1bd4d8aa-cba0-4073-a274-fa63594745e9" class="">
+</p><p id="2725643a-60d1-471b-bd88-f0efd39340f8" class="">实时收益率曲线（以下简称实时曲线）以基准债券为基础，选取银行间本币交易系统点击成交报价和上海国际货币经纪公司的最优买卖报价，通过线性插值计算得到实时曲线。点击成交报价和货币经纪报价均只选取清算速度为T+1的报价。</p><p id="1d53839e-f7ab-491e-838d-83f04793d6b6" class="">实时曲线于每个交易日9时30分发布首条曲线，每1小时更新一次，直至系统闭市。</p><p id="62cc9718-bf2f-463a-a33a-21b31f98503a" class=""><strong>一、曲线类型</strong></p><p id="8585361f-88db-47db-ad6f-e6eb169a28b4" class="">实时曲线为到期收益率曲线，包括报买入、报卖出和均值曲线等3条曲线。</p><p id="1848f2ee-57ff-4989-a498-73b21d1d63fc" class=""><strong>二、基准债券券种</strong></p><p id="ff2b588d-97fb-44f4-b132-5a17cb7fcbd9" class="">实时曲线系列包括国债、政策性金融债（国开行）、政策性金融债（进出口行）、政策性金融债（农发行）、短期融资券（AAA）和中期票据（AAA）。债券样本均选取固定利率、贴现或零息的非含权债券。</p><p id="cd15ec6b-6773-4b25-9590-cc8dbe9fbec1" class=""><strong>三、实时曲线构建方法</strong>
+ 按照基准债券方案，每个选样周期末筛选出各个券种的各关键期限点的基准债券。其中，国债、政策性金融债（国开行）、政策性金融债（进出口行）、政策性金融债（农发行）和中期票据（AAA）按月选样，短期融资券（AAA）按周选样。
+ 在每类债券应用周期内，每个工作日实时选出各个标准期限基准债券最优报买、报卖收益率，如下表所示。<strong>标准期限（年）基准债券剩余期限（年）最优报买入收益率（%）最优报卖出收益率（%）</strong>0.2509贴现国债200.22471.24001.17010.509附息国债210.67671.43981.4298108国债041.28771.61001.6050208国债111.53701.60301.5950309附息国债152.54252.39002.3800509附息国债184.60002.98002.9600709附息国债196.63843.30003.26501008国债188.72883.54003.52501507特别国债0612.88773.85203.85003008国债0628.35344.22964.1295    以报买入利率为例，将表中（剩余期限，最优报买入收益率）为一组数据，以散点形式画在坐标轴上，将散点以直线相连形成实时报买入曲线；其中，国债实时曲线30年期报买入利率设计成与30年期基准债券的报买入利率相等，如果30年期基准债券没有利率，则实时曲线30年期利率为空。同理可得到国债实时报卖出曲线数据；均值曲线为报买入曲线和报卖出曲线的平均，如下图所示。
+
+
+同时提供基准债券实时最优报价表，如下：<strong>标准期限（年）基准债券剩余期限（年）最优报买入收益率（%）最优报卖出收益率（%）</strong>0.2509贴现国债200.22471.24001.17010.509附息国债210.67671.43981.4298108国债041.28771.61001.6050208国债111.53701.60301.5950309附息国债152.54252.39002.3800509附息国债184.60002.98002.9600709附息国债196.63843.30003.26501008国债188.72883.54003.52501507特别国债0612.88773.85203.85003008国债0628.35344.22964.1295
+ 
+如果某只基准债券最优报价产生变化，基准债券实时曲线和实时最优报价表会同步更新。
+<strong>四、 选价规则</strong>
+实时曲线数据源为银行间本币交易系统点击成交报价和国际货币经纪公司的债券报价，点击成交报价和货币经纪报价均只选取清算速度为T+1的报价；按照报价时间和有效性分为实时报价、当日报价、货币经纪报价和历史报价。
+按照选价优先顺序，依次是实时有效点击报价、当日已失效点击报价、货币经纪报价、历史报价。以买报价为例，取价规则如下：
+实时报价：选取发布时刻点基准债券有效的报买点击成交报价中最低的价格作为该基准债券最优报买价。
+当日报价：选取发布时刻点之前最后一笔有效的报买点击成交报价作为价格代表。
+货币经纪报价：选取发布时刻点取到的货币经纪报价中基准债券的报买价。
+历史报价：如果截止到发布时刻基准债券当日没有报买点击成交和货币经纪报买价，则选定该债券最近有点击成交报买价或是货币经纪报买价的日期，选取该日期收盘时基准债券最优买报价利率作为当日发布时刻点利率代表。
+
+<strong>五、基准债券自动换券机制</strong>
+由于一揽子基准债券是通过历史做市报价数据统计所得，因此可能会出现在后续交易日没有报价更新的情况，此时基准债券方案将启动自动换券机制，并及时告知市场成员。自动换券机制如下：
+优先选择新发行债券：
+如果某个关键期限点基准债券连续N天（通常是5天）没有价格，如果在该应用周期有新券发行，优先考虑最近连续N天（通常是5天）有双边报价的新券；如果有两只及两只以上的新券满足条件，按照平均做市机构数优于发行日优于发行量优于债券代码的规则换券。
+其次选择样本债券：
+如果选不出新券进行自动换券，选取该标准期限样本债券中连续N天（通常是5天）有双边报价，且分值最高的债券作为该应用周期剩余期限的基准债券。如果挑选出的债券在应用期限出现连续N天（通常是5天）没有价格，更换基准债券规则同上。
+继续选券：
+如果以上两步仍然没有挑选出债券，基准债券当日不更换，该期限利率依然使用该债券历史报价利率。第二日重新根据以上两步挑选基准债券。</p><figure id="0dd260b0-87b2-45e9-b194-e90a8639a6bb" class="image"><a href="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005221618.jpg"><img src="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005221618.jpg"/></a></figure><p id="8836bdf2-739e-4787-a9bb-545ca482ecf3" class="">
+	</p><pre id="d2bb31f0-8313-4b36-bccb-aa5009a50582" class="code"><code>
+# 国债
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/RtimeYldCurv?lang=CN&amp;qttndate=&amp;qttntime=&amp;bondType=100101
+# 政策性金融债（国开行）
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/RtimeYldCurv?lang=CN&amp;qttndate=&amp;qttntime=&amp;bondType=230101
+# 政策性金融债（进出口银行）
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/RtimeYldCurv?lang=CN&amp;qttndate=&amp;qttntime=&amp;bondType=230102
+# （农发行）
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/RtimeYldCurv?lang=CN&amp;qttndate=&amp;qttntime=&amp;bondType=230103
+# 短期融资券（AAA）
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/RtimeYldCurv?lang=CN&amp;qttndate=&amp;qttntime=&amp;bondType=260101
+# 中期票据（AAA）
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/RtimeYldCurv?lang=CN&amp;qttndate=&amp;qttntime=&amp;bondType=270101</code></pre><p id="1134dd14-96f7-4527-97db-c2ea8669c0b3" class="">
+</p><p id="f075ac67-ead7-47b7-998a-864c117c7216" class="">
+</p></div><h2 id="8af6d56b-561c-4811-9d37-fa4dc80efd7d" class=""><details open=""><summary>收盘收益率曲线</summary></details></h2><div class="indented"><p id="bc9b95fc-a6eb-42e5-b2be-df533c458a67" class="">收盘收益率曲线（以下简称收盘曲线）包括国债、央行票据、政策性金融债、短期融资券各信用评级、中期票据各信用评级、超短期融资券各信用评级、企业债各信用评级、同业存单各信用评级、商业银行普通金融债各信用评级、商业银行二级资本债各信用评级、资产支持证券各信用评级、国际开发机构SDR债、证券公司短期融资券各信用评级等各类债券收盘曲线，每条收盘曲线发布到期收益率、即期利率和远期利率3类曲线。每个工作日17时15分，在中国货币网公布当日收盘曲线。</p><p id="d513d35e-5d42-45f9-93b9-44f4b19106aa" class="">
+</p><p id="3629946a-2de3-4c77-8d48-f741ffda3b18" class="">国债、央行票据、政策性金融债、短期融资券各信用评级、中期票据各信用评级、超短期融资券各信用评级、企业债各信用评级、同业存单各信用评级、商业银行普通金融债各信用评级、商业银行二级资本债各信用评级、资产支持证券各信用评级、国际开发机构SDR债、证券公司短期融资券各信用评级等曲线债券样本是银行间市场上市流通的、不含权、非浮动利率债券(固定利率债券、贴现债券、零息债券)。其中，企业债（AAA、AA+、AA、AA-）对应有担保的企业债，企业债（AAA2、AA+2、AA2、AA-2）对应无担保的企业债。政策性金融债、中期票据和企业债1Y_Depo或Shibor3M点差曲线债券样本是银行间市场上市流通的、不含权的浮动利率债券。</p><p id="0a776ca7-513d-48a8-99ab-1f2cafc95697" class="">收盘曲线以当日对应债券样本的双边报价和成交数据为样本，利用线性回归模型计算得到收盘到期收益率曲线，利用收盘到期收益率曲线推导出对应的即期和远期利率曲线。</p><p id="e0cf0113-3736-4b8d-adee-359ddeecc67d" class="">以国债收盘收益率曲线为例，介绍曲线构建方法：</p><p id="1bcc050a-487f-4e07-ae5f-829461d372a0" class="">一、设定国债关键期限点为0.083、0.25、0.5、0.75、1、2、3、5、7、10、15、20、30、40、50年。</p><p id="daf0e988-4cc1-4181-9648-701119596b4f" class="">二、取当日收盘前所有非浮动、非含权国债双边报价数据和交易数据。</p><p id="5959f37f-ec48-4735-9e81-9b79a8ebcbfa" class="">三、对每一只国债，取出该债券每个做市机构的收盘前最新报价，剔除不合理的做市报价数据。</p><table id="b18ea547-b86c-49d3-b6e5-6d505d2d0182" class="simple-table"><tbody><tr id="9b13165d-0c44-4c09-8f8b-0e0823b77655"><td id="qbqQ" class=""><strong>债券名称</strong></td><td id="lmgY" class=""><strong>报价机构</strong></td><td id="GLEE" class=""><strong>最新报买入收益率(%)</strong></td><td id="cw_Y" class=""><strong>最新报卖出收益率(%)</strong></td><td id="W}di" class=""><strong>剩余期限（年）</strong></td></tr><tr id="8e10f550-2ed1-4376-af37-09e114b82c0b"><td id="qbqQ" class="">11贴现国债09</td><td id="lmgY" class="">机构A</td><td id="GLEE" class="">3.0500</td><td id="cw_Y" class="">2.9503</td><td id="W}di" class="">0.3880</td></tr><tr id="29cdd3bf-90f8-401b-b924-88243dfa2b42"><td id="qbqQ" class="">11附息国债11</td><td id="lmgY" class="">机构B</td><td id="GLEE" class="">2.9900</td><td id="cw_Y" class="">2.9600</td><td id="W}di" class="">0.5027</td></tr><tr id="3ac81b70-410d-48ee-bfa1-d0385ca894c9"><td id="qbqQ" class="">…</td><td id="lmgY" class="">…</td><td id="GLEE" class="">…</td><td id="cw_Y" class="">…</td><td id="W}di" class="">…</td></tr><tr id="bc890a29-4d56-4d30-98cc-16f5efe3ff67"><td id="qbqQ" class="">11国债10</td><td id="lmgY" class="">机构C</td><td id="GLEE" class="">4.1000</td><td id="cw_Y" class="">4.0300</td><td id="W}di" class="">19.4836</td></tr></tbody></table><p id="14a1ef91-ee92-4fc6-99b4-122f801dbbd6" class="">四、将报价数据按照“剩余期限”大小进行排序，取出每只债券最优报买和最优报卖收益率，得到剩余期限和报买、报卖收益率列表。</p><table id="967cf53d-7b10-4172-b423-2182dcd4114d" class="simple-table"><tbody><tr id="a4d49b2b-a3fb-46d3-9800-33441f9942d9"><td id="H&lt;mf" class=""><strong>剩余期限（年）</strong></td><td id="_CEQ" class=""><strong>报买入收益率(%)</strong></td><td id="PRli" class=""><strong>报卖出收益率(%)</strong></td></tr><tr id="7a29b196-5725-4ebf-b444-1c94ad3bf539"><td id="H&lt;mf" class="">1.3716</td><td id="_CEQ" class="">3.1700</td><td id="PRli" class="">3.0000</td></tr><tr id="a940f9b9-d7a4-4523-80d0-d5cbec429fba"><td id="H&lt;mf" class="">2.3497</td><td id="_CEQ" class="">3.3950</td><td id="PRli" class="">3.3700</td></tr><tr id="b18742cb-f8ed-4cf0-a2d6-36418ab69b34"><td id="H&lt;mf" class="">2.5792</td><td id="_CEQ" class="">3.3850</td><td id="PRli" class="">3.3700</td></tr></tbody></table><p id="e60e9789-fa14-44ee-bf32-604ab4a49258" class="">五、利用线性回归算法计算得到关键期限点0.083、0.25、0.5、0.75、1、2、3、5、7、10、15、20、30、40、50年报买入和报卖出利率，均值利率为报买入利率和报卖出利率的平均值。连接关键期限点对应报买入、报卖出利率得到收盘报买入、报卖出曲线。</p><table id="b5cf3ae8-d652-4a0e-b6e5-c91bd49da7da" class="simple-table"><tbody><tr id="24ea24ae-52a8-4333-ba0f-f6f244bdad78"><td id="bNuW" class=""><strong>关键期限（年）</strong></td><td id="]@nl" class=""><strong>报买入收益率(%)</strong></td><td id="RJMX" class=""><strong>报卖出收益率(%)</strong></td><td id="g}r_" class=""><strong>均值利率(%)</strong></td></tr><tr id="98657808-9c3c-4ba0-afe2-5a3564a1ad21"><td id="bNuW" class="">0.083</td><td id="]@nl" class="">2.6600</td><td id="RJMX" class="">2.6500</td><td id="g}r_" class="">2.6550</td></tr><tr id="1e52f6dd-c1d4-4d58-8821-c929030c0b0a"><td id="bNuW" class="">0.25</td><td id="]@nl" class="">2.8880</td><td id="RJMX" class="">2.8660</td><td id="g}r_" class="">2.8770</td></tr><tr id="0066ee7c-39b8-4223-9f2e-3eafed54f8c6"><td id="bNuW" class="">0.5</td><td id="]@nl" class="">3.0440</td><td id="RJMX" class="">3.0300</td><td id="g}r_" class="">3.0370</td></tr><tr id="8e74d85c-9db5-4519-a88e-5ce08cfaa753"><td id="bNuW" class="">0.75</td><td id="]@nl" class="">3.0456</td><td id="RJMX" class="">3.0100</td><td id="g}r_" class="">3.0278</td></tr><tr id="5b4ccbd9-7a3d-4946-97b7-db3fafa34579"><td id="bNuW" class="">1</td><td id="]@nl" class="">3.0805</td><td id="RJMX" class="">3.0456</td><td id="g}r_" class="">3.0631</td></tr><tr id="a24927fb-f4c2-48f4-a98d-5c59c46c8f6c"><td id="bNuW" class="">2</td><td id="]@nl" class="">3.3321</td><td id="RJMX" class="">3.2346</td><td id="g}r_" class="">3.2834</td></tr><tr id="5695ccf9-3c3a-4872-a33e-65fcc26a78d5"><td id="bNuW" class="">3</td><td id="]@nl" class="">3.4724</td><td id="RJMX" class="">3.4056</td><td id="g}r_" class="">3.4390</td></tr><tr id="b01b3648-b715-48f7-a2d7-b6ae3f5fe68c"><td id="bNuW" class="">5</td><td id="]@nl" class="">3.5978</td><td id="RJMX" class="">3.5670</td><td id="g}r_" class="">3.5824</td></tr><tr id="b6922794-0975-4eca-9f34-3bb06975a0dd"><td id="bNuW" class="">7</td><td id="]@nl" class="">3.6989</td><td id="RJMX" class="">3.6038</td><td id="g}r_" class="">3.6514</td></tr><tr id="74e8c335-1118-439b-bed8-f233625617bf"><td id="bNuW" class="">10</td><td id="]@nl" class="">3.7800</td><td id="RJMX" class="">3.7068</td><td id="g}r_" class="">3.7434</td></tr><tr id="a1566c2c-ab3c-4d2e-8d9d-3bd0423b6e81"><td id="bNuW" class="">15</td><td id="]@nl" class="">4.0234</td><td id="RJMX" class="">3.9678</td><td id="g}r_" class="">3.9956</td></tr><tr id="62b49863-4a24-4779-9ccc-8a542a7dadbb"><td id="bNuW" class="">20</td><td id="]@nl" class="">4.1050</td><td id="RJMX" class="">4.0654</td><td id="g}r_" class="">4.0852</td></tr><tr id="850740af-6e66-480a-80e3-b2a8c000a693"><td id="bNuW" class="">30</td><td id="]@nl" class="">4.2034</td><td id="RJMX" class="">4.1621</td><td id="g}r_" class="">4.1828</td></tr><tr id="9538f94a-ed2e-48e0-a0e2-e357d0ae98a6"><td id="bNuW" class="">40</td><td id="]@nl" class="">4.2620</td><td id="RJMX" class="">4.2522</td><td id="g}r_" class="">4.2571</td></tr><tr id="448c9a7a-cd85-4684-ae8a-4307acc423e4"><td id="bNuW" class="">50</td><td id="]@nl" class="">4.3500</td><td id="RJMX" class="">4.3400</td><td id="g}r_" class="">4.3450</td></tr></tbody></table><p id="b8b8538a-d1e8-4abf-af4e-2934072198f9" class="">六、交易数据中剔除与报买入和报卖出收益率曲线相差较大的数据。</p><p id="8edbe0a2-6bf9-4d06-8071-7d8700d3f7be" class="">七、汇总上述报价和成交样本，利用线性回归方法计算关键期限点0.083、0.25、0.5、0.75、1、2、3、5、7、10、15、20、30、40、50年到期收益率。</p><table id="f5484f34-1966-42d4-8fd0-3f3b0cf8a371" class="simple-table"><tbody><tr id="5c92668f-523b-492e-adcd-1198354e57f4"><td id="yL:a" class=""><strong>关键期限（年）</strong></td><td id="gI[&lt;" class=""><strong>到期收益率 (%)</strong></td></tr><tr id="819c19ef-1feb-4cc2-9789-1b6cd77d82f6"><td id="yL:a" class="">0.083</td><td id="gI[&lt;" class="">2.6551</td></tr><tr id="43054879-a407-471f-8514-4edd868f2149"><td id="yL:a" class="">0.25</td><td id="gI[&lt;" class="">2.8750</td></tr><tr id="723ad5de-4236-4a45-b40c-8b99962d2423"><td id="yL:a" class="">0.5</td><td id="gI[&lt;" class="">3.0336</td></tr><tr id="e0a50bba-03ad-46cb-a5a0-9f5c58d1d70c"><td id="yL:a" class="">0.75</td><td id="gI[&lt;" class="">3.0284</td></tr><tr id="387b38de-9eb4-4567-9eab-8aa8fca88cec"><td id="yL:a" class="">1</td><td id="gI[&lt;" class="">3.0605</td></tr><tr id="5d406174-e6ca-451c-a42f-40b92c4b9e8b"><td id="yL:a" class="">2</td><td id="gI[&lt;" class="">3.2821</td></tr><tr id="45c14811-0088-4c41-8a31-b25f4a067724"><td id="yL:a" class="">3</td><td id="gI[&lt;" class="">3.4424</td></tr><tr id="5b51604d-0105-4a96-a01b-77487ed38ce4"><td id="yL:a" class="">5</td><td id="gI[&lt;" class="">3.5756</td></tr><tr id="1130684d-e019-4601-9c47-0eb578e89b09"><td id="yL:a" class="">7</td><td id="gI[&lt;" class="">3.6649</td></tr><tr id="a0e82160-250a-4203-a579-1bc21dd64f77"><td id="yL:a" class="">10</td><td id="gI[&lt;" class="">3.7445</td></tr><tr id="cb53a74e-4c2c-4560-b68f-924f574a931e"><td id="yL:a" class="">15</td><td id="gI[&lt;" class="">3.9945</td></tr><tr id="c00e0199-91e0-49db-88d6-af1ac7fd8dda"><td id="yL:a" class="">20</td><td id="gI[&lt;" class="">4.0850</td></tr><tr id="f74c49a3-1c6e-47cf-94c4-384e18b42e28"><td id="yL:a" class="">30</td><td id="gI[&lt;" class="">4.1812</td></tr><tr id="e18a57c0-540a-43a6-9a86-18354532eb22"><td id="yL:a" class="">40</td><td id="gI[&lt;" class="">4.2562</td></tr><tr id="25203d53-280c-4df3-8ac1-7e158082e38b"><td id="yL:a" class="">50</td><td id="gI[&lt;" class="">4.3407</td></tr></tbody></table><p id="f7b2ca64-2e19-4af5-98d7-680b064d9326" class="">连接关键期限点对应收益率，得到国债收盘到期收益率曲线：</p><figure id="c6371775-3e01-46a2-9f1f-ceee9c419851" class="image"><a href="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005312532.jpg"><img src="https://www.chinamoney.com.cn/ewebeditor/uploadfile/20180406005312532.jpg"/></a></figure><pre id="e0198222-d413-4d48-b33d-7dc6fc2b8d50" class="code"><code>
+reference_dict = {
+&#x27;到期&#x27;:1,
+&#x27;即期&#x27;:2,
+&#x27;远期&#x27;:3
+}
+
+termId_list = [0.1, 0.5, 1.0]
+
+
+# HIST
+
+# 国债
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-currency/ClsYldCurvXml?
+lang=CN&amp;bondType=CYCC000&amp;interestRateDate=2022-10-27&amp;maturityYield=1&amp;currentYield=&amp;futureYield=
+
+# EXCEL
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-currency/ClsYldCurvHisExcel?
+lang=CN&amp;bondType=CYCC000&amp;reference=1,2,3&amp;startDate=2022-10-27&amp;endDate=2022-10-27&amp;termId=0.5
+
+
+# 央行票据
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-currency/ClsYldCurvHisExcel?
+lang=CN&amp;bondType=CYCC010&amp;reference=1,2,3&amp;startDate=2022-10-27&amp;endDate=2022-10-27&amp;termId=0.5
+
+# ... 等等三十多项债券
+</code></pre><p id="bef869e9-4803-4375-ac49-a71f22b9e3df" class="">
+</p><p id="b95bab1e-1da7-410c-a28e-23be050ca33b" class="">
+</p></div><h2 id="bcf2c153-e362-444d-81a5-b17fc0066221" class=""><details open=""><summary>利率互换曲线</summary></details></h2><div class="indented"><p id="139f2b48-3184-4d76-a69b-7ee9cb4934a5" class=""><strong>利率互换曲线编制方案</strong></p><p id="e29f3da2-298d-4e6e-a554-eefb29b078ae" class="">利率互换曲线由全国银行间同业拆借中心编制和发布。</p><p id="0f373a0a-2b48-45bb-b152-ddc9de8b3016" class="">利率互换曲线分为利率互换定盘/收盘曲线和利率互换行情曲线。Shibor3M和FR007利率互换曲线包括利率互换定盘/收盘曲线和利率互换行情曲线，FDR001、FDR007、ShiborO/N、LPR1Y（季付）、LPR5Y（季付）利率互换曲线包括利率互换定盘/收盘曲线。</p><p id="9d0689d0-0cad-437a-86d0-6434f87af6f0" class=""><strong>一、利率互换定盘/收盘曲线</strong></p><p id="14951f28-6f6a-4e7e-a0b0-8877eaf8fcef" class="">利率互换定盘/收盘曲线种类与期限：</p><table id="520db205-924b-47b5-a179-2499b6a31560" class="simple-table"><tbody><tr id="a339ca5f-aea9-4b86-a84a-2f3e661339ea"><td id="hx:Y" class=""><strong>曲线种类</strong></td><td id="|dMY" class=""><strong>标准期限</strong></td></tr><tr id="c5127186-dd1c-4fb5-9147-2717f575c0f0"><td id="hx:Y" class="">Shibor3M</td><td id="|dMY" class="">6M、9M、1Y、2Y、3Y、4Y、5Y、7Y、10Y</td></tr><tr id="865311d8-10b3-40e7-a31c-76f377103b75"><td id="hx:Y" class="">FR007</td><td id="|dMY" class="">1M、3M、6M、9M、1Y、2Y、3Y、4Y、5Y、7Y、10Y</td></tr><tr id="3b53a2d3-2e87-414f-ba79-f7c708e3bd73"><td id="hx:Y" class="">FDR001</td><td id="|dMY" class="">1M、3M、6M、9M、1Y、2Y、3Y</td></tr><tr id="a9c9b812-74b7-413f-8693-ddfc2d595120"><td id="hx:Y" class="">FDR007</td><td id="|dMY" class="">1M、3M、6M、9M、1Y、2Y、3Y、4Y、5Y、7Y、10Y</td></tr><tr id="172ba41f-a047-48ec-81ef-97f425ee953d"><td id="hx:Y" class="">ShiborO/N</td><td id="|dMY" class="">1M、3M、6M、9M、1Y、2Y、3Y</td></tr><tr id="b33a40b6-90d7-4275-933d-ede090db50dc"><td id="hx:Y" class="">LPR1Y（季付）</td><td id="|dMY" class="">6M、9M、1Y、2Y、3Y、4Y、5Y、7Y、10Y</td></tr><tr id="7e3be68b-dd43-4f56-939b-8c332498b011"><td id="hx:Y" class="">LPR5Y（季付）</td><td id="|dMY" class="">6M、9M、1Y、2Y、3Y、4Y、5Y、7Y、10Y</td></tr></tbody></table><p id="e0a604bf-d0e4-4029-ab9f-00adb062bfaa" class="">利率互换定盘/收盘曲线数据样本是X-Swap报价。定盘曲线取样时间为11:45-12:00，收盘取样时间为16:15-16:30。</p><p id="61091fba-51a6-4d92-a401-5f10248309cc" class="">计算规则：</p><p id="0ae4bb91-b039-4170-8528-0fc9bc0e2de8" class="">在取样时间段每隔30秒选取一个取样点（例如收盘曲线取样点为16:15:30、16:16:00、…、16:30:00），每个取样点选取X-Swap报价，计算出每个取样点的报买、报卖和均值价格。对30个取样点按均值排序并过滤上下各25%价格后，将剩余报价按照报买和报卖价差倒数为权重加权，计算出可成交报价的报买、报卖和均值利率。</p><p id="95f87938-431c-4ee9-9a99-b943448b9384" class="">发布时间：每个工作日12:10发布当日利率互换定盘曲线，16:40发布当日利率互换收盘曲线。每类曲线发布报买、报卖和均值三条曲线。</p><p id="f2564f4c-76d7-4464-b64c-a5cdc813eb9d" class=""><strong>二、利率互换行情曲线</strong></p><p id="46a27b82-9629-446a-a891-20eaaa7fc36d" class="">利率互换行情曲线种类与期限：</p><table id="178dd93e-549c-49df-a6ca-bac040f9b9f8" class="simple-table"><tbody><tr id="817c9e08-3bf7-4b30-8f9e-f40f3d0a93fb"><td id="a|Lb" class=""><strong>品种</strong></td><td id="P}&gt;]" class=""><strong>期限</strong></td></tr><tr id="108e6303-d6a2-435c-8805-4e058fc067ac"><td id="a|Lb" class="">Shibor3M</td><td id="P}&gt;]" class="">6M、9M、1Y、2Y、3Y、4Y、5Y、7Y、10Y</td></tr><tr id="e4e12f73-caf1-4781-b28a-8214ec7145a2"><td id="a|Lb" class="">FR007</td><td id="P}&gt;]" class="">1M、3M、6M、9M、1Y、2Y、3Y、4Y、5Y、7Y、10Y</td></tr></tbody></table><p id="22f2a05a-208f-4db7-a66c-b73c316f091e" class="">利率互换行情曲线数据样本包括X-Swap报价、货币经纪可成交报价和货币经纪意向报价。发布时间为9:30-11:30,12:30-16:00，每30分一次。每条曲线取样时间为该曲线发布时间点之前的半小时。</p><p id="2477e815-4308-4871-9d00-9395fb150e7d" class="">计算规则：</p><p id="3c11eda7-d3e0-4357-be9f-4d94adfb3470" class="">1. 计算出可成交代表性价格</p><p id="8d551df8-a09f-43fa-b5fe-e3055aa1b984" class="">根据X-Swap报价和货币经纪可成交报价计算出可成交代表性价格。每个发布时间点，在取样时间段每隔一分钟选取一个取样点（10:00曲线取样点为9:31、9:32、…、10:00），每个取样点优先选取X-Swap报价，以货币经纪可成交报价为补充，计算出每个取样点的报买、报卖和均值价格。对30个取样点按均值排序并过滤上下各25%价格后，将剩余报价按照报买和报卖价差倒数为权重加权，计算出可成交报价的报买、报卖和均值利率。</p><p id="8976532f-84bb-48f1-926d-64b97c2b85a4" class="">2.选出货币经纪意向报价</p><p id="49813560-7621-407f-965c-778f9a3b6fe9" class="">获取截止发布时间点货币经纪各品种最新意向报价数据。</p><p id="17be6d90-65b7-426a-a330-e7ad3c391401" class="">3.选出利率互换行情曲线利率值</p><p id="28633a6c-aabe-4df0-b3f4-df66070a25b9" class="">选价顺序上，优先选用可成交代表性价格。如果可成交代表性价格存在，选用可成交报价的报买、报卖和均值利率作为利率互换行情曲线该品种报买、报卖和均值利率，否则选用货币经纪意向报价。如果某个品种既无可成交代表性价格，又无货币经纪意向报价，则利率互换行情曲线该品种价格显示为空。</p><p id="dcf89859-00ce-4fd7-8ea0-487977d581f8" class="">
+</p><p id="fd49e74a-6ec7-431c-9ef5-f94b3121753e" class="">
+</p><pre id="9aae2d41-af87-48eb-b9c1-1630b75de435" class="code"><code>cfgItemType_dict = {
+&#x27;Shibor3M&#x27;:71,
+&#x27;FROO7&#x27;:72,
+&#x27;FDROO1&#x27;:84,
+&#x27;FDROO7&#x27;:77,
+&#x27;ShiborON&#x27;73:,
+&#x27;LPR1Y(Season)&#x27;:83,
+&#x27;LPR5Y(Season)&#x27;:82
+}
+
+# FR007
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-shibor/Ifcc?lang=CN&amp;cfgItemType=72
+
+# FR001
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-shibor/Ifcc?lang=CN&amp;cfgItemType=84</code></pre><p id="1cc4afe0-0ec4-420b-abbb-dc955da646f4" class="">
+</p></div><h2 id="24c5a2b6-e4cb-490a-9b71-3e18c4be816e" class=""><details open=""><summary>债券估值       </summary></details></h2><div class="indented"><p id="cbc933a3-9f40-4a44-8671-6dc4148f8f31" class="">
+</p><figure id="29af4817-5386-4c59-b071-3eebac02f8f9"><a href="https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-bond/CDSIndxHisExcel?indxName=CFETS-SHCH%E6%B0%91%E4%BC%81CDS%E6%8C%87%E6%95%B0&amp;startDate=2022-09-28&amp;endDate=2022-10-28" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-bond/CDSIndxHisExcel?indxName=CFETS-SHCH%E6%B0%91%E4%BC%81CDS%E6%8C%87%E6%95%B0&amp;startDate=2022-09-28&amp;endDate=2022-10-28</div></div></a></figure><figure id="9d448e45-5b28-459c-a130-24fa5f533429"><div class="source"><a href="%E4%B8%AD%E5%9B%BD%E5%A4%96%E6%B1%87%E4%BA%A4%E6%98%93%E4%B8%AD%E5%BF%83%E3%80%81%E5%85%A8%E5%9B%BD%E9%93%B6%E8%A1%8C%E9%97%B4%E5%90%8C%E4%B8%9A%E6%8B%86%E5%80%9F%E4%B8%AD%E5%BF%83%20(1)%20447321a73fd64855b247baf84e90d5c0/%25E4%25B8%25AD%25E5%259B%25BD%25E5%25A4%2596%25E6%25B1%2587%25E4%25BA%25A4%25E6%2598%2593%25E4%25B8%25AD%25E5%25BF%2583%25E5%2580%25BA%25E5%2588%25B8%25E4%25BC%25B0%25E5%2580%25BC%25E6%2589%258B%25E5%2586%258CV1.1.pdf">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9cb845ce-53cc-4c21-af2c-0c35978c7596/%E4%B8%AD%E5%9B%BD%E5%A4%96%E6%B1%87%E4%BA%A4%E6%98%93%E4%B8%AD%E5%BF%83%E5%80%BA%E5%88%B8%E4%BC%B0%E5%80%BC%E6%89%8B%E5%86%8CV1.1.pdf</a></div></figure><figure id="5135936c-9d8a-4af0-98b0-2a7148b205c7"><a href="https://www.chinamoney.com.cn/chinese/bkval/" class="bookmark source"><div class="bookmark-info"><div class="bookmark-text"><div class="bookmark-title"></div></div><div class="bookmark-href">https://www.chinamoney.com.cn/chinese/bkval/</div></div></a></figure><h3 id="3d500d79-ce38-46ff-bbea-94c345d0e0fc" class="">债券动态估值</h3><h3 id="50b1879b-47d7-4a0a-bfd6-2bd82efe9c03" class="">债券收盘估值</h3><p id="a0035e4e-92a7-4480-a116-db01e39d2634" class="">
+</p></div><h2 id="37ed3dc9-6e84-4556-9593-4cc7dbc4f117" class=""><details open=""><summary>CDS指数</summary></details></h2><div class="indented"><pre id="85827590-5a65-4143-90b3-95af748f55eb" class="code"><code>
+{&quot;head&quot;:{&quot;version&quot;:&quot;2.0&quot;,&quot;provider&quot;:&quot;CWAP&quot;,&quot;req_code&quot;:&quot;&quot;,&quot;rep_code&quot;:&quot;200&quot;,&quot;rep_message&quot;:&quot;&quot;,&quot;ts&quot;:1666862940409,&quot;producer&quot;:&quot;&quot;},
+&quot;records&quot;:[
+{&quot;dataList&quot;:[{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;3M&quot;,&quot;cdIndxVl&quot;:&quot;28.50&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;6M&quot;,&quot;cdIndxVl&quot;:&quot;33.80&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;1Y&quot;,&quot;cdIndxVl&quot;:&quot;35.58&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;2Y&quot;,&quot;cdIndxVl&quot;:&quot;39.50&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;3Y&quot;,&quot;cdIndxVl&quot;:&quot;42.30&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;4Y&quot;,&quot;cdIndxVl&quot;:&quot;45.51&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;5Y&quot;,&quot;cdIndxVl&quot;:&quot;49.04&quot;}],
+&quot;enName&quot;:&quot;CDS-SHCH-GTJA High Grade CDS Index&quot;,&quot;maxDate&quot;:&quot;2022-10-27&quot;,&quot;cnName&quot;:&quot;CFETS-SHCH-GTJA高等级CDS指数&quot;,&quot;maxDateEn&quot;:&quot;27 Oct 2022&quot;},
+{&quot;dataList&quot;:[{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;3M&quot;,&quot;cdIndxVl&quot;:&quot;76.25&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;6M&quot;,&quot;cdIndxVl&quot;:&quot;84.01&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;9M&quot;,&quot;cdIndxVl&quot;:&quot;91.30&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;1Y&quot;,&quot;cdIndxVl&quot;:&quot;97.27&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;2Y&quot;,&quot;cdIndxVl&quot;:&quot;110.54&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;3Y&quot;,&quot;cdIndxVl&quot;:&quot;118.01&quot;}],
+&quot;enName&quot;:&quot;CFETS-SHCH Private Enterprise CDS Index&quot;,&quot;maxDate&quot;:&quot;2022-10-27&quot;,&quot;cnName&quot;:&quot;CFETS-SHCH民企CDS指数&quot;,&quot;maxDateEn&quot;:&quot;27 Oct 2022&quot;},
+{&quot;dataList&quot;:[{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;3M&quot;,&quot;cdIndxVl&quot;:&quot;35.17&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;6M&quot;,&quot;cdIndxVl&quot;:&quot;39.89&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;9M&quot;,&quot;cdIndxVl&quot;:&quot;43.44&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;1Y&quot;,&quot;cdIndxVl&quot;:&quot;47.13&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;2Y&quot;,&quot;cdIndxVl&quot;:&quot;54.60&quot;},{&quot;date&quot;:&quot;2022-10-27&quot;,&quot;dateEN&quot;:&quot;27 Oct 2022&quot;,&quot;prd&quot;:&quot;3Y&quot;,&quot;cdIndxVl&quot;:&quot;59.11&quot;}],
+&quot;enName&quot;:&quot;CFETS-SHCH-CBR Yangtze River Delta CDS Index&quot;,&quot;maxDate&quot;:&quot;2022-10-27&quot;,&quot;cnName&quot;:&quot;CFETS-SHCH-CBR长三角区域CDS指数&quot;,&quot;maxDateEn&quot;:&quot;27 Oct 2022&quot;}]}
+
+
+https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/bond/CDSIndex.json</code></pre><p id="0aafd757-11c3-4553-9fbc-1b7bdb6db060" class="">
+</p><h3 id="a840e8a2-abf3-419b-862b-a9061bf23fe6" class="">CFETS-SHCH-GTJA高等级CDS指数</h3><pre id="38935e41-14d8-408e-9d67-5f7de2a6af53" class="code"><code># HIST
+
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-bond/CDSIndxHisExcel?indxName=CFETS-SHCH-GTJA高等级CDS指数&amp;startDate=2022-09-28&amp;endDate=2022-10-28
+</code></pre><h3 id="4079cbd8-af5f-4562-8aca-43733c43b951" class="">CFETS-SHCH民企CDS指数</h3><pre id="2b8a467e-e704-47fb-b937-6550d1a4b8a9" class="code"><code># HIST
+
+https://www.chinamoney.com.cn/dqs/rest/cm-u-bk-bond/CDSIndxHisExcel?indxName=CFETS-SHCH民企CDS指数&amp;startDate=2022-09-28&amp;endDate=2022-10-28</code></pre><h3 id="5b40b0c8-223c-4c85-bd06-55b7f353af16" class="">CFETS-SHCH-CBR长三角区域CDS指数</h3><p id="856dd8f9-c73d-4843-8e95-ecae6d1cc5a3" class="">
+</p></div><h2 id="09af134b-9cd8-48f2-93f0-19d81f5d2e4d" class=""><details open=""><summary>RMBS条件早偿率指数</summary></details></h2><div class="indented"><figure id="311d5936-5c69-4510-afb4-92f3db672235"><div class="source"><a href="%E4%B8%AD%E5%9B%BD%E5%A4%96%E6%B1%87%E4%BA%A4%E6%98%93%E4%B8%AD%E5%BF%83%E3%80%81%E5%85%A8%E5%9B%BD%E9%93%B6%E8%A1%8C%E9%97%B4%E5%90%8C%E4%B8%9A%E6%8B%86%E5%80%9F%E4%B8%AD%E5%BF%83%20(1)%20447321a73fd64855b247baf84e90d5c0/RMBS%25E6%259D%25A1%25E4%25BB%25B6%25E6%2597%25A9%25E5%2581%25BF%25E7%258E%2587%25E6%258C%2587%25E6%2595%25B0%25E7%25BC%2596%25E5%2588%25B6%25E8%25AF%25B4%25E6%2598%258EV1.0.pdf">https://s3-us-west-2.amazonaws.com/secure.notion-static.com/8d15f9b9-0dce-464a-9ab0-3ac1c490111e/RMBS%E6%9D%A1%E4%BB%B6%E6%97%A9%E5%81%BF%E7%8E%87%E6%8C%87%E6%95%B0%E7%BC%96%E5%88%B6%E8%AF%B4%E6%98%8EV1.0.pdf</a></div></figure><p id="92b475ba-88d8-450b-a5f7-5d24dc8d7251" class="">
+</p><p id="f65fca52-f307-4d4d-a6b1-d3053419efdf" class="">
+</p><pre id="f6d7f459-8470-4ed3-b92d-7aaf6b60315f" class="code"><code># HIST
+https://www.chinamoney.com.cn/ags/ms/cm-u-bk-bond/RMBSIndexHis</code></pre><p id="463536de-7a2a-4a4c-b7ac-072e443235fd" class="">
+</p><p id="3b06c2df-3921-42bc-ad16-3ad2d93ab285" class="">
+</p><p id="1d4b6617-49b0-40ce-968e-bd9c730e7bda" class="">
+</p><p id="b3f3952a-046e-4867-8d90-086783fb763e" class="">
+</p><p id="eef08120-6214-42ac-b9e2-0645116798b9" class="">
+</p><p id="3fccf2b6-39f5-4337-8147-5287986581eb" class="">
+</p><p id="cdb714d8-0f99-476d-886c-431b9bbd71dd" class="">
+</p><p id="9e9bd801-1d67-45e9-8d21-fcdaa4de4ffd" class="">
+</p><p id="d13a77fe-da4f-48ee-ac88-412f1292727b" class="">      </p></div><h1 id="29c5f626-7158-4ca3-944a-fe36b38cfda9" class=""><details open=""><summary>利率与汇率（SDDS）</summary></details></h1><div class="indented"><p id="e19c230c-c18e-4152-a395-52a7ee8faf5e" class="">
+</p><h2 id="35560278-f1fb-4232-b125-38f6f2cd377b" class=""><details open=""><summary>利率数据</summary></details></h2><div class="indented"><pre id="07021a54-fb1e-40ef-ab3e-ffe9a317f233" class="code"><code>
+https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/currency/sdds-intr-rate.json?t=1666941147069</code></pre><p id="aa572ccd-c067-441a-8ebe-a5f925f8168e" class="">
+</p></div><h2 id="5d2f8371-42f8-4bca-abbc-17aaae833e80" class=""><details open=""><summary>汇率数据</summary></details></h2><div class="indented"><p id="44f0db13-abc7-43e8-a169-c7ff7291fd8a" class="">
+</p><pre id="1be2cfea-716f-42d9-a235-40250d32a09f" class="code"><code>https://www.chinamoney.com.cn/r/cms/www/chinamoney/data/fx/sdds-exch-rate.json?t=1666941345203</code></pre><p id="da756219-1891-4be0-8c3a-6878689ec622" class="">
+</p><p id="fd1a22bc-59e9-44a3-8057-818bf02c6272" class="">
+</p><p id="c7f5ffa8-36e3-48c1-b2e1-e7c273bbcd16" class="">
+</p><p id="52fa4f71-5f7f-462d-9f31-b6294068f40e" class="">
+</p><p id="e113196b-48e6-46a8-831c-96bd7bb63a83" class="">
+</p><p id="770b14f3-eb41-42e3-a366-ad1c998518fc" class="">
+</p><p id="6d2070a1-a2b1-42fa-a7d5-846312583655" class="">
+</p><p id="f7d1ef99-84a0-4cc2-b454-357e49ea556a" class="">
+</p><p id="48bfcc6e-0b5a-4d51-835d-a3f7ff9b3e6c" class="">
+</p></div></div></div></article></body></html>
