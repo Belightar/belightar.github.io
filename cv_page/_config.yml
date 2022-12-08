@@ -6,7 +6,7 @@ favicon: images/favicon.ico
 version: 2
 
 # Personal info
-name: Xiong Siliang
+name: Xiong Siliang CV
 title: Senior Network System Administrator
 email: xiong_siliang@siliang.xyz
 website: www.github.com/Belightar/belightar.github.io
@@ -58,7 +58,7 @@ content:
     content:
       - layout: top-middle
         title: Super awesome project
-        link: github.com/sproogen
+        link: github.com/belightar.github.io/cv_page
         # link_text: Project Website
         additional_links:
           - title:  sproogen/modern-resume-theme
