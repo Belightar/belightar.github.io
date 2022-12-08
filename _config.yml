@@ -1,11 +1,8 @@
+title: YOUR TITLE
+description: YOUR DESCRIPTION
+theme: just-the-docs
 
----
-permalink: /404.html
----
+url: https://Belightar.github.io/siliang
 
-sass:
-  sass_dir: _sass
-  style: compressed
-
-plugins:
- - jekyll-seo-tag
+aux_links: # remove if you don't want this link to appear on your pages
+  Template Repository: https://github.com/Belightar/siliang
