@@ -15,18 +15,19 @@ website: siliang.xyz
 darkmode: true
 
 # Social links
-twitter_username: xiong_siliang
+#twitter_username: xiong_siliang
 github_username:  belightar
 # stackoverflow_username: "00000001"
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-instagram_username: xiong_siliang
+#instagram_username: xiong_siliang
 linkedin_username: xiong_siliang
 # xing_username: jekyll
 # pinterest_username: jekyll
-youtube_username: xiong_siliang
+# youtube_username: xiong_siliang
 # googleplus_username: +jekyll
+wechat_username: xiong_siliang
 # orcid_username: 0000-0000-0000-0000
 
 # Additional icon links
