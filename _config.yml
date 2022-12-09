@@ -1,3 +1,7 @@
+
+plugins:
+  - jekyll-default-layout
+
 title: Xiong Siliang
 description: Quantitative Engineer
 theme: just-the-docs
