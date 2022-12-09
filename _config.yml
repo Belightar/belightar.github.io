@@ -2,11 +2,33 @@
 plugins:
   - jekyll-default-layout
 
-title: Xiong Siliang
-description: Quantitative Engineer
-theme: just-the-docs
+  title: Xiong Siliang
+  description: Quantitative Engineer
+  theme: just-the-docs
 
-url: https://github.com/Belightar/belightar.github.io
+  url: https://github.com/Belightar/belightar.github.io
 
-aux_links: 
-  Template Repository: https://github.com/Belightar/belightar.github.io
+  aux_links:
+    Template Repository: https://github.com/Belightar/belightar.github.io
+
+
+
+  title: Test Table
+  description: Test Table
+  theme: just-the-docs
+
+  url: https://github.com/Belightar/belightar.github.io/test_table
+
+  aux_links:
+    Template Repository: https://github.com/Belightar/belightar.github.io/test_table
+
+
+
+  title: CV
+  description: CV
+  theme: just-the-docs
+
+  url: https://github.com/Belightar/belightar.github.io/cv
+
+  aux_links:
+    Template Repository: https://github.com/Belightar/belightar.github.io/cv
