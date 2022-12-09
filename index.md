@@ -7,101 +7,161 @@ permalink: index.html
 summary: These brief instructions will help you get started quickly with the theme. The other topics in this help provide additional information and detail about working with other aspects of this theme and Jekyll.
 ---
 
-{% include note.html content="If you're cloning this theme, you're probably writing documentation of some kind. I have a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='https://tinyletter.com/tomjoht'>subscribing</a>. I also have a site on <a href='http://idratherbewriting.com/learnapidoc'>writing API documentation</a>." %}
+[//]: # ({% include note.html content="If you're cloning this theme, you're probably writing documentation of some kind. I have a blog on technical writing here called <a alt='technical writing blog' href='http://idratherbewriting.com'>I'd Rather Be Writing</a>. If you'd like to stay updated with the latest trends, best practices, and other methods for writing documentation, consider <a href='https://tinyletter.com/tomjoht'>subscribing</a>. I also have a site on <a href='http://idratherbewriting.com/learnapidoc'>writing API documentation</a>." %})
 
-## Build the Theme
+[//]: # ()
+[//]: # (## Build the Theme)
 
-Follow these instructions to build the theme.
+[//]: # ()
+[//]: # (Follow these instructions to build the theme.)
 
-### 1. Download the theme
+[//]: # ()
+[//]: # (### 1. Download the theme)
 
-First, download or clone the theme from the [Github repo](https://github.com/tomjoht/documentation-theme-jekyll). Most likely you won't be pulling in updates once you start customizing the theme, so downloading the theme (instead of cloning it) probably makes the most sense. In Github, click the **Clone or download** button, and then click **Download ZIP**.
+[//]: # ()
+[//]: # (First, download or clone the theme from the [Github repo]&#40;https://github.com/tomjoht/documentation-theme-jekyll&#41;. Most likely you won't be pulling in updates once you start customizing the theme, so downloading the theme &#40;instead of cloning it&#41; probably makes the most sense. In Github, click the **Clone or download** button, and then click **Download ZIP**.)
 
-### 2. Install Jekyll
+[//]: # ()
+[//]: # (### 2. Install Jekyll)
 
-If you've never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:
+[//]: # ()
+[//]: # (If you've never installed or run a Jekyll site locally on your computer, follow these instructions to install Jekyll:)
 
-* [Install Jekyll on Mac][mydoc_install_jekyll_on_mac]
-* [Install Jekyll on Windows][mydoc_install_jekyll_on_windows]
+[//]: # ()
+[//]: # (* [Install Jekyll on Mac][mydoc_install_jekyll_on_mac])
 
-### 3. Install Bundler
+[//]: # (* [Install Jekyll on Windows][mydoc_install_jekyll_on_windows])
 
-In case you haven't installed Bundler, install it:
+[//]: # ()
+[//]: # (### 3. Install Bundler)
 
-```
-gem install bundler
-```
+[//]: # ()
+[//]: # (In case you haven't installed Bundler, install it:)
 
-You'll want [Bundler](http://bundler.io/) to make sure all the Ruby gems needed work well with your project. Bundler sorts out dependencies and installs missing gems or matches up gems with the right versions based on gem dependencies.
+[//]: # ()
+[//]: # (```)
 
-### 4. Option 1: Build the Theme (*without* the github-pages gem) {#option1}
+[//]: # (gem install bundler)
 
-Use this option if you're not planning to publish your Jekyll site using [Github Pages](https://pages.github.com/).
+[//]: # (```)
 
-Bundler's Gemfile specifies how project dependencies are managed. Although this project includes a Gemfile, this theme doesn't have any dependencies beyond core Jekyll. The Gemfile is used to list gems needed for publishing on Github Pages. **If you're not planning to have Github Pages build your Jekyll project, delete these two files from the theme's root directory:**
+[//]: # ()
+[//]: # (You'll want [Bundler]&#40;http://bundler.io/&#41; to make sure all the Ruby gems needed work well with your project. Bundler sorts out dependencies and installs missing gems or matches up gems with the right versions based on gem dependencies.)
 
-* Gemfile
-* Gemfile.lock
+[//]: # ()
+[//]: # (### 4. Option 1: Build the Theme &#40;*without* the github-pages gem&#41; {#option1})
 
-If you've never run Jekyll on your computer (you can check with `jekyll --version`), you may need to install the jekyll gem:
+[//]: # ()
+[//]: # (Use this option if you're not planning to publish your Jekyll site using [Github Pages]&#40;https://pages.github.com/&#41;.)
 
-```
-gem install jekyll
-```
+[//]: # ()
+[//]: # (Bundler's Gemfile specifies how project dependencies are managed. Although this project includes a Gemfile, this theme doesn't have any dependencies beyond core Jekyll. The Gemfile is used to list gems needed for publishing on Github Pages. **If you're not planning to have Github Pages build your Jekyll project, delete these two files from the theme's root directory:**)
 
-Now run jekyll serve (first change directories (`cd`) to where you downloaded the project):
+[//]: # ()
+[//]: # (* Gemfile)
 
-```
-jekyll serve
-```
+[//]: # (* Gemfile.lock)
 
-### 4. Option 2: Build the Theme (*with* the github-pages gem) {#option2}
+[//]: # ()
+[//]: # (If you've never run Jekyll on your computer &#40;you can check with `jekyll --version`&#41;, you may need to install the jekyll gem:)
 
-If you *are* in fact publishing on Github Pages, leave the Gemfile and Gemfile.lock files in the theme.The Gemfile tells Jekyll to use the github-pages gem. **However, note that you cannot use the normal `jekyll serve` command with this gem due to dependency conflicts between the latest version of Jekyll and Github Pages** (which are noted [briefly here](https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/)).
+[//]: # ()
+[//]: # (```)
 
-You need Bundler to resolve these dependency conflicts. Use Bundler to install all the needed Ruby gems:
+[//]: # (gem install jekyll)
 
-```
-bundle update
-```
+[//]: # (```)
 
-Then *always* use this command to build Jekyll:
+[//]: # ()
+[//]: # (Now run jekyll serve &#40;first change directories &#40;`cd`&#41; to where you downloaded the project&#41;:)
 
-```
-bundle exec jekyll serve
-```
+[//]: # ()
+[//]: # (```)
 
-If you want to shorten this long command, you can put this code in a file such as jekyll.sh (on a Mac) and then simply type `. jekyll.sh` to build Jekyll.
+[//]: # (jekyll serve)
 
-## Running the site in Docker
+[//]: # (```)
 
-You can also use Docker to directly build and run the site on your local machine. Just clone the repo and run the following from your working dir:
-```
-docker-compose build --no-cache && docker-compose up
-```
-The site should now be running at [http://localhost:4000/](http://localhost:4000/).
+[//]: # ()
+[//]: # (### 4. Option 2: Build the Theme &#40;*with* the github-pages gem&#41; {#option2})
 
-This is perhaps the easiest way to see how your site would actually look.
+[//]: # ()
+[//]: # (If you *are* in fact publishing on Github Pages, leave the Gemfile and Gemfile.lock files in the theme.The Gemfile tells Jekyll to use the github-pages gem. **However, note that you cannot use the normal `jekyll serve` command with this gem due to dependency conflicts between the latest version of Jekyll and Github Pages** &#40;which are noted [briefly here]&#40;https://help.github.com/articles/setting-up-your-github-pages-site-locally-with-jekyll/&#41;&#41;.)
 
-## Configure the sidebar
+[//]: # ()
+[//]: # (You need Bundler to resolve these dependency conflicts. Use Bundler to install all the needed Ruby gems:)
 
-There are several products in this theme. Each product uses a different sidebar. This is the essence of what makes this theme unique -- different sidebars for different product documentation. The idea is that when users are reading documentation for a specific product, the sidebar navigation should be specific to that product. (You can read more of my thoughts on why multiple sidebars are important in this [blog post](http://idratherbewriting.com/2016/03/23/release-of-documentation-theme-for-jekyll-50/).)
+[//]: # ()
+[//]: # (```)
 
-The top navigation usually remains the same, because it allows users to navigate across products. But the sidebar navigation adapts to the product.
+[//]: # (bundle update)
 
-In each page's frontmatter, you must specify the sidebar you want that page to use. Here's an example of the page frontmatter showing the sidebar property:
+[//]: # (```)
 
-<pre>
----
-title: Alerts
-tags: [formatting]
-keywords: notes, tips, cautions, warnings, admonitions
-last_updated: July 3, 2016
-summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes are stored as shortcodes made available through the linksrefs.hmtl include."
-<span class="red">sidebar: mydoc_sidebar</span>
-permalink: mydoc_alerts
----
-</pre>
+[//]: # ()
+[//]: # (Then *always* use this command to build Jekyll:)
+
+[//]: # ()
+[//]: # (```)
+
+[//]: # (bundle exec jekyll serve)
+
+[//]: # (```)
+
+[//]: # ()
+[//]: # (If you want to shorten this long command, you can put this code in a file such as jekyll.sh &#40;on a Mac&#41; and then simply type `. jekyll.sh` to build Jekyll.)
+
+[//]: # ()
+[//]: # (## Running the site in Docker)
+
+[//]: # ()
+[//]: # (You can also use Docker to directly build and run the site on your local machine. Just clone the repo and run the following from your working dir:)
+
+[//]: # (```)
+
+[//]: # (docker-compose build --no-cache && docker-compose up)
+
+[//]: # (```)
+
+[//]: # (The site should now be running at [http://localhost:4000/]&#40;http://localhost:4000/&#41;.)
+
+[//]: # ()
+[//]: # (This is perhaps the easiest way to see how your site would actually look.)
+
+[//]: # ()
+[//]: # (## Configure the sidebar)
+
+[//]: # ()
+[//]: # (There are several products in this theme. Each product uses a different sidebar. This is the essence of what makes this theme unique -- different sidebars for different product documentation. The idea is that when users are reading documentation for a specific product, the sidebar navigation should be specific to that product. &#40;You can read more of my thoughts on why multiple sidebars are important in this [blog post]&#40;http://idratherbewriting.com/2016/03/23/release-of-documentation-theme-for-jekyll-50/&#41;.&#41;)
+
+[//]: # ()
+[//]: # (The top navigation usually remains the same, because it allows users to navigate across products. But the sidebar navigation adapts to the product.)
+
+[//]: # ()
+[//]: # (In each page's frontmatter, you must specify the sidebar you want that page to use. Here's an example of the page frontmatter showing the sidebar property:)
+
+[//]: # ()
+[//]: # (<pre>)
+
+[//]: # (---)
+
+[//]: # (title: Alerts)
+
+[//]: # (tags: [formatting])
+
+[//]: # (keywords: notes, tips, cautions, warnings, admonitions)
+
+[//]: # (last_updated: July 3, 2016)
+
+[//]: # (summary: "You can insert notes, tips, warnings, and important alerts in your content. These notes are stored as shortcodes made available through the linksrefs.hmtl include.")
+
+[//]: # (<span class="red">sidebar: mydoc_sidebar</span>)
+
+[//]: # (permalink: mydoc_alerts)
+
+[//]: # (---)
+
+[//]: # (</pre>)
 
 The `sidebar: mydoc_sidebar` refers to the \_data/sidebars/mydoc_sidebar.yml file.
 
