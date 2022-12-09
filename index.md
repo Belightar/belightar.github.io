@@ -1,6 +1,12 @@
 ---
 title: Home
 layout: home
+
+title: Home1
+layout: home1
+---
+title: Home2
+layout: home2
 ---
 
 #
