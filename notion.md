@@ -1,3 +1,7 @@
+charset=utf-8
+
+
+
 # Getting Started
 
 这里记录了项目设立的初心
