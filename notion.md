@@ -1,4 +1,8 @@
-charset=utf-8
+
+layout: page
+title: "Notion"
+permalink: /notion/
+
 
 
 
