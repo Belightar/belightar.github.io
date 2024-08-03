@@ -1,0 +1,677 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>重生之我是央行行长</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="d41a4bbe-da9f-4f35-985a-c93e43a39d0c" class="page sans"><header><h1 class="page-title">重生之我是央行行长</h1><p class="page-description"></p></header><div class="page-body"><p id="c507ac66-ddb7-4426-8571-ac4c5ee617b4" class="">我没有系统学过什么经济学，只是一个trader。今天和朋友聊了一些脑暴的观点，受到一些启发，写下来给大家当做笑料。同时尽量确保没有金融背景的人也能看懂。</p><p id="74a3878f-9af4-4607-9eb5-b9694ee2f8a0" class="">本文开始写于8月2日东八区23点09分。</p><p id="6a682153-58b6-458d-bca0-24af5b875bc8" class="">8月2日，是8月第一个交易周的最后一个交易日。A股上证收在了2905，跌了近1%，而恒指跌了2%。</p><p id="8ebd94c2-974d-4c92-b23c-7b8226b2c6fa" class="">这里固然有美国市场的影响，继昨天美股整体大跌后，英特尔盘后一天内从30跌到了21。似乎如两千年的时候，宣布互联网泡沫破裂一遍，在宣告AI泡沫的破裂。</p><p id="83c4362d-409b-472a-bba0-41dab88f9f5c" class="">收盘后，我心平气和地看了一眼持仓，也瞥见了自己持仓里的一个异类，国债30ETF，涨了0.28%。我是2023年的3月开始交易利率债的，无意间在银行的APP里看到这类叫做“柜台债”的栏目，它需要一定的交易门槛，彼时我经过了几次测试和观察，持有了一笔十年久期的利率债。</p><p id="76c4c874-68a0-4b1b-9886-6de0eafefee5" class="">债券，就是一种欠条。一般来说它有几个要素：借钱的数额，期限，利息以及支付利息和本金的方式。而利率债，我国指的就是比如国债，地方债以及政策性银行发行的以政府信誉为担保的债券，风险较小。在西方金融学的教科书里，美国的国债，简称“美债”，是所谓的“无风险”金融产品。换言之，在所有的金融产品里，它的信誉理论上是所谓“最高的”。因为，自1791年发行以来，从来没有“违约过”。（只有2023年8月因偿付7月底日本2842亿美元国债到期延期了，下调了评级）。所以在美国，因为没有人的信誉比政府更好，那么他们发行的债券比美债的风险都要高，所以其他美国的债券的利率必须比美债更高才能卖出去。所以美债这种“利率债”还是其他债券利率的基础，其他债券也会因为美债利率的上升，而水涨船高。信誉差距，换言之风险差距，决定了其他债券利率的变化幅度。不光如此，上面提到的只是这些市场主体从纳税人和公司手里借钱的利率。而纳税人和公司向银行以及其他个人和主体贷款的利率，更是要比存款利率更高，发放贷款的银行才有钱赚。所以利率债的利率上升除了会推高其他主体的借债利率，也会进一步推高他们贷款的利率。</p><p id="410c07e6-369f-4518-8cf5-7127f1fdbb78" class="">而买债券，赚钱的方式有两种：1.持有并收取利息。2.在债券价值变高的时候把债券在市场上卖给别人。</p><p id="fafcde78-fe66-4eb3-a228-6f96481a3abd" class="">第一种方式很好理解，而且利率债是每年都要进行付息的，几次不重要，重要的是债券本身约定的利率，也是付息的利率，叫做票面利率，coupon rate。题外话，我国的政策性银行债券的付息还要纳税20%。</p><p id="209bfeba-3085-4aee-a542-e22d1186c309" class="">第二种方式的理解需要动态的思维。想象一个人在去年花100买了一张十年期，面值100，coupon rate 等于10%的债券，每年年末付利息。一年过去，他拿到了利息，想提前把债券卖掉。但是他此时发现，市面上待售的全新的十年期债券已经全部变成，同样面值100，但是coupon rate 等于20%的债券了。那他还能找到人愿意花100去买他的这张coupon rate只有10%的债券么？即使他把自己刚拿到的利息赠与他人，他也找不到。由于利率债具有作为其他债券利率基础的特殊性，政府还是那个政府，发行人还是那个发行人，他的信誉还是“最高”的，那么它发行的债券coupon rate随着时间上升，会导致过去所有人购买的任何债券，价值下降。</p><p id="e71fe2dc-fb72-46de-822f-baa6ef05ed2a" class="">反之，亦然。利率债利率降低，市面上过去发行的所有债券，不论谁持有，在当下的价值，都会增长。</p><p id="9513f8e3-495e-4840-aa50-e6356d502aaa" class="">这里还有一个区别，想象这个人只买了一年期的，同样面值100的，coupon rate等于10%的债券，那么他364天后，市场上的新债券利率变成20%了，那其实他也就没有困扰了。他的这张债券还是几乎等于110块。因为，明天他就能利息连同本金换到这笔钱了。但是如果他这张债券是十年的，就另当别论了，三十年的话，似乎更惨。</p><p id="5ef16aeb-e5c4-4be9-87e3-d3902e7732fc" class="">没错，债券持有的剩余时间越长，风险越大，同时交易获利的幅度也增大了。</p><p id="39bd23a6-4554-4b4f-8c09-d4d2de311aa4" class="">举两个例子。在1993年我出生的时候，3年期国债利率是14%。放到现在一定会被疯抢。而去年3月，我国发行了50年期，coupon rate 3.27%的国债。如果是这样一张100面值的国债，假如放到今天50年期国债利率2.5%的市场上，大约可以卖到131。虽然利率只下降了不到1%，但由于期限长，一年就可以涨31%，还不包括第一年收到的利息。</p><p id="77b90568-6005-48e5-9aa1-cba054235322" class="">说完了亏欠方法，再说风险。债券的违约有很多种，我觉得主要就是：延期付息（可能就不付了或者少付），部分赖账（到期了你自己想办法把欠条打折卖给下一个冤大头或者专业收账的），以后再还（如果是你朋友这么说你们可能就友尽了，但是很多地方城投债都是以这种方式违约），那扪心自问很多时候听到别人说以后再还，那还真的能换上吗？金融市场就是这么朴实无华。债券是最简单的金融产品，也是所有金融产品的基石。</p><p id="c5c578a4-a09c-4b89-b53f-88c333809add" class="">好了，债券相关的内容其实还有很多，担保，抵押，回购，提前还贷，附加条款，等等等等。借钱是可以借出花来的，先收起小黑板，大家只要记住，债券只要不违约，那利率下降，债券升值；久期越长，升得越多，就好了。</p><p id="d2d29591-bb24-4579-af75-45b4faae2fab" class="">一年前就是我想到了日本的情况，日本在房地产泡沫的萧条阶段，利率一直下降到负数，再几经考察下开始投资债券。而现在，经历了长期的复利率环境开始加息了。于是他们有了失去的三十年的美名。</p><p id="db43a159-1920-4fc9-a6e1-12d10527b3ef" class="">是不是隐隐有一种感觉，持续的利率下行不是好事。它虽然利好持有债券的主体，但是这也说明市场上找不到什么收益率比债券还高的事情做投资了。也侧面说明的了经济的萧条。所以今年以来，央行多次喊话，强调利率风险，也就是加息风险，并开始向银行等金融机构借入长债，在市场卖出。</p><p id="3e9d64f3-bad6-424c-9384-6c390000bf3f" class="">有意思吧，印象中，似乎国家权威巨大，想发行多少coupon rate的国债，还不简单。</p><p id="8c8446ec-cf8b-4edc-afe8-6bf60ebf4bc2" class="">其实并非如此，央行也要看市场脸色。利率债发行本质是从市场里借钱，给的利息不合适，是借不到钱的。每时每刻，过去发行的，类似的债券都在以一个隐形的利率基准在市场里交易，所以央行也要参考这个利率来升息和降息，达到他融资的目的。比如美国国债，去年11月就创下了2021年10以来的需求新低：三十年国债4.7%还缺乏买家。（中国纳税人投资美债需要考虑汇损和利率风险，这是另一个话题，暂且不表）</p><p id="a2473c7f-4cb1-4c2f-a1e8-1edff854ac1a" class="">还有一个经济现象是之前在美国发生的，所谓利率“倒挂”的现象。大家存款一般有这样的经验，7天的，或者一年的存款利率没有三年甚至五年的高。这是正常的现象，因为存款可以看作是一次性还本付息的债券。持有期长，风险会增加，理应获得更多的利息作为补偿。但是如果出现了相反的情况：往往是短持有期的利率没什么大的变化，但是长持有期的利率大幅下降，这种前者比后者利率更高的情况就被称为“倒挂”。这说明了市场对未来长时间收益的悲观。这解释了为什么我们的央行要借入债券：因为央行手里债券不光金额不够，而且短债为主。实际上有好事者估计过央行持有的债券持有期限在1.4年左右，所以央行如果大量卖出短债，会导致短债贬值，传导到短期利率上升，客观上形成“倒挂”。所以手里没有太多长债的的央行首先要解决的是长债利率太低的问题，解决的办法就是卖出（做空）长债，哪怕是用借入卖出的方式。</p><p id="44a6200f-10cb-4444-9c04-d44719814881" class="">但时间回到今天下午，央行的行为并没有L用。前文提到的30年期国债ETF一天涨了0.28%。别看这点少，从两个月前陆续购买时候算起，已经涨了8%。当然我不是推荐小白买高风险国债，恰恰相反。一年前，我买的都是银行的柜台债。其实是银行购买了大量的利率债需要变现，所以自己开一个小的交易所给客户买卖，不论客户是想买还是想卖，他都接货。代价就是从像我这样的散户，从他那里买得比市场价高，卖得比市场价低。有意思的是这个价格 可以让银行的客户经理代你向银行的债券交易组讨价还价。我一般会把这个价格说到千分之三。当然了现在印花税降了，下次又有了讨价还价的理由。那我为啥不去市场里买呢？因为这个市场叫做银行间债券交易市场，成为他的会员一般要先开一家银行。</p><p id="17c1a15e-bc91-4328-a5e8-3a36233e1215" class="">Anyways, 这种市场不适合反复买卖操作，因为交易成本高，费事。好处是，就像你可以去菜市场挑西瓜🍉，卖瓜大妈可能卖你贵点，但你可以学习西瓜书📚挑个好西瓜的，种在土里还能发芽（可以直接收到利息而不是基金分红）。那怎么叫美团🥬买西瓜呢，就是通过债券ETF（交易所交易基金）直接在股票账户里买卖，交易费用具体看个人，可以不到千分之一，但是你也不能指名具体哪个，只能看平台买手。那这种平台的产品你下单之前要仔细点。当然不差钱可以选择让自己孩子👧买，就是通过各种金融APP平台买普通的债券基金。但我估计有些短债基金的收益可能都不够交管理费的。</p><p id="db6880dd-f602-4c6f-9cc9-20e4bd551d3a" class="">其实还有一种主流方式，🚛批发西瓜，自己吃不了再很快转手卖给别人，这种风险高的方式就是利率期货。利率期货本身是最贴近价格变化市场的，但是目前不太适合我的风险偏好。</p><p id="9d7dc209-ea69-41d9-b918-1fdc879d3c64" class="">那央行口中的风险是什么？其实就是如果有些金融机构持有大量的长债，万一利率快速上升，这些资产也会快速贬值，甚至引发银行倒闭。去年大家听到的各种美国银行倒闭就是美联储暴力升息导致银行持有的债券类资产贬值。银行是高杠杆行业，我记得招行的资产负债比是最低的，90%的样子。就是说招行10块钱只有一块钱是自己的，9块都是借别人的。而且这10块钱里面大部分都不在自己手里，已经借出去了，这里面的坏账还没算进去。所以银行是绝对承受不了10%的损失的。其实现实中，2%的贷款坏账损失就足够让银行破产了。</p><p id="b0cecb88-f943-43c3-a836-a649f1389a25" class="">看到这里你可能觉得这些事和你都没有关系（这人在这装B吧）但其实从支付宝里的余额宝，微信里的零钱通，到招行买的朝朝宝，平安买的天天利，再到XX银行买的XX理财，你把那产品说明书点开一看，底层的资产全是这些债券。</p><p id="5e69694e-425d-4124-9554-817f7daa8646" class="">吗？</p><p id="de13ecd9-eb8d-4d64-8dcb-91d95410410c" class="">利率债只占这些产品的一小部分，大部分是其他的信用更差的债券，包括公司发行的债券，包括城投发行的债券，也包括那些房地产公司发行的债券。</p><p id="db9fe614-8c5a-4a03-9ad7-0f621e0a8d61" class="">而我们国家经历了15个季度的债券牛市（利率下跌），而大家的理财利率是多少？钱去哪了？</p><p id="81cf2eed-d923-4638-9f9d-277cc772bbda" class="">再次回到今天下午。长债还是在涨，股票还是在跌，利率也在被动下跌。所谓的经济预期，很差。只怕央行借入债券卖出的交易是要亏钱咯。</p><p id="bb7acfdd-dbd3-438c-8e84-822ecf020d5a" class="">这个时候B站随机推送了一个关于如何买房的视频，里面关于学区可以通过1%所有权转让的方式获得的说法让我觉得很有意思。利率下跌，贷款利率也下跌了，我想，还房贷的人可能会觉得心理平衡一点。</p><p id="5d285110-0e6f-4219-a3f2-0aa3a3841d00" class="">这个时候，抖音又给我推送一条债券基金的推荐视频。确实，最近债券类的产品越来越多进入大家的视野了。诶？</p><p id="c351824e-0186-4f08-a157-a6d7013fb227" class="">那，有房贷的人不就可以通过继续买中长债来压低利率，进而压低LPR了？这样他们就可以少还房贷！而且就算这两批人不是一类人，他们都是拥有资本支配权的人，所以一旦这种循环达成，利率一定会被压到几乎为零！怪不得日本失落三十年而不是其他的时间，因为高位站岗的买房人，房贷最多就三十年！哈哈哈，有能力支配资本的人群在这种囚徒困境下主动加深经济的萧条，这真是个地狱笑话。</p><p id="ea6d1b3d-7867-438a-b9dd-ad6f4a616b1e" class="">其实这个想法有很多漏洞，姑且大家看下去。</p><p id="fec0be19-1314-476c-b0b2-3941d80e4533" class="">这个时候，老邬来了，我和他分享了我的“发现”。</p><p id="f7afebbe-cf37-4dbd-b9d5-0bdf924f5331" class="">说着说着，我就提议不然我们脑暴一下如何解决当关于利率的困境吧。（当然这些假设都很朴素，贻笑大方啦）</p><p id="c1608682-b96e-4f0e-acb9-57b1de875681" class="">央行视角：</p><ol type="1" id="f4fc44bf-72fb-432e-9c67-37bc5785eff6" class="numbered-list" start="1"><li>要维持市场资金流动：利率走低，尤其是长期的利率快速走低，会吸引资金抱团买债，形成“空转”，减少了市场流动资金。</li></ol><ol type="1" id="4a9b1b58-9c5f-466c-abe6-b06654620e57" class="numbered-list" start="2"><li>要维持长债利率稳定：央行似乎缺乏市场干预长债利率的手段。</li></ol><ol type="1" id="82e948c9-c823-4ef2-b21d-bd2fd9a715c7" class="numbered-list" start="3"><li>要保经济：强行利率抬升会导致社会融资成本升高，影响经济发展。</li></ol><ol type="1" id="7da9027c-7b6b-4177-9a1c-60723ec6523d" class="numbered-list" start="4"><li>要预防通胀：利率抬升的前提是恶性通胀。说起来像天方夜谭，毕竟现在国内是通缩，但是天知道在美国国债利率走高，全球客观严重通胀的这段时间里，咱们印了多少人民币，多少去了国外吃利息。如果回流呢？这笔账只有央行自己清楚。如果此时通缩的环境转为输入型通胀，才最难处理。买多了长债的银行，会破产。</li></ol><p id="8e3e3117-e218-46ad-b108-32d1cd0b8e08" class="">银行代表的金融机构（我认为我们国家央行和银行从所有制上讲，其实是一体，只是从表面职责上做区别）：</p><ol type="1" id="5dec1b65-ac3b-40fe-9367-87176cdf9e11" class="numbered-list" start="1"><li>要挣买利率债的钱：大资金既然在利率债抱团，这时候买长债自然是最好的（自己买，利率下行挣更多），但是短债也要买（基金公司打包短债，银行打包短债，卖给散户）</li></ol><ol type="1" id="ef163bde-dea6-4c48-81c8-0a66487a7e25" class="numbered-list" start="2"><li>要挣房贷的钱：别忘了买房人借了银行的钱，那相当于什么？相当于银行从买房人那里买了一张有抵押的债券，面值当时购买时房价的70%，按月付息，利率浮动（这种情况下银行稳赚不赔）如果违约，房子是银行的，贷款还得继续还。如果是固定利息，在利率下行的环境中，银行可以挣更多。但利率上行时，1.银行会面临借方断供，公司经营资金紧张导致的坏账增加；2.持有的房贷合同，也就是从私人那里购买的债券，以及从央行购买的债券贬值;3.市场资金紧张拆借成本上升，流动性紧缩（挤兑）的三重风险。（吐槽一下，美联储能加息，可见背后是多么大的能量。）其实哪有稳赚不赔，那都是理论上的，还有两个现实条件：1. 房价不能跌破首付款和已经偿还的房贷总额（负资产是没人要的，会产生坏账）2. 借款人要有稳定收入（就业率）3. 房贷不能再增加了，利息不能走高，不能高到买房人还不起。</li></ol><ol type="1" id="5cca0631-f37d-4ec9-8ae5-aa6443c306af" class="numbered-list" start="3"><li>要挣卖产品的钱：现在什么产品还能推动？活钱理财，债券基金。这都是可以推动利率下行的事情。</li></ol><ol type="1" id="e10efb26-2eee-407c-8d1a-9133fe12b1e6" class="numbered-list" start="4"><li>要符合风控合规：过去贷款出去的钱因为烂在房地产，利息太高收不上来，坏账多了会破产；经济不还贷出去的钱收不回来，坏账多了会破产；买的长久期利率债多了，利息上涨，资产贬值多了会破产。银行风控巴三（马云喷的那个东西）的项目我也有一丢丢参与，22年年底才完成软件系统搭建，应该还没有完全推广。所以现在也是口径不同意，混账的状态。不然为什么今年那么多城乡行要合并，这种不透明的并购也可能包括一些隐性的破产和提高预见性的坏账计提。</li></ol><p id="d244b150-a29b-4cc5-906a-c473201f4d35" class="">纳税人和主体（公司）：</p><ol type="1" id="73e7b8e6-a4cc-477c-b12c-198a005a698f" class="numbered-list" start="1"><li>防止资产减值：央行的货币投放行为会通过银行投放到社会流通，普通人是无法对此做抵抗的。因为银行和央行都是“稳赚不赔”。换言之，普通人买银行理财，存钱储蓄，就是减缓一点资产贬值的速度。买长久期的国债其实是想在宏观调控中在减缓资产贬值的同时揣摩“上”意，冒点风险来搭便车。</li></ol><ol type="1" id="d97fd78c-978c-4170-b714-60ebee485651" class="numbered-list" start="2"><li>甚至从央行和银行那里赚钱：有些市场主体（公司）是可以低利息获得贷款的，这部分钱如果能找到稳定收益的标的，就能直接赚利差。好比前阵子京东金融给我一笔一个月的无息贷款，那我也懒得研究，也嫌麻烦，转手买成T+0的活钱理财了。相当于京东送了我几十钱。公司自然不会像我这么保守，早年间很多能获得低利率贷款的上市公司都把这些钱直接或间接地去投资房地产了。当然还有一个重要的人群，他们是近二十年的贷款买房者。尤其在过去，银行的贷款利息是固定，同时相对GDP增长率来说，是低很多的。即便后来贷款利息随着LPR浮动，但由于这中间的利息差和贷款金额的巨大，“稳定”投资品的稀缺，市场上低利率贷款的难以获取，这三者促成了房地产泡沫。<br/>和上市公司，银行，央行，以及背后的地方政府相比，这个人群其实是最弱势的。即便买房者借由“身家性命”、“掏空六个钱包”、“降价就砸售楼处”等姿态也想获得一样“稳赚不赔”的地位，实际情况也是轻松地被转移成为购房人和开发商的内部矛盾以及零和博弈。<br/></li></ol><ol type="1" id="ec31daf9-7e10-48f4-98fe-c26812b4e95e" class="numbered-list" start="3"><li>经济市场内做零和博弈：在房地产市场中，有一个不知从何而来的行业弊病，就是施工垫资。大大小小的施工队伍除了提供原料，劳动力以外，实际上也承担了银行的任务，是中小施工方不断地借钱给大的中标地产企业，间接给地方政府来完成房地产项目的。他们比我懂什么是真实的金融。早年间春晚都会讽刺的农民工工资拖欠的问题，但我想向上追溯，实际上违约方都是中铁中建以及背后的XXXX。近些年所有的律师朋友都很清楚，房产市场中违约频率最高，赖账金额最大的是“风险最低，信誉最好”的国企，相关诉讼养活了一个小行业。在金融服务的市场中，也有专门的公司做所谓的投资顾问去吸引散户去投资到利率市场，当然了，很多结局往往是散户想要利差，别人想要你的本金，或者一部分本金（债券的违约有很多种，延期付息，部分赖账，以后再还）。</li></ol><p id="10ac3fe8-31ea-4011-a799-a17f29163371" class="">不行了老了，我先睡会儿（8月3日东八区2:17，英伟达两日跌幅10%）</p><p id="cd50cca6-82bf-410b-8665-114be6a2e1da" class="">醒了醒了，昨晚晚睡前我看到了抖音上马翔宇的“喜讯”，今天接着写实际上不着急了。</p><p id="8aa7c349-a69f-497e-920f-97909db38656" class="">为什么提他呢，这其实是我写这篇文章的动机，您接着看。</p><p id="a911ec3c-6beb-4be9-98c2-a0fa2f4bca6f" class="">说完这些背景故事，那我就和老邬开了一个脑洞：</p><p id="e8333df3-ceff-4849-aeae-fd5a21e27eb3" class="">B：“这央行找银行借入债做空真是一步臭棋，自己有亏损的风险不说，这借出的银行是赚这钱呢，还是不赚这笔钱的。市场上这么多人有动机买债压低利率，这样弄还有损国家公信力，有损央行的威严。”</p><p id="f54449dd-a0a2-4ca6-8817-cc9658c2c20a" class="">B：“冤有头债有主，关键还是地方卖地太贵了，前些年接盘的人受不了，不如就主动打个八折，把多卖地的钱给退回去，退给开发商，施工单位，这地产板块，原材料板块就有救了。买房人那边，银行的贷款数额就按票面直接打八折，再减去首付和已付利息和部分本金，剩下的金额按同样的持有期限分摊，这活交给一金融本科生都能算。这样市面上房价也降了，也不影响银行，有一部分人就能买得起房了。到时候租金也降了，经济自然就好了。”</p><p id="28e6badc-fd6c-4fa3-8563-0c41a371b68c" class="">W：“且不说这能不能有用吧，这钱从哪来呢？”</p><p id="8b9a264a-f17a-4031-bb2f-bd2dd26da014" class="">B：“现在老百姓不是爱买长债吗，不如就搞一个专项债，把募集的钱退给开发商，让他们再退给施工方。银行方面直接算好以后调整每个月贷款数额即可，我想很多人要是三千房贷的话可能会降到一千多，这可不就刺激消费了吗”</p><p id="5ab6638f-488b-49ec-8249-a39d2fdce537" class="">W：“那开发商要是捐款跑路呢”</p><p id="429777e8-ecc4-4fc0-8cc6-6fd6cb01ea37" class="">B：“这钱款就不走开发商的账，施工单位谁有欠条就去银行兑就是了，设定一个期限，总额就是这两成的卖地退款” （但这其中债务认定的问题也大有文章可做）</p><p id="9227a68c-0bff-4748-a774-43e6c52b19ff" class="">W：“那你这其实是用一部分老百姓的钱，去填另一部分人的窟窿”</p><p id="d6221cd1-a622-475e-827b-1628b0156f86" class="">B：“那可不是吗，哪次发债不是这样。但是这么做确实能解决眼下的困境，利率调控了；新的一批年轻人能买房了；商贩的成本降低了；需求增加了，以后再紧一紧税收，这就能持续下去”</p><p id="69228a30-3e9c-42c6-950e-909507247d5d" class="">W：“那你这还真是个良善政府的策略，那为什么没有这么做呢”</p><p id="24cf7bf4-9e9f-4cfc-91e0-6249b42f0974" class="">（ten thousand years later）</p><p id="26450678-667f-4abd-b35a-fd0e5b9358ed" class="">B：“这里面回扣的钱可不好算”</p><p id="2a110771-b479-4f34-960e-6b34f2395fe2" class="">W：“哈哈哈哈”</p><p id="56520da3-1ac2-4ae0-8eff-cdfe093e04bc" class="">... ...</p><p id="ddde1cd1-d2e6-45b9-a90d-343d97417ec4" class="">这次笑谈就这么结束了。</p><p id="b9bc5254-b113-4321-8972-1c6f6911fbf9" class="">但我晚上猛然一想，今年利率债发行数额定在25.2万亿，这笔钱用来干什么了呢？</p><p id="701ce610-b17b-48af-b5b6-30b7eef247a5" class="">当然主要是用来维持社会运转和基建。</p><p id="402b5871-1c47-43a0-b221-08a18c7d1345" class="">诶？</p><p id="4d5a61f2-473d-4b2a-bcea-831b08479b88" class="">银行何尝没有去填补一部分开发商和上下游公司的债务？</p><p id="6e549bcd-ce86-4518-94f2-a6a37f7be723" class="">其实是有的，只有一小部分而已，没有一视同仁。</p><p id="8fae08ea-696b-4e08-829c-92e1a24e109e" class="">而且普通买房人打折的那一部分完全没有传导下去，那钱去哪了？</p><p id="e6094d92-ca5e-41a8-8c13-be6a103cbf2a" class="">还干什么了，发展三大产业去了？</p><p id="6cd47611-d1ce-4acf-a22d-5f19c41ccf15" class="">是，所以才会有苏州的事情，马翔宇的故事。</p><p id="dfd306a3-4033-4b33-9331-b96d739719bb" class="">那还干什么了？</p><p id="bfae131e-537f-4d44-9956-3e1bc0a51a0a" class="">... ...</p><p id="9c97e0e4-21bd-4f92-bdd9-9cd42e8d7026" class="">25.2万亿。</p><p id="c80267fd-173a-44d9-b2eb-f650720c553f" class="">发生这种事，这真的是太TM符合市场经济规律了。</p><p id="704f5be8-ccbe-48eb-883d-359f7d9f3dc2" class="">我不禁觉得头皮发凉，他每天都在发视频，他一直没有休息，在战斗。</p><p id="3282c6b9-d6d5-40ad-9e4c-1568712ebae6" class="">因而熬夜写这篇文字。</p><p id="df7cf5d9-4828-41b9-9a41-a8795d0961a2" class="">不是教大家去赚这个钱，也不是宣传银行央行不好，而是想通过金融科普的方式告诉大家一些客观的规律。</p><p id="34382d1b-8bec-47f6-b3dd-219c20144b58" class="">民可使由之这种话，是糟粕。</p><p id="2a84f5ef-78e5-41fa-a8d9-6d10ccc083a0" class="">如果只能用引用大明王朝和让子弹飞来说些阴阳怪气的话。</p><p id="fda6d408-42db-4c7e-a1f3-9f9170477368" class="">我也想倒严，但其实严不光是具体的人，也在每个人心里。</p><p id="031ca478-04a1-4995-ba2c-01a2050d75d9" class="">破贼，破心中贼。</p><p id="87820e32-39cc-45e0-9ae7-f654c154e003" class="">大厦倾覆，没有一个居民是无辜。</p><p id="48f628d5-cdd3-4e56-9898-78f9de2951a9" class="">世界很残酷，我也一直觉得，原子弹下没有冤死的鬼。</p><p id="ad4fe8d0-d6bf-43de-b679-17214b3ba18b" class="">19世纪其实有一群日本的幸运儿，明治维新后失去了土地的农民，前后几十万人，移民了南美。</p><p id="2bd1d037-59ab-4921-a14a-eba9f5f154f2" class="">我不希望这种事发生，我希望所有人都可以是幸运的。</p><p id="e4d1fe68-8127-4eca-9339-94fe2ca650c0" class="">正值奥运，我听着国歌：</p><p id="37733304-4ba8-47b9-928d-a780cf6094d6" class="">中华民族到了，最危险的时候。</p><p id="cf23e643-9179-4853-96a5-caa20021768f" class="">有感而发。</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
