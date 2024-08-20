@@ -5,7 +5,8 @@ layout: home
 
 * notion [notion](notion.md)
 * text [text](重生之我是央行行长.md)
-* page [page](interest.html)
+* page1 [page](interest.html)
+* page2 [page](zone.html)
 
 ----
 
