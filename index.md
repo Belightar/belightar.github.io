@@ -7,6 +7,7 @@ layout: home
 * text [text](重生之我是央行行长.md)
 * page1 [page](interest.html)
 * page2 [page](zone.html)
+* page3 [page](industry_distribution.html)
 
 ----
 

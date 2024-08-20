@@ -1,0 +1,684 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>重生之金融沙皇</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 237, 214, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 237, 214, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-transparentGray { background-color: rgba(227, 226, 224, 0); }
+.select-value-color-translucentGray { background-color: rgba(0, 0, 0, 0.06); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(249, 228, 188, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="712cfbc6-f7b9-4f13-bf53-cf6041aa613e" class="page sans"><header><h1 class="page-title">重生之金融沙皇</h1><p class="page-description"></p></header><div class="page-body"><hr id="c1ddb820-8463-4d54-9d51-d9495997c1fd"/><p id="357472a1-1cac-47db-b2cd-be17bd6c79bc" class="">于2024年8月13日，云南往玉溪的火车上。</p><hr id="b5707202-b540-428a-bce6-8c7f38f0a44d"/><p id="f6dd7085-5fa2-411f-a7f4-dc75326f8739" class="">接上次《重生之我是央行行长》想象解决利率下行和经济展望悲观的问题，我妄言了一个解决思路:</p><p id="9cbaf54c-de9a-4d88-beec-310e4c91b112" class="">举长债将土地出让金增长过高的部分等比例退给过往三年的站岗购房者：有贷款的从银行房贷里扣除，没有房贷的直接发钱；还有中间的开发商施工队以及建材商。最后我提出了对现有国债发放筹集资金流向的质疑。</p><p id="c9062f24-1816-4e2b-893a-acce3dafde29" class="">这样可以：</p><ol type="1" id="b6b4c32d-5d01-42a3-bcf1-8c74b5be4936" class="numbered-list" start="1"><li>真正地在不伤害银行资产负债表的前提下，平抑房价和商业地产的租金。银行没有了现在的系统性风险，但是会损失未来利润。</li></ol><ol type="1" id="9c1eb182-9d9a-4846-9080-a26818e63394" class="numbered-list" start="2"><li>刺激经济。这样减少的用地成本可以改善全产业利润率；减少的负债压力可以改善居民资产负债表，继而刺激消费。</li></ol><ol type="1" id="521ef815-c7d1-43af-b861-0a962e21306e" class="numbered-list" start="3"><li>解决通缩问题。债券的利率可以因为债券供给增加，得到修正。权益市场（股市）可以因为经济预期的改善和债券市场后续下跌带来的资金挤出进行均值回归。</li></ol><p id="78324600-2975-4050-8965-2955ae4d0599" class="">国家发债，改投为退，一举三得。下面是这样做会带来的问题：</p><ol type="1" id="0481e07f-5b54-4a37-a4ce-11d9023f02de" class="numbered-list" start="1"><li>钱从哪来？购债人——从事债券投机的散户（我自己）和银行。最后经过银行传到到社会每一个纳税人。自人类有了中央银行，根子上所有经济问题都是这样解决的。只不过这个解决的过程中给了纳税人比较充分的选择的权利。</li></ol><ol type="1" id="80b17a1b-5616-4780-a8c4-1b48dd2ae486" class="numbered-list" start="2"><li>贪污。在等比例还债的过程中，房地产产业链条从地方政府开始，到各部门，银行，开发商接待，合同，施工，材料供应商。每一环都有回扣，都会在等比例退回的执行中造成账目核对不上。进而在推行中需要进行额外的考量。</li></ol><ol type="1" id="66741ad0-b9e1-49af-9127-b63369abc076" class="numbered-list" start="3"><li>执行成本。以购房者的购房合同和契税缴纳为依据，由银行和税务局合作处理，这个可以全部电子化，偷税漏税的人也会得到应有的损失。开发商和材料以及人力供应商那里是最麻烦的，容易形成二次贪腐。这个环节可以通过参考近三年所在地建筑造价成本的均价进行统一粗估，也是电子化操作，只是这一部分就不可能像个人那样做精确计算。</li></ol><p id="62e75cef-6096-4527-becc-552a282fa1cb" class="">那其实随着时间的推进，最近也发生了关于利率方面的事件：</p><ol type="1" id="8d4b198f-98ff-4ccb-bf6c-11d71cab6617" class="numbered-list" start="1"><li>8月9日，央行发布了《2024年第二季度中国货币政策执行报告》：</li></ol><blockquote id="cf5c319e-fc9c-4464-be86-76349b046213" class="">四是保持汇率基本稳定。坚持市场在汇率形成中起决定性作用，发挥好汇率对宏观经济、国际收支的调节功能，保持汇率弹性，强化预期引导，坚决防范汇率超调风险。<p id="25dc24e2-b914-46c9-ad58-3c9dea80e133" class=""><strong>五是</strong>加强风险防范化解。健全金融风险监测评估，稳妥处置重点区域和重点机构风险。有序推进金融支持融资平台债务风险化解。强化金融稳定保障体系建设。</p></blockquote><p id="39bb10fd-40c1-48af-88ef-543dfaca784c" class="">http://www.pbc.gov.cn/goutongjiaoliu/113456/113469/5427706/index.html</p><ol type="1" id="f696b22e-99ee-49cd-9f1f-8bfad8514bf6" class="numbered-list" start="1"><li>同日，第一财经补充了</li></ol><blockquote id="23df0c02-b02d-4d34-a243-e5a4c4e4ff95" class="">9日央行发布2024年第二季度中国货币政策执行报告，其中提到对金融机构持有债券资产的风险敞口开展压力测试，防范利率风险。</blockquote><p id="c55015ef-fa44-41ca-83d9-635524ffe4ef" class="">https://www.yicai.com/epaper/pc/202408/12/node_A02.html</p><ol type="1" id="73462f2a-187e-4bcc-9fa0-9b93b3850dc7" class="numbered-list" start="1"><li>8日，9日，12日，利率市场大跌，对应利率上浮。13日，反弹。市场呼应了这次“压力测试”。</li></ol><p id="788e7871-2251-46fd-8dfb-d086aeda709d" class="">那这次我和老邬走在去西南联大的路上，对解决目前经济衰退，资金卷入债券市场开的脑洞就是出一个特区政策，让上海实现“金融独立”。</p><p id="dc460fea-7ca3-4fe4-849b-d62d4895a79d" class="">所谓上海金融独立，可以直接让上海拥有蒙代尔三角中的相对独立的货币政策以及自由流通，这样子上上海的本土资本就可以自由参与到其他发展中市场的投资，对于公有制的主体投资以及私有制的主体投资都会带来极大的便利。</p><p id="18fa4a07-a9ec-45bf-bb7a-49030c184b9d" class="">引用走出去公共服务平台文章：</p><blockquote id="b255c300-82ab-4a0c-a0d9-d2f48d6f41a3" class="">据商务部、外汇局统计，2024年1-6月，我国全行业对外直接投资6060.7亿元人民币，同比增长16.1%（以美元计为853亿美元，增长13.2%）。其中，我国境内投资者共对全球152个国家和地区的5532家境外企业进行了非金融类直接投资，累计投资5159.7亿元人民币,增长19.5%(以美元计为726.2亿美元，增长16.6%)。<p id="bb2e2aaf-0653-4eda-b6c2-2175554b6b86" class="">http://fec.mofcom.gov.cn/article/tjsj/ydjm/jwtz/202407/20240703525524.shtml</p></blockquote><p id="2ce804c0-5d77-4c22-8b49-4e7e702ed420" class="">但是个人对外投资渠道还是比较狭窄：</p><blockquote id="3fbba09b-4537-4881-b9b8-4544d589dfd1" class="">中国个人对外投资渠道主要包括B股、QDII产品、商业银行发行的外币理财产品以及外汇及黄金买卖等。<ul id="358c0087-1b38-4bfb-9935-cad93f49e8c2" class="bulleted-list"><li style="list-style-type:disc">B股：这是人民币特种股票，允许国内居民投资境外企业发行的股票。</li></ul><ul id="d9d6a92c-24f6-4542-97d8-3390a313ada6" class="bulleted-list"><li style="list-style-type:disc">QDII产品：即合格境内机构投资者，这些产品允许国内投资者投资海外市场，包括股票、债券等金融产品。</li></ul><ul id="71d85a5a-b9ab-47f3-aab7-13a3c7388c2c" class="bulleted-list"><li style="list-style-type:disc">商业银行发行的外币理财产品：这些产品允许投资者通过购买外币理财产品，间接投资海外市场。</li></ul><ul id="cee6b058-c902-4315-80d5-ff7ddb342771" class="bulleted-list"><li style="list-style-type:disc">外汇及黄金买卖：投资者可以通过外汇交易和黄金投资，参与国际金融市场。</li></ul></blockquote><p id="8dc7b008-80b6-447f-a5b3-25b487fca5d1" class="">那么主要沿着股票产品和商品线，理论上个人参与期货交易，进行港股的投资，也算是对外投资的一种。</p><p id="2f01400e-e642-447a-a731-2db58f8f2950" class="">还有普通的境内法人理论上可以通过参与利率互换，期货套保，经由合格的交易商来进行对外投资。</p><p id="3e467810-29f3-4e19-b9bb-535555d88132" class="">这是最主要的目的之一，还有一个非常重要的好处，就是同时还能够让央行的财政政策货币政策更有效的在其他地方实行。</p><p id="15d3ea2f-5cea-4342-8c3a-0d14b4c8f442" class="">上海其实是中国最大的工业城市，也是最大的金融城市。本身投资和融资就是要分开应对的。央行的政策落地主要在工业生产的融资方面，而投资方面的需求不一定和融资方面的政策需求能够完全对应。与其创新一些定向借贷便利产品不如直接在地域上做隔离。</p><p id="7e34214e-f544-4bf6-b1c9-f243eb088fe3" class="">实践的方法可以直接以中环为界内部划定为特区，只能用数字人民币结算。同时全国海关贸易（包括服务贸易）也只能用数字人民币结算。让数字人民币替离岸货币的地位。同时特区内只接收人民币的消费，不接受人民币作为投资资本。只接受数字人民币作为投资资本，通过一定程度上剥离货币的投资功能，让投资资本成为真正可溯源和杜绝非法交易，偷税漏税的干净钱。同时上海市金管局可以对上海特区的数字货币执行相对“独立”的财政政策（肯定也是在北京的授意下），参与投放和调整数字人民币的利率。乍一听天马行空，但我个人觉得这非常社会主义，但这个政策影响非常大，恐怕重生为央行行长也无济于事，只能重生为经济沙皇了。</p><hr id="d7db6c7d-21ea-412c-a29f-419ccdf9f3c9"/><p id="dc7d900c-03ea-4e78-9dce-6150e953bf80" class="">接上文，现在是8月20日昆明南往广州的火车上.</p><hr id="68931cfd-fa30-4782-ba67-d2e2cccdc266"/><p id="cbf085ce-161d-42b4-bda3-b04d839dd34e" class="">聊着聊着，9日当晚我就想到，其实并不是我异想天开，而是这个世界本来就是这么运行的。</p><p id="630ce149-70d1-4911-8423-217793062ca1" class="">美联储没有控制新西兰，澳大利亚，日本，韩国，加拿大，英国和欧盟的央行。但是他们的货币政策和财政政策步调是有默契的。明面上美元放弃了稳定的汇价，但实质上也让其他一些地区的所谓独立货币和财政政策收到极大的约束。如果上海成立“金融独立的特区”，并推行“数字人民币”，这种形式非常类似于上个时代的美联储和日元。只不过这种“中国特色”是结合了加密货币的优点和更加稳固的政治联系。对于普通人来说，牺牲了必将牺牲的“隐私”，但同样得到了货币政策执行实际效果的一定程度上的“透明”。如果普通人也能获得数字人民币溯源的信息渠道的话。</p><p id="9ab8daad-4e35-4ceb-8f26-350dc3571180" class="">同样，如果上海的模式运行成功了，民间资本可以在全监管的客观条件下进行对外投资和充分的金融竞争。期间可以带动一大部分金融服务相关的产业。国家也可以通过这种形式对其他贸易国的本币形成贬值压力。只要保持生产力和科技的领先，数字人民币相对于贸易国和对外投资国家本币的压力就会越来越强。强势货币配合强势商品会让他国人民趋向于持有数字人民币，甚至以数字人民币作为衡量自身财富累计的尺度。</p><p id="7dc6399c-4ab3-4605-bf3a-cf86bb7dd165" class="">目的是为了短期解决投资和融资对于货币政策需求冲突的矛盾。通过“金融独立”特区，减缓特区外自身产能增长，以特区为跳板加强对外投资。</p><p id="525fa940-34ae-4f4f-9542-7b7cabcf45b3" class="">最终也可以实现金融上约束他国央行和财政政策实行效果的目的。</p><p id="d360b35c-f21f-4bed-b4bd-ebba971b4b91" class="">没事闲扯，感谢观看。</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
