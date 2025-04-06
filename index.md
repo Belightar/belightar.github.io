@@ -8,6 +8,7 @@ layout: home
 * page1 [page](interest.html)
 * page2 [page](zone.html)
 * page3 [page](industry_distribution.html)
+* [行业分布统计](industry_distribution.html)
 
 ----
 
