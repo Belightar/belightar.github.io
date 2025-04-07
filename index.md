@@ -9,6 +9,7 @@ layout: home
 * page2 [page](zone.html)
 * page3 [page](industry_distribution.html)
 * [行业分布统计](industry_distribution.html)
+* text [text](重生之我是央行行长.md)
 
 ----
 
