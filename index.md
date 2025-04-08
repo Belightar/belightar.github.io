@@ -7,13 +7,11 @@ layout: home
 * text [text](重生之我是央行行长.md)
 * page1 [page](interest.html)
 * page2 [page](zone.html)
-* page3 [page](industry_distribution.html)
 * [行业分布统计](industry_distribution.html)
-* text [text](重生之我是央行行长.md)
 
 ----
 
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
+[^1]: [GitHub Pages更新通常需要1-3分钟，请确保文件已成功推送到gh-pages分支](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
 
 [Jekyll]: https://jekyllrb.com
 
