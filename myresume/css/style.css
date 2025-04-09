@@ -1,0 +1,29 @@
+/* 核心样式表 - 从根目录同步 */
+@import url('vendor.css');
+
+/* 响应式布局定义 */
+.container {
+  max-width: 1320px;
+  padding: 0 15px;
+}
+
+/* 导航栏样式补全 */
+#header-nav {
+  box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* 图标框动画效果 */
+.icon-box {
+  transition: transform 0.3s ease;
+}
+.icon-box:hover {
+  transform: translateY(-5px);
+}
+
+.language-switch-btn {
+    position: fixed !important;
+    top: 20px !important;
+    right: 20px !important;
+    z-index: 9999 !important;
+    /* 其他样式 */
+}
