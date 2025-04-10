@@ -81,7 +81,7 @@ def prepare_multilingual_config():
         for key, value in config.items(section, raw=True):
             # 处理英文键值对
             if key.endswith('_en'):
-                base_key = key[:-3]  # 移除 _en 后缀
+                base_key = key[:-3]
                 config_dict['en'][section][base_key] = value
             # 处理中文键值对
             elif not key.endswith('_en'):
@@ -94,6 +94,10 @@ def prepare_multilingual_config():
     # 添加默认语言设置
     default_lang = config.get('Preferences', 'default_language', fallback='zh')
     config_dict['default_language'] = default_lang
+    
+    # 添加完整姓名用于模板渲染
+    config_dict['zh']['PersonalInfo']['name'] = config.get('PersonalInfo', 'last_name', raw=True) + config.get('PersonalInfo', 'first_name', raw=True)
+    config_dict['en']['PersonalInfo']['name'] = config.get('PersonalInfo', 'first_name_en', raw=True) + ' ' + config.get('PersonalInfo', 'last_name_en', raw=True)
     
     return config_dict
 
@@ -132,10 +136,29 @@ function applyLanguage() {
     if (switchBtn) {
         switchBtn.textContent = languageData[currentLanguage]['UI']['language_switch'];
     }
+    
+    // 更新名字样式
+    updateNameStyle();
+}
+
+// 更新名字样式
+function updateNameStyle() {
+    const lastName = document.querySelector('.last-name');
+    const firstName = document.querySelector('.first-name');
+    if (currentLanguage === 'en') {
+        if (lastName) lastName.style.textTransform = 'uppercase';
+        if (firstName) firstName.style.textTransform = 'capitalize';
+    } else {
+        if (lastName) lastName.style.textTransform = 'none';
+        if (firstName) firstName.style.textTransform = 'none';
+    }
 }
 
 // 页面加载完成后应用语言设置
-document.addEventListener('DOMContentLoaded', applyLanguage);
+document.addEventListener('DOMContentLoaded', function() {
+    applyLanguage();
+    updateNameStyle();
+});
 """ % json.dumps(config_dict, ensure_ascii=False)
     
     with open(os.path.join(js_dir, 'language-switch.js'), 'w', encoding='utf-8') as f:
@@ -147,20 +170,23 @@ def add_language_switch_button(soup):
     style = soup.new_tag('style')
     style.string = """
     .language-switch-btn {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 1000;
-        padding: 8px 16px;
-        background-color: #007bff;
-        color: white;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-        font-size: 14px;
+        position: fixed !important;
+        top: 20px !important;
+        right: 20px !important;
+        z-index: 9999 !important;
+        padding: 8px 16px !important;
+        background-color: #007bff !important;
+        color: white !important;
+        border: none !important;
+        border-radius: 4px !important;
+        cursor: pointer !important;
+        font-size: 14px !important;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.2) !important;
     }
     .language-switch-btn:hover {
-        background-color: #0056b3;
+        background-color: #0056b3 !important;
+        transform: translateY(-2px) !important;
+        transition: all 0.3s ease !important;
     }
     """
     
@@ -192,10 +218,139 @@ def add_language_switch_button(soup):
 
 def add_multilingual_support(soup):
     """为HTML元素添加多语言支持"""
-    # 添加标题
-    title_elem = soup.select_one('title')
-    if title_elem:
-        title_elem['data-lang'] = 'PersonalInfo.name'
+    # 查找并替换姓名占位符
+    name_placeholder = soup.find(text=lambda t: '[您的姓名]' in str(t))
+    if name_placeholder:
+        # 创建姓名容器
+        name_container = soup.new_tag('div')
+        name_container['class'] = 'name-container'
+        
+        # 添加姓氏
+        last_name_elem = soup.new_tag('div')
+        last_name_elem['class'] = 'last-name'
+        last_name_elem['data-lang'] = 'PersonalInfo.last_name'
+        last_name_elem.string = config.get('PersonalInfo', 'last_name', raw=True)
+        
+        # 添加名字
+        first_name_elem = soup.new_tag('div')
+        first_name_elem['class'] = 'first-name'
+        first_name_elem['data-lang'] = 'PersonalInfo.first_name'
+        first_name_elem.string = config.get('PersonalInfo', 'first_name', raw=True)
+        
+        # 创建装饰容器
+        decor_container = soup.new_tag('div')
+        decor_container['class'] = 'name-decor-container'
+        
+        # 添加左上角装饰
+        decor_top = soup.new_tag('span')
+        decor_top['class'] = 'decor-top'
+        decor_top.string = '「'
+        
+        # 添加右下角装饰
+        decor_bottom = soup.new_tag('span')
+        decor_bottom['class'] = 'decor-bottom'
+        decor_bottom.string = '」'
+        
+        # 组装元素
+        decor_container.append(decor_top)
+        decor_container.append(last_name_elem)
+        decor_container.append(first_name_elem)
+        decor_container.append(decor_bottom)
+        name_container.append(decor_container)
+        
+        # 替换占位符
+        name_placeholder.replace_with(name_container)
+    
+    # 添加样式
+    style = soup.new_tag('style')
+    style.string = """
+    .name-container {
+        position: relative;
+        display: inline-block;
+        margin: 20px 0;
+    }
+    .name-decor-container {
+        position: relative;
+        display: inline-block;
+        padding: 0 20px;
+    }
+    .last-name {
+        font-size: 2.5em;
+        font-weight: bold;
+        line-height: 1;
+        color: #333;
+        display: block;
+    }
+    .first-name {
+        font-size: 1.8em;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #555;
+        display: block;
+        margin-top: 5px;
+    }
+    .decor-top {
+        position: absolute;
+        top: -15px;
+        left: 0;
+        font-size: 1.8em;
+        color: #888;
+    }
+    .decor-bottom {
+        position: absolute;
+        bottom: -15px;
+        right: 0;
+        font-size: 1.8em;
+        color: #888;
+    }
+    """
+    if soup.head:
+        soup.head.append(style)
+    
+    # 移除之前添加的左上角姓名容器
+    existing_name_container = soup.select_one('.name-container')
+    if existing_name_container and existing_name_container.parent and existing_name_container.parent.name != 'body':
+        existing_name_container.decompose()
+    
+    # 添加样式
+    style = soup.new_tag('style')
+    style.string = """
+    .name-container {
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        display: inline-block;
+        padding: 0 20px;
+    }
+    .last-name {
+        font-size: 2.5em;
+        font-weight: bold;
+        line-height: 1;
+        color: #333;
+    }
+    .first-name {
+        font-size: 1.8em;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #555;
+        margin-top: 5px;
+    }
+    .name-decor {
+        position: absolute;
+        font-size: 1.5em;
+        color: #888;
+    }
+    .name-decor.top-left {
+        top: -10px;
+        left: 0;
+    }
+    .name-decor.bottom-right {
+        bottom: -15px;
+        right: 0;
+    }
+    """
+    if soup.head:
+        soup.head.append(style)
     
     # 添加个人信息
     name_elem = soup.select_one('h1')

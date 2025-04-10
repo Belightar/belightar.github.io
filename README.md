@@ -63,3 +63,13 @@
 ## 部署信息
 
 该项目使用GitHub Pages部署，通过GitHub Actions自动化部署流程（见.github/workflows/pages.yml）。
+
+## 项目迁移指南
+
+1. 旧模板路径：`src/legacy-templates/`
+2. 新开发请使用React组件：`src/pages/`
+3. 开发命令：
+   ```powershell
+   npm install
+   npm run dev
+   ```
