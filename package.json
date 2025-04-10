@@ -12,7 +12,7 @@
     "test": "jest",
     "test:local": "npm run build && serve -s docs -- --port 5000",
     "test:prod": "serve -s docs -- --port 5000",
-    "deploy": "npm run build && git add . && git commit -m \"Update for GitHub Pages\" && git push"
+    "deploy": "npm run build && git add --force . && git commit --allow-empty -m \"Update for GitHub Pages\" && git push"
   },
   "devDependencies": {
     "@babel/core": "^7.26.10",
