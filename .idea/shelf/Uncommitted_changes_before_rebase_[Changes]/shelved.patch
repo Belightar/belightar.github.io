@@ -1,0 +1,43 @@
+Index: .idea/encodings.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/encodings.xml b/.idea/encodings.xml
+new file mode 100644
+--- /dev/null	(date 1743951729410)
++++ b/.idea/encodings.xml	(date 1743951729410)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="Encoding">
++    <file url="file://$PROJECT_DIR$/industry_distribution.html" charset="GBK" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/CopilotChatHistory.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/CopilotChatHistory.xml b/.idea/CopilotChatHistory.xml
+new file mode 100644
+--- /dev/null	(date 1743951729404)
++++ b/.idea/CopilotChatHistory.xml	(date 1743951729404)
+@@ -0,0 +1,15 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CopilotChatHistory">
++    <option name="conversations">
++      <list>
++        <Conversation>
++          <option name="createTime" value="1743951047864" />
++          <option name="id" value="01960b952cb878628ac61555dda78141" />
++          <option name="title" value="新对话 2025年4月06日 22:50:47" />
++          <option name="updateTime" value="1743951047864" />
++        </Conversation>
++      </list>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
